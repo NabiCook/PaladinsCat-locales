@@ -9,6 +9,7 @@
   "nav.openSiteMenu": "Open site menu",
   "nav.closeSiteMenu": "Close site menu",
   "nav.language": "Language",
+  "nav.localization": "Localization",
   "nav.login": "Login",
   "nav.logout": "Logout",
   "nav.greeting": "Hi, {username}",
