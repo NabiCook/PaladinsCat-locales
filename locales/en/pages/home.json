@@ -1,0 +1,12 @@
+{
+  "home.logoAlt": "PaladinsCat logo",
+  "home.tagline": "Paladins: Comp Analytics Tool — advanced statistic, or just meow.",
+  "home.dismiss": "Dismiss",
+  "home.noNotifications": "No notifications",
+  "home.latestChanges": "Latest Changes",
+  "home.viewAllChanges": "View All Changes",
+  "home.noChangelogEntries": "No changelog entries yet",
+  "search.homeInputLabel": "Search players, matches, champions, items, cards, talents",
+  "search.clear": "Clear search",
+  "search.submit": "Search"
+}

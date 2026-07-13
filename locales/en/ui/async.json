@@ -1,0 +1,5 @@
+{
+  "async.loading": "Loading",
+  "async.couldNotLoad": "Could not load this data",
+  "async.tryAgain": "Try again"
+}

@@ -1,0 +1,9 @@
+{
+  "status.apiOutage": "Hi-Rez API outage",
+  "status.apiDegraded": "Hi-Rez API degraded",
+  "status.heldMatches": "{count} held matches",
+  "status.affectedHours": "{count} affected hours",
+  "status.probeDue": "Probe due",
+  "status.nextProbe": "Next probe {time}",
+  "status.live": "Live"
+}
