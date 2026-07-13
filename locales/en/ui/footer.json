@@ -1,0 +1,12 @@
+{
+  "footer.termsOfUse": "Terms of Use",
+  "footer.privacyPolicy": "Privacy Policy",
+  "footer.joinDiscord": "Join Discord",
+  "footer.dataProvidedBy": "Data provided by © Hi-Rez Studios,",
+  "footer.allRightsReserved": "All rights reserved.",
+  "footer.commit": "Commit: {commit}",
+  "footer.branch": "Branch: {branch}",
+  "footer.dirtyWorktree": "Dirty worktree at deploy",
+  "footer.databaseSchema": "DB schema: {version}",
+  "footer.deployed": "Deployed: {date}"
+}
