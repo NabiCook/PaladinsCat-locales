@@ -6,6 +6,15 @@ private repository.
 
 ## Contribute a translation
 
+The recommended workflow uses a private Tolgee instance on your own computer.
+It provides progress tracking, search, translation memory, batch operations,
+untranslated filters, and an approval-gated PaladinsCat submission helper:
+
+- **[Complete Tolgee setup and contributor guide](docs/CONTRIBUTING_WITH_TOLGEE.md)**
+- [Docker-only Tolgee reference](docs/SELF_HOSTED_TOLGEE.md)
+
+For a small direct GitHub contribution:
+
 1. Copy an English module such as `locales/en/ui/navigation.json` to the same
    path under your locale, for example `locales/de/ui/navigation.json`.
 2. Translate values only. Do not rename or add keys.
@@ -13,13 +22,12 @@ private repository.
 
 The website loads approved locale files directly from this repository and falls
 back to English whenever a string is not yet translated. See
-[CONTRIBUTING.md](CONTRIBUTING.md) for formatting and review rules. Contributors
-who prefer a translation-management interface may use a
-[private Tolgee instance](docs/CONTRIBUTING_WITH_TOLGEE.md) on their own
-computer.
+[CONTRIBUTING.md](CONTRIBUTING.md) for formatting and review rules. The detailed
+guide also covers the Paladins game-client catalog, placeholder safety,
+repeated-phrase batch processing, and the administrator approval flow.
 
-For the planned format-neutral catalog and submission API, see the
-[federated translation platform plan](docs/TRANSLATION_PLATFORM.md).
+For the format-neutral catalog, approval, and submission architecture, see the
+[federated translation platform design](docs/TRANSLATION_PLATFORM.md).
 
 ## Repository layout
 
