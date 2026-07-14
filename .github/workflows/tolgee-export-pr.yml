@@ -1,0 +1,86 @@
+name: Export Tolgee translations to a pull request
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tolgee-export-pr
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    env:
+      TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL }}
+      TOLGEE_PROJECT_ID: ${{ vars.TOLGEE_PROJECT_ID }}
+      TOLGEE_TARGET_LOCALES: ${{ vars.TOLGEE_TARGET_LOCALES }}
+      TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
+      GH_TOKEN: ${{ secrets.LOCALES_PR_TOKEN }}
+      EXPORT_BRANCH: automation/tolgee-export
+    steps:
+      - name: Check required configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$TOLGEE_API_URL" || { echo "Missing repository variable TOLGEE_API_URL"; exit 1; }
+          test -n "$TOLGEE_PROJECT_ID" || { echo "Missing repository variable TOLGEE_PROJECT_ID"; exit 1; }
+          test -n "$TOLGEE_TARGET_LOCALES" || { echo "Missing repository variable TOLGEE_TARGET_LOCALES"; exit 1; }
+          test -n "$TOLGEE_API_KEY" || { echo "Missing repository secret TOLGEE_API_KEY"; exit 1; }
+          test -n "$GH_TOKEN" || { echo "Missing repository secret LOCALES_PR_TOKEN"; exit 1; }
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - name: Export translated and reviewed values
+        run: npm run tolgee:export
+
+      - name: Detect locale changes
+        id: changes
+        shell: bash
+        run: |
+          if git diff --quiet -- locales; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and publish the automation branch
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "PaladinsCat localization bot"
+          git config user.email "localization-bot@users.noreply.github.com"
+          git checkout -B "$EXPORT_BRANCH"
+          git add locales
+          git commit -m "chore(locales): export Tolgee translations"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin "HEAD:refs/heads/${EXPORT_BRANCH}"
+
+      - name: Open the pull request
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          existing_url="$(gh pr list --base main --head "$EXPORT_BRANCH" --state open --json url --jq '.[0].url // empty')"
+          if [ -z "$existing_url" ]; then
+            gh pr create \
+              --base main \
+              --head "$EXPORT_BRANCH" \
+              --title "chore(locales): export Tolgee translations" \
+              --body "Automated export of TRANSLATED and REVIEWED values from Tolgee. Merge this pull request after the locale validation check passes."
+          else
+            echo "Updated existing pull request: $existing_url"
+          fi

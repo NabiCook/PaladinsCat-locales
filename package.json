@@ -4,10 +4,11 @@
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate-locales.mjs",
-    "l10n": "node scripts/paladinscat-l10n.mjs",
-    "test:l10n": "node --test scripts/paladinscat-l10n.test.mjs"
+    "tolgee:push": "tolgee push",
+    "tolgee:pull": "tolgee pull",
+    "tolgee:export": "npm run tolgee:pull && npm run validate"
   },
-  "bin": {
-    "paladinscat-l10n": "scripts/paladinscat-l10n.mjs"
+  "devDependencies": {
+    "@tolgee/cli": "2.20.0"
   }
 }

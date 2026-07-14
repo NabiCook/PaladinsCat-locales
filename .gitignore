@@ -1,2 +1,8 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Legacy local sync state may still contain machine-specific project metadata.
 .paladinscat-l10n.json
 .paladinscat-l10n/

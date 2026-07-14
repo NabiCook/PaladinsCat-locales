@@ -1,8 +1,8 @@
 # Local Tolgee setup for contributors
 
 This setup runs a private Tolgee instance on your own computer. Nothing needs
-to be reachable from the public Internet. PaladinsCat exchanges translation
-files with it through the included companion sync helper or manual import/export.
+to be reachable from the public Internet. The official Tolgee CLI exchanges
+translation files directly with your cloned Git working tree.
 
 Tolgee's current minimum specification is 2 CPU cores and 4 GB RAM. Docker
 Desktop must have at least that much capacity available for a reliable session.
@@ -66,7 +66,7 @@ your Tolgee version no longer needs it.
 4. Leave public registration disabled.
 5. In project developer settings, create a project API key that can view keys
    and translations and edit translations. Keep this key on your computer.
-6. Pull a PaladinsCat source bundle as described in
+6. Push the cloned repository's English source files as described in
    [CONTRIBUTING_WITH_TOLGEE.md](CONTRIBUTING_WITH_TOLGEE.md).
 
 The two catalogs should be separate Tolgee projects because their keys, release
@@ -93,12 +93,10 @@ the named volume; `docker compose down --volumes` permanently deletes it.
 ## Security rules
 
 - Never publish port 8080 on `0.0.0.0` for this workflow.
-- Never send a Tolgee admin token, project API key, `.env`, or data volume to
-  PaladinsCat.
-- The PaladinsCat contribution token is scoped to catalog submission; it must
-  not be placed in Tolgee's administrator settings or shared with anyone.
-- Do not enable Tolgee webhooks for PaladinsCat. The sync helper will initiate
-  outbound requests, which works without a paid webhook feature or public port.
+- Never commit a Tolgee admin token, project API key, `.env`, or data volume.
+- Keep project credentials in environment variables used by Tolgee CLI.
+- Tolgee webhooks and PaladinsCat contribution tokens are not part of this
+  repository-first workflow.
 
 ## References
 

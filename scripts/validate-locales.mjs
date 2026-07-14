@@ -5,8 +5,26 @@ import { fileURLToPath } from "node:url";
 const localesDirectory = fileURLToPath(new URL("../locales/", import.meta.url));
 const gameDirectory = fileURLToPath(new URL("../game-client/", import.meta.url));
 const localeName = /^(?:[a-z]{2,3})(?:-[A-Z]{2})?$/;
+const moduleName = /^[a-z][a-z0-9-]*(?:\/[a-z][a-z0-9-]*)*$/;
+const placeholderPattern = /@@[A-Za-z0-9_]+@@|\{[A-Za-z0-9_]+\}|%(?:\d+\$)?[sdif]/g;
 const modules = JSON.parse(await readFile(join(localesDirectory, "modules.json"), "utf8"));
 let hasErrors = false;
+
+function placeholders(value) {
+  return [...value.matchAll(placeholderPattern)].map((match) => match[0]).sort();
+}
+
+function hasUnpairedSurrogate(value) {
+  for (let index = 0; index < value.length; index += 1) {
+    const code = value.charCodeAt(index);
+    if (code >= 0xd800 && code <= 0xdbff) {
+      const next = value.charCodeAt(index + 1);
+      if (!(next >= 0xdc00 && next <= 0xdfff)) return true;
+      index += 1;
+    } else if (code >= 0xdc00 && code <= 0xdfff) return true;
+  }
+  return false;
+}
 
 function parseCsv(text) {
   const rows = [];
@@ -37,17 +55,27 @@ function parseCsv(text) {
   return rows;
 }
 
-if (!Array.isArray(modules) || modules.some((module) => typeof module !== "string" || !/^[a-z][a-z0-9-]*(?:\/[a-z][a-z0-9-]*)*$/.test(module))) {
-  console.error("locales/modules.json must contain valid locale module paths.");
+if (!Array.isArray(modules)
+  || new Set(modules).size !== modules.length
+  || modules.some((module) => typeof module !== "string" || !moduleName.test(module))) {
+  console.error("locales/modules.json must contain unique, valid locale module paths.");
   process.exit(1);
 }
 
-const englishKeys = new Set();
+const englishByModule = new Map();
 for (const module of modules) {
   const file = join(localesDirectory, "en", `${module}.json`);
   try {
     const english = JSON.parse(await readFile(file, "utf8"));
-    for (const key of Object.keys(english)) englishKeys.add(key);
+    if (!english || Array.isArray(english) || typeof english !== "object") {
+      throw new Error("English source module must be a JSON object");
+    }
+    for (const [key, value] of Object.entries(english)) {
+      if (typeof value !== "string" || !value.trim() || value.length > 1_000 || hasUnpairedSurrogate(value)) {
+        throw new Error(`English key ${JSON.stringify(key)} must contain valid text of at most 1000 characters`);
+      }
+    }
+    englishByModule.set(module, english);
   } catch (error) {
     console.error(`${file}: missing or invalid English source module.`, error);
     hasErrors = true;
@@ -92,13 +120,21 @@ for (const locale of languageDirectories) {
       continue;
     }
 
+    const english = englishByModule.get(module) ?? {};
     for (const [key, value] of Object.entries(messages)) {
-      if (!englishKeys.has(key)) {
-        console.error(`${file}: unknown key \"${key}\".`);
+      const source = english[key];
+      if (typeof source !== "string") {
+        console.error(`${file}: unknown key ${JSON.stringify(key)} in module ${JSON.stringify(module)}.`);
         hasErrors = true;
+        continue;
       }
-      if (typeof value !== "string" || value.trim().length === 0 || value.length > 1000) {
-        console.error(`${file}: \"${key}\" must be a non-empty string of at most 1000 characters.`);
+      if (typeof value !== "string" || value.trim().length === 0 || value.length > 1_000 || hasUnpairedSurrogate(value)) {
+        console.error(`${file}: ${JSON.stringify(key)} must be a valid, non-empty string of at most 1000 characters.`);
+        hasErrors = true;
+        continue;
+      }
+      if (locale !== "en" && JSON.stringify(placeholders(value)) !== JSON.stringify(placeholders(source))) {
+        console.error(`${file}: ${JSON.stringify(key)} must preserve source placeholders exactly.`);
         hasErrors = true;
       }
     }
@@ -121,8 +157,9 @@ for (const entry of await readdir(gameDirectory, { withFileTypes: true })) {
     }
     const ids = new Set();
     for (const [index, row] of rows.slice(1).entries()) {
-      if (row.length !== 2 || !/^\d+$/.test(row[0]) || !row[1]?.trim() || row[1].length > 8000 || row[1].includes("\uFFFD")) {
-        throw new Error(`row ${index + 2} must contain a numeric message_id and a valid non-empty value of at most 8000 characters`);
+      if (row.length !== 2 || !/^\d+$/.test(row[0]) || !row[1]?.trim() || row[1].length > 8_000
+        || row[1].includes("\uFFFD") || hasUnpairedSurrogate(row[1])) {
+        throw new Error(`row ${index + 2} must contain a numeric message_id and valid text of at most 8000 characters`);
       }
       if (ids.has(row[0])) throw new Error(`duplicate message_id ${row[0]}`);
       ids.add(row[0]);

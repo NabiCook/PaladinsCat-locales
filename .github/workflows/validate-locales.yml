@@ -7,7 +7,9 @@ on:
       - "game-client/**"
       - "scripts/**"
       - "package.json"
-      - ".github/workflows/validate-locales.yml"
+      - "package-lock.json"
+      - "tolgee.config.cjs"
+      - ".github/workflows/**"
   push:
     branches: [main]
     paths:
@@ -15,7 +17,9 @@ on:
       - "game-client/**"
       - "scripts/**"
       - "package.json"
-      - ".github/workflows/validate-locales.yml"
+      - "package-lock.json"
+      - "tolgee.config.cjs"
+      - ".github/workflows/**"
 
 permissions:
   contents: read
@@ -28,5 +32,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+      - run: npm ci
       - run: npm run validate
-      - run: npm run test:l10n
