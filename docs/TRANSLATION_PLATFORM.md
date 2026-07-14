@@ -7,9 +7,10 @@ another translation tool that supports the same exchange files.
 
 ## Status
 
-Direct GitHub pull requests work today. The catalog and submission endpoints
-described below are the contract for the planned PaladinsCat data service; they
-must not be advertised as live until the backend implements them.
+The catalog service, scoped contribution tokens, pending-submission storage,
+administrator approval routes, and `paladinscat-l10n` helper are implemented.
+They become publicly available when the matching PaladinsCat backend release
+and database migration `052_federated_localization_submissions.sql` are deployed.
 
 ## Trust boundary
 
@@ -22,7 +23,7 @@ contributor sync helper <-> contributor-owned Tolgee
         |
         | authenticated contribution bundle
         v
-validation -> pending submission/PR -> maintainer approval -> production
+validation -> pending submission -> administrator approval -> GitHub PR -> merge -> production
 ```
 
 The contributor's computer always initiates the connection. PaladinsCat never
@@ -43,7 +44,7 @@ Both catalogs use English as their base language. Each downloadable bundle has
 a manifest containing the schema version, catalog ID, source revision, source
 language, key count, and SHA-256 checksum.
 
-## Planned HTTP contract
+## HTTP contract
 
 ### Discover catalogs
 
@@ -51,8 +52,9 @@ language, key count, and SHA-256 checksum.
 GET /api/localization/v1/catalogs
 ```
 
-Returns catalog metadata, current source revisions, supported languages,
-formats, and download URLs. This endpoint is public and cacheable.
+Returns catalog metadata, availability, supported languages, formats, and
+download URLs. The selected catalog revision is included in each export and
+progress response. This endpoint is public and cacheable.
 
 ### Download a working bundle
 
@@ -60,7 +62,7 @@ formats, and download URLs. This endpoint is public and cacheable.
 GET /api/localization/v1/catalogs/{catalog}/export?locale=de&format=xliff
 ```
 
-Supported formats should be:
+Supported formats are:
 
 - XLIFF 1.2 for Tolgee and other translation systems;
 - flat JSON for website modules;
@@ -75,12 +77,12 @@ catalogs.
 ```http
 POST /api/localization/v1/submissions
 Authorization: Bearer <PaladinsCat contribution token>
-Content-Type: multipart/form-data
+Content-Type: application/json
 ```
 
-The request contains `catalog`, `locale`, `format`, `baseRevision`, and the
-translation file. It creates a pending submission or GitHub pull request; it
-never changes a released locale directly.
+The request contains `catalog`, `locale`, `baseRevision`, and a `translations`
+array. Every translation contains `namespace`, `key`, and `text`. It creates a
+pending submission and never changes a released locale directly.
 
 ```http
 GET /api/localization/v1/submissions/{submissionId}
@@ -107,7 +109,6 @@ Every submission must be treated as untrusted input. The backend must enforce:
 - known catalog, locale, source revision, and translation keys;
 - exact placeholder preservation and valid Unicode;
 - no source-language edits, scripts, binary executables, or path traversal;
-- decompression limits and safe archive handling;
 - duplicate-ID rejection for game-client data;
 - stale-source reporting when the submitted base revision is no longer current.
 
@@ -117,12 +118,12 @@ public locale repository.
 
 ## Synchronization helper
 
-A small `paladinscat-l10n` companion CLI or container should perform the
+The included `scripts/paladinscat-l10n.mjs` companion CLI performs the
 Tolgee-specific work:
 
 1. download and verify the current bundle;
 2. import it into the contributor's local Tolgee project;
-3. export the chosen target language from Tolgee;
+3. read translated or reviewed target strings from Tolgee;
 4. package the export with its original source revision;
 5. submit it to PaladinsCat and display validation results.
 

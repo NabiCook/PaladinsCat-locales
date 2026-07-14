@@ -1,0 +1,13 @@
+{
+  "name": "paladinscat-locales",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-locales.mjs",
+    "l10n": "node scripts/paladinscat-l10n.mjs",
+    "test:l10n": "node --test scripts/paladinscat-l10n.test.mjs"
+  },
+  "bin": {
+    "paladinscat-l10n": "scripts/paladinscat-l10n.mjs"
+  }
+}

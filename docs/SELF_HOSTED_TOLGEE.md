@@ -2,8 +2,7 @@
 
 This setup runs a private Tolgee instance on your own computer. Nothing needs
 to be reachable from the public Internet. PaladinsCat exchanges translation
-files with it through manual import/export today and a companion sync helper in
-the planned workflow.
+files with it through the included companion sync helper or manual import/export.
 
 Tolgee's current minimum specification is 2 CPU cores and 4 GB RAM. Docker
 Desktop must have at least that much capacity available for a reliable session.
@@ -65,7 +64,9 @@ your Tolgee version no longer needs it.
 2. Select English as the base language.
 3. Add the language you intend to translate.
 4. Leave public registration disabled.
-5. Import a PaladinsCat source bundle as described in
+5. In project developer settings, create a project API key that can view keys
+   and translations and edit translations. Keep this key on your computer.
+6. Pull a PaladinsCat source bundle as described in
    [CONTRIBUTING_WITH_TOLGEE.md](CONTRIBUTING_WITH_TOLGEE.md).
 
 The two catalogs should be separate Tolgee projects because their keys, release
@@ -94,8 +95,8 @@ the named volume; `docker compose down --volumes` permanently deletes it.
 - Never publish port 8080 on `0.0.0.0` for this workflow.
 - Never send a Tolgee admin token, project API key, `.env`, or data volume to
   PaladinsCat.
-- A future PaladinsCat contribution token will be scoped to catalog submission;
-  it must not be placed in Tolgee's administrator settings.
+- The PaladinsCat contribution token is scoped to catalog submission; it must
+  not be placed in Tolgee's administrator settings or shared with anyone.
 - Do not enable Tolgee webhooks for PaladinsCat. The sync helper will initiate
   outbound requests, which works without a paid webhook feature or public port.
 
@@ -104,4 +105,3 @@ the named volume; `docker compose down --volumes` permanently deletes it.
 - [Tolgee Docker installation](https://docs.tolgee.io/platform/self_hosting/running_with_docker)
 - [Tolgee supported formats](https://docs.tolgee.io/platform/supported_formats)
 - [Tolgee XLIFF 1.2 support](https://docs.tolgee.io/platform/formats/xliff)
-
