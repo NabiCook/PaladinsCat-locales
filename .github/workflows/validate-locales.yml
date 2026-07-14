@@ -1,15 +1,21 @@
-name: Validate locale packs
+name: Validate localization tooling and locale packs
 
 on:
   pull_request:
     paths:
       - "locales/**"
-      - "scripts/validate-locales.mjs"
+      - "game-client/**"
+      - "scripts/**"
+      - "package.json"
+      - ".github/workflows/validate-locales.yml"
   push:
     branches: [main]
     paths:
       - "locales/**"
-      - "scripts/validate-locales.mjs"
+      - "game-client/**"
+      - "scripts/**"
+      - "package.json"
+      - ".github/workflows/validate-locales.yml"
 
 permissions:
   contents: read
@@ -22,4 +28,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/validate-locales.mjs
+      - run: npm run validate
+      - run: npm run test:l10n
