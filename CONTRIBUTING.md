@@ -17,13 +17,14 @@ The automated check rejects unknown keys, empty strings, invalid locale
 filenames, and non-string values. Maintainers review wording and terminology
 before merging.
 
-## Optional Tolgee workflow
+## Recommended Tolgee workflow
 
-You may run Tolgee privately on your own computer, import the English modules,
-and export your target-language JSON before opening the pull request. PaladinsCat
-does not need network access to your Tolgee instance.
+You may run Tolgee privately on your own computer. PaladinsCat does not need
+network access to your instance. The companion CLI verifies source checksums,
+imports the selected catalog, and submits completed strings to an administrator
+queue without giving contributors direct write access to GitHub.
 
 See:
 
-- [Contributing with Tolgee](docs/CONTRIBUTING_WITH_TOLGEE.md)
+- [Complete Tolgee setup and contributor guide](docs/CONTRIBUTING_WITH_TOLGEE.md)
 - [Local Tolgee Docker setup](docs/SELF_HOSTED_TOLGEE.md)
