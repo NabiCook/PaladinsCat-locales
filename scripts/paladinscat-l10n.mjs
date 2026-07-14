@@ -128,7 +128,7 @@ async function tolgeeImport(config, bundle, apiKey) {
       `${config.tolgeeUrl}/v2/projects/${encodeURIComponent(config.tolgeeProjectId)}/single-step-import-resolvable`,
       {
         method: "POST",
-        headers: { "Content-Type": "application/json", "X-API-Key": apiKey },
+        headers: { "Content-Type": "application/json", ...(apiKey ? { "X-API-Key": apiKey } : {}) },
         body: JSON.stringify({ keys: group, overrideMode: "RECOMMENDED", errorOnUnresolvedConflict: false }),
       },
     );
@@ -147,7 +147,9 @@ async function tolgeeTranslations(config, apiKey) {
     url.searchParams.append("languages", config.locale);
     url.searchParams.set("page", String(page));
     url.searchParams.set("size", "1000");
-    const { body } = await request(url, { headers: { "X-API-Key": apiKey } });
+    const headers = {};
+    if (apiKey) headers["X-API-Key"] = apiKey;
+    const { body } = await request(url, { headers });
     const current = body?._embedded?.keys;
     if (!Array.isArray(current)) throw new Error("Tolgee returned an unsupported translations response");
     rows.push(...current);
@@ -212,7 +214,7 @@ async function commandProgress(options) {
 
 async function commandPull(options) {
   const loaded = await loadConfig(options);
-  const apiKey = required(process.env.TOLGEE_API_KEY, "Set TOLGEE_API_KEY to a Tolgee project API key");
+  const apiKey = process.env.TOLGEE_API_KEY || "";
   const bundle = await fetchBundle(loaded.value);
   await tolgeeImport(loaded.value, bundle, apiKey);
   loaded.value.baseRevision = bundle.revision;
@@ -224,7 +226,7 @@ async function commandPull(options) {
 
 async function commandSubmit(options) {
   const loaded = await loadConfig(options);
-  const apiKey = required(process.env.TOLGEE_API_KEY, "Set TOLGEE_API_KEY to a Tolgee project API key");
+  const apiKey = process.env.TOLGEE_API_KEY || "";
   const contributionToken = required(process.env.PALADINSCAT_CONTRIBUTION_TOKEN, "Set PALADINSCAT_CONTRIBUTION_TOKEN to a scoped PaladinsCat localization token");
   const baseRevision = required(loaded.value.baseRevision, "Run pull before submitting");
   const bundle = await fetchBundle(loaded.value);
