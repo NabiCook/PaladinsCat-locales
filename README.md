@@ -1,8 +1,7 @@
 # PaladinsCat community translations
 
-This repository contains community-maintained text for PaladinsCat. It contains
-translation JSON only; the PaladinsCat application source is kept in a separate
-private repository.
+This repository contains community-maintained text for PaladinsCat, a Paladins stats website.
+It contains translation JSON files.
 
 ## Contribute a translation
 
