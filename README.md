@@ -1,39 +1,37 @@
 # PaladinsCat community translations
 
-This repository contains community-maintained text for PaladinsCat, a Paladins stats website.
-It contains translation JSON files.
+This public repository is the source of truth for PaladinsCat translations.
+Translation changes are made on a Git branch, validated by GitHub Actions, and
+reviewed once as a normal pull request.
 
-## Contribute a translation
+## Contribute
 
-The recommended workflow uses a private Tolgee instance on your own computer.
-It provides progress tracking, search, translation memory, batch operations,
-untranslated filters, and an approval-gated PaladinsCat submission helper:
+The primary workflow is entirely web based: edit translations in Tolgee, then
+the scheduled GitHub workflow exports `TRANSLATED` and `REVIEWED` values into a
+pull request. Merging that pull request is the only translation approval.
 
-- **[Complete Tolgee setup and contributor guide](docs/CONTRIBUTING_WITH_TOLGEE.md)**
-- [Docker-only Tolgee reference](docs/SELF_HOSTED_TOLGEE.md)
+For a local-only Tolgee instance or a small direct edit, clone this repository,
+export into the working tree, and create the pull request with GitHub Desktop.
 
-For a small direct GitHub contribution:
+- [Contribution rules](CONTRIBUTING.md)
+- [Tolgee and GitHub Desktop workflow](docs/CONTRIBUTING_WITH_TOLGEE.md)
+- [Automated Tolgee pull requests](docs/TOLGEE_GITHUB_AUTOMATION.md)
+- [Local Tolgee Docker setup](docs/SELF_HOSTED_TOLGEE.md)
 
-1. Copy an English module such as `locales/en/ui/navigation.json` to the same
-   path under your locale, for example `locales/de/ui/navigation.json`.
-2. Translate values only. Do not rename or add keys.
-3. Open a pull request with the JSON file.
+Run the same mechanical checks used by pull requests before committing:
 
-The website loads approved locale files directly from this repository and falls
-back to English whenever a string is not yet translated. See
-[CONTRIBUTING.md](CONTRIBUTING.md) for formatting and review rules. The detailed
-guide also covers the Paladins game-client catalog, placeholder safety,
-repeated-phrase batch processing, and the administrator approval flow.
-
-For the format-neutral catalog, approval, and submission architecture, see the
-[federated translation platform design](docs/TRANSLATION_PLATFORM.md).
+```powershell
+npm install
+npm run validate
+```
 
 ## Repository layout
 
-- `locales/modules.json` lists every module used by the website.
-- `locales/en/<area>.json` files are the English source key lists.
-- `locales/<locale>/<area>.json` files are community translations.
-- `.github/workflows/validate-locales.yml` validates every pull request.
+- `locales/modules.json` lists website translation namespaces.
+- `locales/en/<namespace>.json` contains canonical English source strings.
+- `locales/<locale>/<namespace>.json` contains partial target translations.
+- `game-client/<locale>.csv` contains stable `message_id,value` artifacts.
 
-No private application code, credentials, infrastructure files, or production
-configuration belong in this repository.
+PaladinsCat pins a reviewed commit of this repository into each VPS frontend
+deployment. No translation drafts, API tokens, or approval queues are stored on
+the PaladinsCat server.

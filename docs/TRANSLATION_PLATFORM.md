@@ -1,147 +1,31 @@
-# Federated translation platform
+# Repository-first translation architecture
 
-PaladinsCat does not need to operate a public Tolgee server. The recommended
-design is a format-neutral localization data service: contributors may edit in
-the PaladinsCat website, a private Tolgee instance on their own computer, or
-another translation tool that supports the same exchange files.
-
-## Status
-
-The catalog service, scoped contribution tokens, pending-submission storage,
-administrator approval routes, and `paladinscat-l10n` helper are implemented.
-They become publicly available when the matching PaladinsCat backend release
-and database migration `052_federated_localization_submissions.sql` are deployed.
-
-## Trust boundary
+GitHub is the translation database and the only approval boundary.
 
 ```text
-PaladinsCat/GitHub source
-        |
-        | public catalog export
-        v
-contributor sync helper <-> contributor-owned Tolgee
-        |
-        | authenticated contribution bundle
-        v
-validation -> pending submission -> administrator approval -> GitHub PR -> merge -> production
+shared Tolgee web UI
+        ↓ scheduled Tolgee CLI export on GitHub Actions
+GitHub pull request (automation/tolgee-export)
+        ↓ validation and merge
+PaladinsCat-locales main
+        ↓ pinned submodule revision
+PaladinsCat frontend image and VPS deployment
 ```
 
-The contributor's computer always initiates the connection. PaladinsCat never
-connects to a contributor's Tolgee API, and a contributor never receives a
-PaladinsCat infrastructure or GitHub App credential.
+Tolgee retains a local editing database for translation memory, state, and batch
+operations. The checked-in files remain authoritative. PaladinsCat no longer
+stores localization drafts, API tokens, submissions, or approval state.
 
-## Catalogs
+The GitHub workflow holds its Tolgee project key in GitHub Actions secrets, not
+on the PaladinsCat VPS. A local Tolgee plus GitHub Desktop remains available for
+contributors who do not use the shared project.
 
-The service exposes two independent catalogs:
+Pull-request validation enforces repository structure, per-namespace source
+keys, non-empty values, length limits, Unicode validity, and exact placeholder
+preservation. Human wording review happens once on GitHub.
 
-- `website`: PaladinsCat interface text. Existing module paths, such as
-  `ui/navigation`, map to translation namespaces.
-- `game-client`: Paladins client text extracted from localization DAT files.
-  Its stable translation key is `msg.<message_id>`. The repeated game `key`
-  field is context only and must never be used as the unique translation key.
-
-Both catalogs use English as their base language. Each downloadable bundle has
-a manifest containing the schema version, catalog ID, source revision, source
-language, key count, and SHA-256 checksum.
-
-## HTTP contract
-
-### Discover catalogs
-
-```http
-GET /api/localization/v1/catalogs
-```
-
-Returns catalog metadata, availability, supported languages, formats, and
-download URLs. The selected catalog revision is included in each export and
-progress response. This endpoint is public and cacheable.
-
-### Download a working bundle
-
-```http
-GET /api/localization/v1/catalogs/{catalog}/export?locale=de&format=xliff
-```
-
-Supported formats are:
-
-- XLIFF 1.2 for Tolgee and other translation systems;
-- flat JSON for website modules;
-- UTF-8 CSV for spreadsheets and the game localization toolchain.
-
-Responses include an `ETag`, `Content-Disposition`, source revision, and bundle
-checksum. Conditional requests with `If-None-Match` avoid downloading unchanged
-catalogs.
-
-### Submit a contribution
-
-```http
-POST /api/localization/v1/submissions
-Authorization: Bearer <PaladinsCat contribution token>
-Content-Type: application/json
-```
-
-The request contains `catalog`, `locale`, `baseRevision`, and a `translations`
-array. Every translation contains `namespace`, `key`, and `text`. It creates a
-pending submission and never changes a released locale directly.
-
-```http
-GET /api/localization/v1/submissions/{submissionId}
-Authorization: Bearer <PaladinsCat contribution token>
-```
-
-Returns validation and review status to the submitting user.
-
-### Display progress
-
-```http
-GET /api/localization/v1/progress?catalog=website
-```
-
-Returns approved, pending, untranslated, and stale counts per language. Public
-progress is calculated from the approved GitHub snapshot plus pending
-submissions, not from any contributor's private Tolgee instance.
-
-## Validation and approval
-
-Every submission must be treated as untrusted input. The backend must enforce:
-
-- signed-in contributor identity, scoped tokens, rate limits, and upload limits;
-- known catalog, locale, source revision, and translation keys;
-- exact placeholder preservation and valid Unicode;
-- no source-language edits, scripts, binary executables, or path traversal;
-- duplicate-ID rejection for game-client data;
-- stale-source reporting when the submitted base revision is no longer current.
-
-A valid submission remains pending until a maintainer approves and merges it.
-Production continues to read approved files from the default branch of the
-public locale repository.
-
-## Synchronization helper
-
-The included `scripts/paladinscat-l10n.mjs` companion CLI performs the
-Tolgee-specific work:
-
-1. download and verify the current bundle;
-2. import it into the contributor's local Tolgee project;
-3. read translated or reviewed target strings from Tolgee;
-4. package the export with its original source revision;
-5. submit it to PaladinsCat and display validation results.
-
-This helper is preferable to Tolgee webhooks. It works behind NAT, requires no
-public port on the contributor's computer, and keeps the exchange protocol
-usable by tools other than Tolgee.
-
-## GitHub synchronization
-
-GitHub remains the release ledger:
-
-1. application changes update canonical English website modules;
-2. game extraction updates the canonical game-client source manifest;
-3. public export endpoints serve those revisions;
-4. accepted submissions create branches or pull requests;
-5. GitHub Actions validates the resulting files;
-6. a maintainer merges the approved changes.
-
-Do not implement unrestricted two-way synchronization. Source keys flow out
-from GitHub/PaladinsCat; target-language contributions flow back through the
-validated submission endpoint.
+The private PaladinsCat application repository records the exact reviewed
+locale commit as a Git submodule pointer. The VPS deploy initializes that pinned
+revision and copies its `locales/` directory into the frontend image. Updating
+translations therefore requires a locale pull request followed by a mechanical
+submodule-pointer update, not another translation approval.
