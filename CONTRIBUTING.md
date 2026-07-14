@@ -16,3 +16,14 @@ Thank you for helping make PaladinsCat accessible in more languages.
 The automated check rejects unknown keys, empty strings, invalid locale
 filenames, and non-string values. Maintainers review wording and terminology
 before merging.
+
+## Optional Tolgee workflow
+
+You may run Tolgee privately on your own computer, import the English modules,
+and export your target-language JSON before opening the pull request. PaladinsCat
+does not need network access to your Tolgee instance.
+
+See:
+
+- [Contributing with Tolgee](docs/CONTRIBUTING_WITH_TOLGEE.md)
+- [Local Tolgee Docker setup](docs/SELF_HOSTED_TOLGEE.md)

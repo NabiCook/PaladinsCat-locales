@@ -13,10 +13,13 @@ private repository.
 
 The website loads approved locale files directly from this repository and falls
 back to English whenever a string is not yet translated. See
-[CONTRIBUTING.md](CONTRIBUTING.md) for formatting and review rules.
+[CONTRIBUTING.md](CONTRIBUTING.md) for formatting and review rules. Contributors
+who prefer a translation-management interface may use a
+[private Tolgee instance](docs/CONTRIBUTING_WITH_TOLGEE.md) on their own
+computer.
 
-For maintainers planning a browser-based translation workspace, see the
-[translation platform plan](docs/TRANSLATION_PLATFORM.md).
+For the planned format-neutral catalog and submission API, see the
+[federated translation platform plan](docs/TRANSLATION_PLATFORM.md).
 
 ## Repository layout
 
