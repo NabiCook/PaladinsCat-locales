@@ -1,0 +1,12 @@
+{
+  "footer.allRightsReserved": "모든 권리 보유.",
+  "footer.branch": "브랜치: {branch}",
+  "footer.commit": "커밋: {commit}",
+  "footer.databaseSchema": "DB 스키마: {version}",
+  "footer.dataProvidedBy": "© Hi-Rez Studios 제공 데이터",
+  "footer.deployed": "배포: {date}",
+  "footer.dirtyWorktree": "배포 시 작업트리 상태 불일치",
+  "footer.joinDiscord": "Discord 가입",
+  "footer.privacyPolicy": "개인정보처리방침",
+  "footer.termsOfUse": "이용약관"
+}

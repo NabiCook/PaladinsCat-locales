@@ -1,3 +1,6 @@
+const path = require("node:path");
+const localeModules = require("./locales/modules.json");
+
 const projectId = Number(process.env.TOLGEE_PROJECT_ID);
 const targetLocales = (
   process.env.TOLGEE_TARGET_LOCALES || process.env.TOLGEE_TARGET_LOCALE || ""
@@ -22,8 +25,11 @@ module.exports = {
   format: "JSON_ICU",
   strictNamespace: false,
   push: {
-    filesTemplate: "./locales/{languageTag}/{namespace}.json",
-    languages: ["en"],
+    files: localeModules.map((namespace) => ({
+      path: path.resolve(__dirname, "locales", "en", `${namespace}.json`),
+      language: "en",
+      namespace,
+    })),
     forceMode: "OVERRIDE",
     convertPlaceholdersToIcu: false
   },
@@ -32,6 +38,7 @@ module.exports = {
     fileStructureTemplate: "{languageTag}/{namespace}.{extension}",
     delimiter: "",
     languages: targetLocales,
+    namespaces: localeModules,
     states: ["TRANSLATED", "REVIEWED"],
     emptyDir: false
   }
