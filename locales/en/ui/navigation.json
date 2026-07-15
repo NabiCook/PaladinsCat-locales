@@ -12,7 +12,6 @@
   "nav.localization": "Localization",
   "nav.login": "Login",
   "nav.logout": "Logout",
-  "nav.greeting": "Hi, {username}",
   "menu.browse": "Browse",
   "menu.home": "Home",
   "menu.globalStats": "Global Stats",
@@ -44,7 +43,9 @@
   "menu.terms": "Terms",
   "menu.appearance": "Appearance",
   "menu.mapWallpaper": "Map wallpaper",
+  "menu.homeAlerts": "Home alerts",
   "menu.enabled": "Enabled",
+  "menu.hidden": "Hidden",
   "menu.darkGreyOnly": "Dark grey only",
   "bottomNav.moreNavigation": "More navigation",
   "bottomNav.more": "More"

@@ -1,10 +1,14 @@
 [
   "ui/navigation",
+  "ui/common",
+  "ui/moderation",
   "ui/footer",
   "ui/async",
   "pages/home",
   "pages/localization",
   "system/status",
   "game/talents",
-  "game/items"
+  "game/items",
+  "generated/ui",
+  "seo/metadata"
 ]
