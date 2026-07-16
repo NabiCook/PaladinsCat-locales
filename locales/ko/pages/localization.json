@@ -1,0 +1,12 @@
+{
+  "localization.githubTitle": "GitHub로 번역",
+  "localization.githubDescription": "공용 로케일 저장소를 복제하고 Tolgee 또는 텍스트 편집기로 편집한 후 GitHub 풀 리퀘스트를 열어주세요. PaladinsCat은 번역 초안이나 추가 승인을 저장하지 않습니다.",
+  "localization.workflowTitle": "저장소 워크플로우",
+  "localization.workflowStepClone": "PaladinsCat-locales를 복제하고 번역 브랜치를 생성하세요.",
+  "localization.workflowStepTolgee": "영문 파일을 Tolgee에 가져와서 번역한 후 클론에 다시 내보내세요.",
+  "localization.workflowStepPr": "검증, GitHub Desktop으로 커밋, 풀 리퀘스트 생성, 체크 통과 후 병합.",
+  "localization.repository": "로케일 저장소 열기",
+  "localization.contributingGuide": "기여 가이드 읽기",
+  "localization.tolgeeGuide": "Tolgee 워크플로우 읽기",
+  "localization.deploymentDescription": "병합된 로케일 커밋은 PaladinsCat 프론트엔드 이미지에 고정되어 재현 가능한 VPS 배포를 만듭니다."
+}
