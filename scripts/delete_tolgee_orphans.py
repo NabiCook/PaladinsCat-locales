@@ -97,7 +97,7 @@ def main():
     # Use the namespace-filtered approach for generated/ui (more precise)
     # For other namespaces, check individually
     all_orphan_ids = []
-    
+
     # generated/ui orphans
     for k in gen_orphans:
         all_orphan_ids.append(k["id"])
