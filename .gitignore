@@ -2,6 +2,13 @@ node_modules/
 .env
 .env.*
 !.env.example
+!.env.tolgee.example
+
+# Local Tolgee credentials. The checked-in tolgee.config.cjs reads only
+# environment variables; these machine-specific files must never be committed.
+tolgeerc.json
+.tolgeerc
+.tolgeerc.*
 
 # Legacy local sync state may still contain machine-specific project metadata.
 .paladinscat-l10n.json

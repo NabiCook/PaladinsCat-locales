@@ -25,16 +25,15 @@ changed placeholders, invalid CSV rows, and duplicate game message IDs.
 ## Tolgee workflow
 
 Tolgee stores its working copy in its own database, so it does not edit Git
-files continuously. For the shared project, a scheduled GitHub workflow uses
-the checked-in Tolgee CLI configuration to bridge the two:
+files continuously. The current project is local-only, so a guarded local
+agent uses the checked-in Tolgee CLI configuration to bridge the two:
 
 1. translate in the Tolgee web interface;
-2. wait for the automation run, or start it from GitHub Actions;
-3. review the generated `automation/tolgee-export` pull request;
+2. export from a clean translation branch with `npm run tolgee:local -- export`;
+3. publish the branch and create a GitHub pull request;
 4. merge it after validation passes.
 
-The shared Tolgee endpoint must be reachable by GitHub-hosted runners. A
-local-only Tolgee instance uses the GitHub Desktop fallback in
-[the complete guide](docs/CONTRIBUTING_WITH_TOLGEE.md). Repository owners can
-configure the web workflow with
-[the automation guide](docs/TOLGEE_GITHUB_AUTOMATION.md).
+See the [local-agent guide](docs/LOCAL_AGENT_TOLGEE.md). If Tolgee is later
+hosted at a URL reachable by GitHub runners, repository owners can opt into the
+scheduled workflow with the
+[hosted automation guide](docs/TOLGEE_GITHUB_AUTOMATION.md).
