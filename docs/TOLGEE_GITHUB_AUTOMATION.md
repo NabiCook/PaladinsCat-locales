@@ -12,11 +12,16 @@ Cloud or a separately secured, Internet-reachable Tolgee installation. A
 Tolgee instance bound only to `127.0.0.1` cannot use this automation; use the
 GitHub Desktop workflow instead.
 
+The workflow is disabled by default. Without explicit enablement, scheduled
+runs skip the export job and do not generate missing-configuration failures.
+
 ## Repository configuration
 
 In `PaladinsCat-locales` open **Settings → Secrets and variables → Actions**.
 Add these repository variables:
 
+- `TOLGEE_AUTOMATION_ENABLED`: set to `true` only after all settings below are
+  present and the Tolgee URL is reachable from the public Internet;
 - `TOLGEE_API_URL`: the Tolgee base URL, for example `https://app.tolgee.io`;
 - `TOLGEE_PROJECT_ID`: the numeric project ID from its Tolgee URL;
 - `TOLGEE_TARGET_LOCALES`: comma- or space-separated locale tags to export,
@@ -37,10 +42,11 @@ the VPS.
 ## Operation
 
 The `Export Tolgee translations to a pull request` workflow runs every 15
-minutes. It exports only the configured target locales and only translations
-in `TRANSLATED` or `REVIEWED` state. If files changed, it force-refreshes the
-automation-owned `automation/tolgee-export` branch and opens or updates its
-pull request.
+minutes when `TOLGEE_AUTOMATION_ENABLED=true`. Otherwise its job is skipped.
+When enabled, it exports only the configured target locales and only
+translations in `TRANSLATED` or `REVIEWED` state. If files changed, it
+force-refreshes the automation-owned `automation/tolgee-export` branch and
+opens or updates its pull request.
 
 To run immediately, open **Actions → Export Tolgee translations to a pull
 request → Run workflow**. Do not commit manually to the automation branch.
