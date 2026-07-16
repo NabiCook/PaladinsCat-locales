@@ -1,5 +1,5 @@
 {
-  "async.loading": "로딩 중",
   "async.couldNotLoad": "이 데이터를 로드할 수 없음",
+  "async.loading": "로딩 중",
   "async.tryAgain": "다시 시도"
 }
