@@ -1,12 +1,12 @@
 {
-  "footer.termsOfUse": "이용약관",
-  "footer.privacyPolicy": "개인정보 처리방침",
-  "footer.joinDiscord": "Discord 참여",
-  "footer.dataProvidedBy": "데이터 제공 © Hi-Rez Studios,",
   "footer.allRightsReserved": "모든 권리 보유.",
-  "footer.commit": "커밋: {commit}",
   "footer.branch": "브랜치: {branch}",
-  "footer.dirtyWorktree": "배포 시 디저티 작업트리",
+  "footer.commit": "커밋: {commit}",
+  "footer.dataProvidedBy": "데이터 제공 © Hi-Rez Studios,",
   "footer.databaseSchema": "DB 스키마: {version}",
-  "footer.deployed": "배포됨: {date}"
+  "footer.deployed": "배포됨: {date}",
+  "footer.dirtyWorktree": "배포 시 디저티 작업트리",
+  "footer.joinDiscord": "Discord 참여",
+  "footer.privacyPolicy": "개인정보 처리방침",
+  "footer.termsOfUse": "이용약관"
 }
