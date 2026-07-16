@@ -1,9 +1,9 @@
 {
-  "status.apiOutage": "Hi-Rez API 장애",
-  "status.apiDegraded": "Hi-Rez API 성능 저하",
-  "status.heldMatches": "대기 중인 매치 {count}개",
   "status.affectedHours": "영향 시간 {count}시간",
-  "status.probeDue": "탐지 시간 초과",
+  "status.apiDegraded": "Hi-Rez API 성능 저하",
+  "status.apiOutage": "Hi-Rez API 장애",
+  "status.heldMatches": "대기 중인 매치 {count}개",
+  "status.live": "실시간",
   "status.nextProbe": "다음 탐지 {time}",
-  "status.live": "실시간"
+  "status.probeDue": "탐지 시간 초과"
 }

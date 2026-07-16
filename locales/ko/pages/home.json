@@ -1,12 +1,12 @@
 {
-  "home.logoAlt": "PaladinsCat 로고",
-  "home.tagline": "Paladins: Comp Analytics Tool — advanced statistic, or just meow.",
   "home.dismiss": "닫기",
-  "home.noNotifications": "알림 없음",
   "home.latestChanges": "최근 변경사항",
-  "home.viewAllChanges": "전체 변경사항 보기",
+  "home.logoAlt": "PaladinsCat 로고",
   "home.noChangelogEntries": "변경 사항 없음",
-  "search.homeInputLabel": "플레이어, 매치, 챔피언, 아이템, 카드, 재능 검색",
+  "home.noNotifications": "알림 없음",
+  "home.tagline": "Paladins: Comp Analytics Tool — advanced statistic, or just meow.",
+  "home.viewAllChanges": "전체 변경사항 보기",
   "search.clear": "검색 지우기",
+  "search.homeInputLabel": "플레이어, 매치, 챔피언, 아이템, 카드, 재능 검색",
   "search.submit": "검색"
 }
