@@ -14,6 +14,11 @@ concurrency:
 
 jobs:
   export:
+    # GitHub-hosted runners cannot reach a Tolgee instance bound to
+    # 127.0.0.1 on a contributor machine. Hosted export is therefore opt-in;
+    # local-agent installations leave this variable unset and scheduled runs
+    # finish as skipped instead of producing failure notifications.
+    if: ${{ vars.TOLGEE_AUTOMATION_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     env:
       TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL }}

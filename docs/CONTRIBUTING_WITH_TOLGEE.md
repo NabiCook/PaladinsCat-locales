@@ -8,6 +8,9 @@ Use this fallback when Tolgee runs only on your computer or when you want to
 control the exported files locally. GitHub pull requests remain the single
 review and approval gate; PaladinsCat does not receive or store drafts.
 
+Automated local agents should use the guarded credential runner documented in
+[LOCAL_AGENT_TOLGEE.md](LOCAL_AGENT_TOLGEE.md).
+
 ## 1. Clone and branch
 
 Clone `https://github.com/NabiCook/PaladinsCat-locales.git` with GitHub Desktop,

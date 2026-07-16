@@ -6,15 +6,15 @@ reviewed once as a normal pull request.
 
 ## Contribute
 
-The primary workflow is entirely web based: edit translations in Tolgee, then
-the scheduled GitHub workflow exports `TRANSLATED` and `REVIEWED` values into a
-pull request. Merging that pull request is the only translation approval.
-
-For a local-only Tolgee instance or a small direct edit, clone this repository,
-export into the working tree, and create the pull request with GitHub Desktop.
+Edit translations in Tolgee, export `TRANSLATED` and `REVIEWED` values to a Git
+branch, and merge one GitHub pull request. For the current local-only Tolgee
+instance, a guarded local agent performs the export and GitHub Desktop (or Git)
+publishes the branch. A scheduled GitHub-hosted export is available only when
+Tolgee is deployed at an Internet-reachable URL and explicitly enabled.
 
 - [Contribution rules](CONTRIBUTING.md)
 - [Tolgee and GitHub Desktop workflow](docs/CONTRIBUTING_WITH_TOLGEE.md)
+- [Local-agent Tolgee setup](docs/LOCAL_AGENT_TOLGEE.md)
 - [Automated Tolgee pull requests](docs/TOLGEE_GITHUB_AUTOMATION.md)
 - [Local Tolgee Docker setup](docs/SELF_HOSTED_TOLGEE.md)
 
