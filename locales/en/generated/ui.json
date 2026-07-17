@@ -1078,5 +1078,10 @@
   "generated.terms.text6LimitationOfLiability": "6. Limitation of Liability",
   "generated.terms.text7ThirdPartyServices": "7. Third-Party Services",
   "generated.terms.text8Termination": "8. Termination",
-  "generated.terms.text9ChangesToTerms": "9. Changes to Terms"
+  "generated.terms.text9ChangesToTerms": "9. Changes to Terms",
+  "generated.wallpaper.fileTooLargeError": "Wallpaper file is too large",
+  "generated.wallpaper.invalidUrlError": "Wallpaper URL is invalid",
+  "generated.wallpaper.operationFailed": "Operation failed",
+  "generated.wallpaper.saveSettingError": "Unable to save wallpaper setting",
+  "generated.wallpaper.unsupportedTypeError": "This wallpaper file format is not supported"
 }
