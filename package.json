@@ -10,6 +10,6 @@
     "tolgee:export": "npm run tolgee:pull && npm run validate"
   },
   "devDependencies": {
-    "@tolgee/cli": "2.20.0"
+    "@tolgee/cli": "^2.20.0"
   }
 }
