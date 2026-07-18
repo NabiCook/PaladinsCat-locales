@@ -1,1 +1,10 @@
-{}
+{
+  "items.overviewFallbackDescription": "Ranked purchase performance.",
+  "items.fallback.lethality": "Increase your Movement Speed by {20|20}% and Jump Height by {60|60}% for 5s after getting an Elimination.",
+  "items.fallback.triggerScent": "Increase your in-hand weapon damage dealt by {6|6}% for 5s after getting an Elimination.",
+  "items.fallback.guardian": "Increase the effectiveness of Shields you create by {20|20}%.",
+  "items.fallback.sentinel": "Gain a {200|200}-Health Shield for 5s after an Elimination. Stacks up to 3 times.",
+  "items.fallback.bloodbath": "Kills True Heal you, and Eliminations True Heal you and the ally who got the kill, for {360|360} Health over 4s. Stacks up to 2 times.",
+  "items.fallback.meditation": "Heal for an additional {2.5|2.5}% of your maximum Health every 0.25s while out of combat.",
+  "items.fallback.hoard": "Gain bonus Credits over time and on Eliminations. At level 3, gain 10% Movement, Mount, Cooldown, and Ultimate Charge speed instead."
+}

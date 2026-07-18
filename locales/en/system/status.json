@@ -5,5 +5,16 @@
   "status.affectedHours": "{count} affected hours",
   "status.probeDue": "Probe due",
   "status.nextProbe": "Next probe {time}",
-  "status.live": "Live"
+  "status.live": "Live",
+  "status.updateQueued": "Update queued",
+  "status.updateQueuedMessage": "A PaladinsCat update is ready and will begin shortly.",
+  "status.updateDraining": "Update starting",
+  "status.updateDrainingMessage": "Finishing active requests before the service switches versions.",
+  "status.updateSwitching": "Applying update",
+  "status.updateSwitchingMessage": "The new PaladinsCat version is being loaded.",
+  "status.updateWarming": "Update almost ready",
+  "status.updateWarmingMessage": "The new service is online and completing readiness checks.",
+  "status.updateFailed": "Update delayed",
+  "status.updateFailedMessage": "The current service has resumed while the update is reviewed.",
+  "status.requestsPaused": "New data requests paused"
 }
