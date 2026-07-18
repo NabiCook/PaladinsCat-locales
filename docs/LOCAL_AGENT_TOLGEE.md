@@ -117,6 +117,41 @@ wrapper requires a second explicit flag:
 npm run tolgee:local -- push-source --allow-source-push
 ```
 
+To validate that the checked-out repository matches its upstream, validate the
+English catalog, push it, and verify every canonical key in one command, use:
+
+```powershell
+npm run tolgee:sync-source -- --apply
+```
+
+On Windows, the same guarded sync is available as
+`Sync-TolgeeSource.ps1` in the repository root. Right-click it and choose
+**Run with PowerShell**, or run it from a terminal. It does not commit or push
+to GitHub. It works from any clone: by default it syncs the canonical English
+files already in that clone to the configured Tolgee project.
+
+```powershell
+.\Sync-TolgeeSource.ps1
+```
+
+To also copy a nearby PaladinsCat frontend catalog first, keep repositories as
+sibling directories named `PaladinsCat` and `PaladinsCat-locales`. On another
+layout, supply the frontend path once per run or set it in your user
+environment:
+
+```powershell
+.\Sync-TolgeeSource.ps1 -FrontendDir 'D:\work\PaladinsCat\src\frontend'
+$env:PALADINSCAT_FRONTEND_DIR = 'D:\work\PaladinsCat\src\frontend'
+```
+
+Use `-CheckOnly` for the read-only report. The launcher pauses at completion so
+Explorer's **Run with PowerShell** window stays visible; use `-NoPause` for
+terminal or automation use.
+
+Omit `--apply` for a read-only parity report. The command refuses dirty
+canonical locale files or an out-of-date checkout and reports stale Tolgee-only
+keys without deleting them.
+
 ## 6. Git rules for agents
 
 1. Run `git status --short` before connecting or exporting.

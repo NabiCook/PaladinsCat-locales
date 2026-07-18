@@ -5,6 +5,7 @@
   "scripts": {
     "validate": "node scripts/validate-locales.mjs",
     "tolgee:local": "node scripts/tolgee-local.mjs",
+    "tolgee:sync-source": "node scripts/sync-tolgee-source.mjs",
     "tolgee:push": "tolgee push",
     "tolgee:pull": "tolgee pull && node scripts/sanitize-tolgee-export.mjs",
     "tolgee:export": "npm run tolgee:pull && npm run validate"
