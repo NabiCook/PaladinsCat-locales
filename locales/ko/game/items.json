@@ -1,0 +1,10 @@
+{
+  "items.fallback.bloodbath": "킬은 본인에게, 엘리미네이션은 본인과 킬을 얻은 동맹에게 {360|360} 체력을 4초간 진정한 치유합니다. 최대 2회 스택.",
+  "items.fallback.guardian": "생성하는 시엘드의 효과를 {20|20}% 상승시킵니다.",
+  "items.fallback.hoard": "시간 경과와 엘리미네이션으로 보너스 크레딧 획득. 레벨 3에서는 대신 이동, 마운트, 쿨다운, 궁극기 충전 속도 10% 상승.",
+  "items.fallback.lethality": "엘리미네이션 후 {20|20}% 이동 속도, {60|60}% 점프 높이를 5초간 상승시킵니다.",
+  "items.fallback.meditation": "전투 외时每 0.25초마다 최대 체력의 {2.5|2.5}% 추가 치유.",
+  "items.fallback.sentinel": "엘리미네이션 후 {200|200} 체력 시엘드를 5초간 획득합니다. 최대 3회 스택.",
+  "items.fallback.triggerScent": "엘리미네이션 후 {6|6}% 인핸스 무구 피해가 5초간 상승합니다.",
+  "items.overviewFallbackDescription": "랭크 구매 성과."
+}

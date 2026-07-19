@@ -1,0 +1,19 @@
+{
+  "compositions.summary.mostCommon": "Most common",
+  "compositions.summary.total": "Compositions",
+  "compositions.summary.trackedMatches": "추적 매치",
+  "maps.compareOtherMaps": "다른 맵 비교",
+  "maps.itemClass.defense": "Defense",
+  "maps.itemClass.healing": "치유",
+  "maps.itemClass.offense": "공격",
+  "maps.itemClass.utility": "유틸리티",
+  "maps.noComparisonData": "이 항목에 대한 비교 관측 데이터가 없습니다.",
+  "maps.comparisonFailed": "전체 맵 비교를 로드할 수 없습니다.",
+  "maps.detailDescription": "이 랭크 맵의 챔피언, 재능, 아이템, 팀 조합 성과.",
+  "maps.itemDescription": "아이템 클래스별 맵별 아이템 구매 성과.",
+  "maps.compositionDescription": "이 맵에 기록된 5인 팀 조합, 매치 수순.",
+  "maps.noCompositions": "이 맵에 대한 완벽한 팀 조합 데이터가 없습니다.",
+  "compositions.title": "팀 조합 통계",
+  "compositions.description": "랭크 5인 팀 조합, 프론트라인 · 데미지 · 플랑크 · 서포트 순.",
+  "compositions.summary.bestSampledWinRate": "최고 샘플 승률"
+}

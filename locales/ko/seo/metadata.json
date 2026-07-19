@@ -64,5 +64,15 @@
   "seo.stats.tiers.title": "Paladins 랭크 티어 분포 및 플레이어 통계",
   "seo.stats.title": "Paladins 통계, 랭크 데이터, 메타 트렌드 & 티어 분포",
   "seo.stats.winRate.description": "클래스 및 글로벌 순위별 Paladins 챔피언 승률 추적, 매치 횟수, 랭크 데이터 및 클래스 및 글로벌 평균 비교.",
-  "seo.stats.winRate.title": "Paladins 승률 통계 — 챔피언 및 클래스 순위"
+  "seo.stats.winRate.title": "Paladins 승률 통계 — 챔피언 및 클래스 순위",
+  "seo.players.performance.description": "최고의 단일 랭크 매치 Paladins 크레딧, 치유, 데미지 및 시일딩/분 기록을 비교하세요.",
+  "seo.players.performance.title": "Paladins 단일 매치 성능 리더보드",
+  "seo.stats.activity.description": "지난 24시간 동안 리전별 추적된 Paladins 랭크 매치 활동을 확인하세요.",
+  "seo.stats.activity.title": "Paladins 랭크 플레이어 활동 — 24시간 매치 추적",
+  "seo.game.compositions.description": "Paladins 랭크 플레이어가 실제로 사용하는 팀 조합을 매치 수 및 승률과 함께 확인하세요.",
+  "seo.game.compositions.title": "Paladins 팀 조합 통계 — 랭크 픽 및 승률",
+  "seo.operations.description": "PaladinsCat 공개 사용량, 매치 카탈로그, 커뮤니티, 릴리스 및 복구 지표를 확인하세요.",
+  "seo.operations.title": "PaladinsCat 공개 서비스 통계",
+  "seo.tierLists.description": "S~F Paladins 챔피언 티어 목록을 생성, 공유, 좋아요 및 토론하세요.",
+  "seo.tierLists.title": "Paladins 챔피언 티어 목록 — 커뮤니티 랭킹"
 }

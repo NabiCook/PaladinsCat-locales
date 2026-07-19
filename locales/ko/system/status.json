@@ -5,5 +5,16 @@
   "status.heldMatches": "대기 중인 매치 {count}개",
   "status.live": "실시간",
   "status.nextProbe": "다음 탐지 {time}",
-  "status.probeDue": "탐지 시간 초과"
+  "status.probeDue": "탐지 시간 초과",
+  "status.updateQueued": "업데이트 대기",
+  "status.updateQueuedMessage": "PaladinsCat 업데이트가 준비되어 곧 시작됩니다.",
+  "status.updateDraining": "업데이트 시작",
+  "status.updateDrainingMessage": "서비스 버전 전환 전에 활성 요청을 처리 중입니다.",
+  "status.updateSwitching": "업데이트 적용",
+  "status.updateSwitchingMessage": "새 PaladinsCat 버전이 로딩 중입니다.",
+  "status.updateWarming": "업데이트 거의 완료",
+  "status.updateWarmingMessage": "새 서비스가 온라인이며 준비 확인을 완료하고 있습니다.",
+  "status.updateFailed": "업데이트 지연",
+  "status.updateFailedMessage": "업데이트 검토 중 현재 서비스가 재개되었습니다.",
+  "status.requestsPaused": "새 데이터 요청 일시 중단"
 }
