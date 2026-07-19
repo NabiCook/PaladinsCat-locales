@@ -166,5 +166,16 @@
   "common.tiers.silver3": "Silver III",
   "common.tiers.silver4": "Silver IV",
   "common.tiers.silver5": "Silver V",
-  "common.tiers.tierNumber": "Tier {number}"
+  "common.tiers.tierNumber": "Tier {number}",
+  "common.activity.possibleDisconnect": "Possible disconnect",
+  "common.activity.reviewPolicy": "Activity brackets are conservative signals, not proof. Players at 70–119 eCPM are shown for review; only values below 70, near or below passive-credit pace, are automatically flagged.",
+  "common.activity.candidates": "Recent eCPM candidates",
+  "common.activity.candidatesDescription": "Inspect recent completed ranked player-matches by activity bracket. Counts and percentages come from the maintained ranked distribution.",
+  "common.activity.reviewOnly": "Review only",
+  "common.activity.automaticFlag": "Automatic flag",
+  "common.activity.policy": "Policy",
+  "common.activity.classification": "Classification",
+  "common.activity.noCandidates": "No candidates were found in this bracket and lobby-tier scope.",
+  "common.activity.loadMoreCandidates": "Load more candidates",
+  "common.activity.candidatesLoadFailed": "Candidates could not be loaded. Try again."
 }

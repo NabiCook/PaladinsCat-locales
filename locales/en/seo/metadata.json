@@ -74,5 +74,7 @@
   "seo.stats.tiers.title": "Paladins Ranked Tier Distribution and Playerbase Stats",
   "seo.stats.title": "Paladins Stats, Ranked Data, Meta Trends & Tier Distribution",
   "seo.stats.winRate.description": "Track Paladins champion win rates by class and global rank with match counts, ranked data, and comparisons against class and global averages.",
-  "seo.stats.winRate.title": "Paladins Win Rate Stats — Champion and Class Rankings"
+  "seo.stats.winRate.title": "Paladins Win Rate Stats — Champion and Class Rankings",
+  "seo.community.diminishingReturns.title": "Paladins Diminishing Return Calculator",
+  "seo.community.diminishingReturns.description": "Calculate Paladins diminishing returns across champion talents, loadout cards, and items with percentage and raw stat estimates."
 }

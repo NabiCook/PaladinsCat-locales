@@ -6,6 +6,7 @@
   "ui/async",
   "pages/home",
   "pages/localization",
+  "pages/diminishing-returns",
   "system/status",
   "game/talents",
   "game/items",
