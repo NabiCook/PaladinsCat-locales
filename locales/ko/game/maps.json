@@ -1,6 +1,6 @@
 {
-  "compositions.summary.mostCommon": "Most common",
-  "compositions.summary.total": "Compositions",
+  "compositions.summary.mostCommon": "가장 흔한",
+  "compositions.summary.total": "팀 조합",
   "compositions.summary.trackedMatches": "추적 매치",
   "maps.compareOtherMaps": "다른 맵 비교",
   "maps.itemClass.defense": "Defense",
