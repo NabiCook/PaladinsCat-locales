@@ -145,7 +145,7 @@
   "common.summary.metricValue": "{summary} · {value} {metric}",
   "common.summary.valueMetric": "{value} {metric}",
   "common.entity.championNumber": "챔피언 #{number}",
-  "common.metrics.afk": "AFK",
+  "common.metrics.afk": "탈주",
   "common.metrics.apm": "APM",
   "common.metrics.abilityPerMinute": "분당 능력 사용",
   "common.metrics.championElo": "챔피언 ELO",
