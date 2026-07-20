@@ -13,3 +13,20 @@ tolgeerc.json
 # Legacy local sync state may still contain machine-specific project metadata.
 .paladinscat-l10n.json
 .paladinscat-l10n/
+
+# Local dev temp directory
+.tmp/
+
+# Untracked test/fix scripts (ad-hoc, not for tracking)
+scripts/fixers/
+scripts/*.mjs
+scripts/*.py
+scripts/*.sh
+!scripts/delete_tolgee_orphans.py
+!scripts/sync-tolgee-source.mjs
+!scripts/sanitize-tolgee-export.mjs
+!scripts/tolgee-local.mjs
+!scripts/validate-locales.mjs
+
+# Generated KO pages (ad-hoc, re-generated from source)
+locales/ko/pages/diminishing-returns.json
