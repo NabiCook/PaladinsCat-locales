@@ -1407,5 +1407,12 @@
   "champions.zhin.loadouts.perfectblock.description": "Heal for {100|100} after successfully Countering an attack.",
   "champions.zhin.loadouts.upinsmoke.description": "Increase your Movement Speed by {11|11}% while Billow is active.",
   "champions.zhin.loadouts.viciousness.description": "Reduce the Cooldown of Counter by {15|15}% after successfully hitting an enemy with Counter.",
-  "champions.zhin.loadouts.wildfire.description": "Reduce the Cooldown of Whirl by {0.5|0.5}s for each enemy it hits."
+  "champions.zhin.loadouts.wildfire.description": "Reduce the Cooldown of Whirl by {0.5|0.5}s for each enemy it hits.",
+  "champions.bombking.skills.grumpybomb.description": "Throw a bomb that sticks to enemies and explodes after 1.5s, dealing 600 damage.",
+  "champions.bombking.skills.poppypop.description": "Throw a bomb that bounces twice before exploding, dealing 500 damage.",
+  "champions.bombking.skills.kingbomb.description": "Throw a massive bomb that rolls forward, dealing 800 damage on impact.",
+  "champions.bettabomb.skills.explosivepersonality.description": "Gain 30% lifesteal for 4s after eliminations.",
+  "champions.maldamba.skills.spittingcobra.description": "Heal an ally for 300 health over 3s.",
+  "champions.maldamba.skills.dreadserpent.description": "Fear an enemy for 1.5s, causing them to flee in terror.",
+  "champions.shalin.skills.cripplingarrow.description": "Reduce enemy movement speed by 50% for 2s."
 }
