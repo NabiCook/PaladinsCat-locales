@@ -9,9 +9,9 @@
   "pages/diminishing-returns",
   "system/status",
   "game/talents",
-  "game/champions",
   "game/items",
   "game/maps",
+  "game/champions",
   "generated/ui",
   "seo/metadata"
 ]

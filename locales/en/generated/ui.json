@@ -1207,7 +1207,6 @@
   "generated.roles.support": "Support",
   "generated.search.clearSearch": "Clear search",
   "generated.search.exactLookupLocalDbIsCheckedFirst": "Exact lookup. Local DB is checked first.",
-  "generated.search.homeSearchResultsScrollbarColorVarPcAccentSecondaryVar": ".home-search-results { scrollbar-color: var(--pc-accent-secondary) var(--pc-bg-elevated); scrollbar-width: thin; } .home-search-results::-webkit-scrollbar { width: 0.5rem; } .home-search-results::-webkit-scrollbar-track { background: var(--pc-bg-elevated); box-shadow: inset 1px 0 var(--pc-border); } .home-search-results::-webkit-scrollbar-thumb { background: var(--pc-accent-secondary); border-radius: 999px; } .home-search-results::-webkit-scrollbar-thumb:hover { background: var(--pc-accent); } .home-search-results::-webkit-scrollbar-button { display: none; height: 0; }",
   "generated.search.lookUpMatchId": "Look up match ID",
   "generated.search.lookUpPlayerId": "Look up player ID",
   "generated.search.noRelatedResults": "No related results",
