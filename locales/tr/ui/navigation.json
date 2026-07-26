@@ -172,6 +172,8 @@
   "playerActivity.pagination": "Etkinlik kanıt sayfaları",
   "playerActivity.platformCoverage": "Platform kapsamı",
   "playerActivity.playerParticipations": "{total}, Oyuncu maç katılımlarını yeniden yapılandırdı",
+  "playerActivity.unresolvedPlayerRange": "Çözümlenmemiş oyuncu aralığı",
+  "playerActivity.possiblePlayerTotal": "Olası benzersiz oyuncu toplamı",
   "playerActivity.playerRowsLoaded": "Oyuncu satırları yüklendi",
   "playerActivity.players24h": "Oyuncular · son 24 saat",
   "playerActivity.playersByPlatform": "Oyuncular platforma göre",

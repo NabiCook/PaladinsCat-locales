@@ -172,6 +172,8 @@
   "playerActivity.pagination": "Strony z dowodami aktywności",
   "playerActivity.platformCoverage": "Zasięg platformy",
   "playerActivity.playerParticipations": "{total} zrekonstruował udział w meczach Gracz",
+  "playerActivity.unresolvedPlayerRange": "Nieustalony zakres liczby graczy",
+  "playerActivity.possiblePlayerTotal": "Możliwa łączna liczba unikalnych graczy",
   "playerActivity.playerRowsLoaded": "Załadowano wiersze Gracz",
   "playerActivity.players24h": "Gracze · ostatnie 24 godziny",
   "playerActivity.playersByPlatform": "Gracze według platformy",
