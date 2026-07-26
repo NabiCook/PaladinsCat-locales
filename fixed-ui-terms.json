@@ -3,6 +3,7 @@
   "description": "Reviewed UI terminology and locale-specific manual overrides that must survive general translation runs.",
   "terms": {
     "ko": {
+      "players": "유저",
       "record": "전적",
       "ranked": "경쟁전",
       "stats": "통계"
