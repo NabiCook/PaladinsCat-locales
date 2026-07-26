@@ -125,8 +125,9 @@ def title_adjacent_match(
 ) -> str | None:
     """Resolve duplicate generic card text through its unique client title."""
     card_or_talent = key.split(".")[-2]
+    title_ids = title_index.get(title_token(card_or_talent), [])
     candidates: list[str] = []
-    for title_id in title_index.get(title_token(card_or_talent), []):
+    for title_id in title_ids:
         try:
             description_id = str(int(title_id) + 1)
         except ValueError:
@@ -134,7 +135,18 @@ def title_adjacent_match(
         description = values_by_id.get(description_id)
         if description and descriptions_are_compatible(source_value, description):
             candidates.append(description_id)
-    return candidates[0] if len(candidates) == 1 else None
+    if len(candidates) == 1:
+        return candidates[0]
+    # The canonical title is a stronger identity than a stale web description.
+    # Use its adjacent client description only when the title itself is unique;
+    # duplicate names still require compatible text above.
+    if len(title_ids) == 1:
+        try:
+            adjacent_id = str(int(title_ids[0]) + 1)
+        except ValueError:
+            return None
+        return adjacent_id if adjacent_id in values_by_id else None
+    return None
 
 
 def unique_semantic_match(
