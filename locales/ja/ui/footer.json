@@ -1,0 +1,12 @@
+{
+  "footer.allRightsReserved": "すべての著作権は留保されています。",
+  "footer.branch": "ブランチ: {branch}",
+  "footer.commit": "コミット: {commit}",
+  "footer.dataProvidedBy": "データ提供：© Hi-Rez Studios、",
+  "footer.databaseSchema": "DBスキーマ: {version}",
+  "footer.deployed": "デプロイ済み: {date}",
+  "footer.dirtyWorktree": "デプロイ時のダーティなワークツリー",
+  "footer.joinDiscord": "Discordに参加する",
+  "footer.privacyPolicy": "プライバシーポリシー",
+  "footer.termsOfUse": "利用規約"
+}

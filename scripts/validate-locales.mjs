@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const localesDirectory = fileURLToPath(new URL("../locales/", import.meta.url));
 const gameDirectory = fileURLToPath(new URL("../game-client/", import.meta.url));
-const localeName = /^(?:[a-z]{2,3})(?:-[A-Z]{2})?$/;
+const localeName = /^(?:[a-z]{2,3})(?:-(?:[A-Z]{2}|\d{3}))?$/;
 const moduleName = /^[a-z][a-z0-9-]*(?:\/[a-z][a-z0-9-]*)*$/;
 const placeholderPattern = /@@[A-Za-z0-9_]+@@|\{[A-Za-z0-9_]+\}|%(?:\d+\$)?[sdif]/g;
 const modules = JSON.parse(await readFile(join(localesDirectory, "modules.json"), "utf8"));

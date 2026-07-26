@@ -1,0 +1,22 @@
+{
+  "home.brandAccent": "Kot",
+  "home.brandLead": "Paladyni",
+  "home.dismiss": "Odrzuć",
+  "home.exploreBotEyebrow": "PaladinsCat na Discordzie",
+  "home.exploreBotTitle": "Przenieś odpowiedzi na Discord",
+  "home.exploreMetaEyebrow": "Statystyki Czempion Rankingowy",
+  "home.exploreMetaTitle": "Porównaj wydajność Czempion Rankingowy",
+  "home.explorePlayersEyebrow": "Centrum Gracz",
+  "home.explorePlayersTitle": "Znajdź dowolny Gracz i śledź jego zapis",
+  "home.exploreTitleLead": "Jedna platforma.",
+  "home.exploreTitleRest": "Każdy kąt Królestwa.",
+  "home.latestChanges": "Najnowsze zmiany",
+  "home.logoAlt": "Logo PaladinsCat",
+  "home.noChangelogEntries": "Nie ma jeszcze żadnych wpisów w dzienniku zmian",
+  "home.noNotifications": "Brak powiadomień",
+  "home.tagline": "Paladins: Comp Analytics Tool — zaawansowane statystyki lub po prostu miau.",
+  "home.viewAllChanges": "Wyświetl wszystkie zmiany",
+  "search.clear": "Wyczyść wyszukiwanie",
+  "search.homeInputLabel": "Szukaj Gracze, mecze, mistrzowie, Przedmioty, Karty, talenty",
+  "search.submit": "Szukaj"
+}

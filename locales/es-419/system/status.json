@@ -1,0 +1,20 @@
+{
+  "status.affectedHours": "{count} horas afectadas",
+  "status.apiDegraded": "API de alta resolución degradada",
+  "status.apiOutage": "Interrupción de la API de alta resolución",
+  "status.heldMatches": "{count} celebró partidos",
+  "status.live": "en vivo",
+  "status.nextProbe": "Siguiente sonda {time}",
+  "status.probeDue": "sonda pendiente",
+  "status.requestsPaused": "Nuevas solicitudes de datos en pausa",
+  "status.updateDraining": "Actualización comenzando",
+  "status.updateDrainingMessage": "Finalizar las solicitudes activas antes de que el servicio cambie de versión.",
+  "status.updateFailed": "Actualización retrasada",
+  "status.updateFailedMessage": "El servicio actual se ha reanudado mientras se revisa la actualización.",
+  "status.updateQueued": "Actualización en cola",
+  "status.updateQueuedMessage": "Una actualización de PaladinsCat está lista y comenzará en breve.",
+  "status.updateSwitching": "Aplicando actualización",
+  "status.updateSwitchingMessage": "Se está cargando la nueva versión de PaladinsCat.",
+  "status.updateWarming": "Actualización casi lista",
+  "status.updateWarmingMessage": "El nuevo servicio está en línea y completando verificaciones de preparación."
+}

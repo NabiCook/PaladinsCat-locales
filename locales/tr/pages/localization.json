@@ -1,0 +1,12 @@
+{
+  "localization.contributingGuide": "Katkı kılavuzunu okuyun",
+  "localization.deploymentDescription": "Birleştirilmiş yerel ayar taahhütleri, tekrarlanabilir VPS dağıtımları için PaladinsCat ön uç görüntüsüne sabitlenir.",
+  "localization.githubDescription": "Genel yerel ayar deposunu kopyalayın, Tolgee veya bir metin düzenleyiciyle düzenleyin ve bir GitHub çekme isteği açın. PaladinsCat çeviri taslaklarını Mağaza yapmaz veya ikinci bir onay gerektirmez.",
+  "localization.githubTitle": "GitHub aracılığıyla çeviri yapın",
+  "localization.repository": "Yerel ayar deposunu aç",
+  "localization.tolgeeGuide": "Tolgee iş akışını okuyun",
+  "localization.workflowStepClone": "PaladinsCat-locales'i klonlayın ve bir çeviri dalı oluşturun.",
+  "localization.workflowStepPr": "Doğrulayın, GitHub Desktop ile taahhütte bulunun, bir çekme isteği açın ve kontroller geçtikten sonra birleştirin.",
+  "localization.workflowStepTolgee": "İngilizce dosyaları Tolgee'ye aktarın, çevirin ve hedef dosyaları tekrar klona aktarın.",
+  "localization.workflowTitle": "Depo iş akışı"
+}

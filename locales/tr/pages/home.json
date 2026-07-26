@@ -1,0 +1,22 @@
+{
+  "home.brandAccent": "Kedi",
+  "home.brandLead": "Paladinler",
+  "home.dismiss": "Reddet",
+  "home.exploreBotEyebrow": "Discord için PaladinsCat",
+  "home.exploreBotTitle": "Yanıtları Discord'a taşıyın",
+  "home.exploreMetaEyebrow": "Şampiyon Dereceli İstatistikleri",
+  "home.exploreMetaTitle": "Şampiyon Dereceli performansını karşılaştırın",
+  "home.explorePlayersEyebrow": "Oyuncu Merkezi",
+  "home.explorePlayersTitle": "Herhangi bir Oyuncu'i bulun ve kayıtlarını takip edin",
+  "home.exploreTitleLead": "Tek platform.",
+  "home.exploreTitleRest": "Diyarın her açısı.",
+  "home.latestChanges": "Son Değişiklikler",
+  "home.logoAlt": "PaladinsCat logosu",
+  "home.noChangelogEntries": "Henüz değişiklik günlüğü girişi yok",
+  "home.noNotifications": "Bildirim yok",
+  "home.tagline": "Paladins: Comp Analytics Aracı — gelişmiş istatistik veya sadece miyav.",
+  "home.viewAllChanges": "Tüm Değişiklikleri Görüntüle",
+  "search.clear": "Aramayı temizle",
+  "search.homeInputLabel": "Oyuncular, maçlar, şampiyonlar, Eşyalar, Kartlar, yeteneklerde arama yapın",
+  "search.submit": "Ara"
+}

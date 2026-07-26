@@ -1,0 +1,9 @@
+{
+  "champions.furia.talents.exterminate.description": "烈焰冲击击中一名敌人后将停止移动直到技能结束。",
+  "champions.grover.talents.deeproots.description": "Crippling Throw now roots and deals more damage.",
+  "champions.maldamba.talents.spiritschosen.description": "Mending Spirits heals additional Health upfront.",
+  "champions.shalin.talents.desertshadow.description": "[幻影翻腾] 幻影翻腾的隐身时间提高2秒。脱离潜行的第一次射击会造成25%额外伤害",
+  "champions.strix.skills.quickswitch.description": "切换至另一把武器",
+  "champions.strix.skills.stealth.description": "Enter stealth and hide yourself from vision. While in Stealth your energy is consumed.",
+  "champions.strix.talents.nocturnal.description": "[潜行] 潜行能量槽消耗减少50%"
+}

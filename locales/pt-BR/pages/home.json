@@ -1,0 +1,22 @@
+{
+  "home.brandAccent": "Gato",
+  "home.brandLead": "Paladinos",
+  "home.dismiss": "Dispensar",
+  "home.exploreBotEyebrow": "PaladinsCat para Discord",
+  "home.exploreBotTitle": "Traga as respostas para o Discord",
+  "home.exploreMetaEyebrow": "Estatísticas de Campeão Ranqueado",
+  "home.exploreMetaTitle": "Compare o desempenho de Campeão Ranqueado",
+  "home.explorePlayersEyebrow": "Hub Jogador",
+  "home.explorePlayersTitle": "Encontre qualquer Jogador e siga seu registro",
+  "home.exploreTitleLead": "Uma plataforma.",
+  "home.exploreTitleRest": "Todos os ângulos do Reino.",
+  "home.latestChanges": "Últimas alterações",
+  "home.logoAlt": "Logotipo do PaladinsCat",
+  "home.noChangelogEntries": "Nenhuma entrada no changelog ainda",
+  "home.noNotifications": "Sem notificações",
+  "home.tagline": "Paladins: Comp Analytics Tool – estatística avançada, ou apenas miau.",
+  "home.viewAllChanges": "Ver todas as alterações",
+  "search.clear": "Limpar pesquisa",
+  "search.homeInputLabel": "Pesquise Jogadores, partidas, campeões, Itens, Cartas, talentos",
+  "search.submit": "Pesquisar"
+}

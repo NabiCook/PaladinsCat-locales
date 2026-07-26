@@ -1,0 +1,12 @@
+{
+  "localization.contributingGuide": "Читать руководство по вкладам",
+  "localization.deploymentDescription": "Объединенные коммиты локали закрепляются во внешнем образе PaladinsCat для воспроизводимого развертывания VPS.",
+  "localization.githubDescription": "Клонируйте общедоступный репозиторий локали, отредактируйте его с помощью Tolgee или текстового редактора и откройте один запрос на извлечение GitHub. PaladinsCat не создает черновики перевода Магазин и не требует повторного утверждения.",
+  "localization.githubTitle": "Перевести через GitHub",
+  "localization.repository": "Открыть репозиторий локали",
+  "localization.tolgeeGuide": "Прочтите рабочий процесс Толги",
+  "localization.workflowStepClone": "Клонируйте PaladinsCat-locales и создайте ветку перевода.",
+  "localization.workflowStepPr": "Проверьте, зафиксируйте с помощью GitHub Desktop, откройте запрос на включение и выполните слияние после прохождения проверок.",
+  "localization.workflowStepTolgee": "Импортируйте английские файлы в Tolgee, переведите и экспортируйте целевые файлы обратно в клон.",
+  "localization.workflowTitle": "Рабочий процесс репозитория"
+}

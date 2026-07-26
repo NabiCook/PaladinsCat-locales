@@ -27,6 +27,10 @@ scripts/*.sh
 !scripts/sanitize-tolgee-export.mjs
 !scripts/tolgee-local.mjs
 !scripts/validate-locales.mjs
+!scripts/import-game-client-locales.py
+!scripts/import-frontend-game-locales.py
+!scripts/build-game-term-glossary.py
+!scripts/translate-frontend-general-copy.py
 
 # Generated KO pages (ad-hoc, re-generated from source)
 locales/ko/pages/diminishing-returns.json

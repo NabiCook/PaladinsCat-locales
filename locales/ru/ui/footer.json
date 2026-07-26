@@ -1,0 +1,12 @@
+{
+  "footer.allRightsReserved": "Все права защищены.",
+  "footer.branch": "Филиал: {branch}",
+  "footer.commit": "Зафиксировать: {commit}",
+  "footer.dataProvidedBy": "Данные предоставлены © Hi-Rez Studios,",
+  "footer.databaseSchema": "Схема БД: {version}",
+  "footer.deployed": "Развернуто: {date}",
+  "footer.dirtyWorktree": "Грязное рабочее дерево при развертывании",
+  "footer.joinDiscord": "Присоединяйтесь к Discord",
+  "footer.privacyPolicy": "Политика конфиденциальности",
+  "footer.termsOfUse": "Условия использования"
+}

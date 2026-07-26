@@ -1,0 +1,22 @@
+{
+  "home.brandAccent": "Кот",
+  "home.brandLead": "Паладины",
+  "home.dismiss": "Уволить",
+  "home.exploreBotEyebrow": "PaladinsCat для Discord",
+  "home.exploreBotTitle": "Перенесите ответы в Discord",
+  "home.exploreMetaEyebrow": "Статистика Чемпион Рейтинговый режим",
+  "home.exploreMetaTitle": "Сравните производительность Чемпион Рейтинговый режим",
+  "home.explorePlayersEyebrow": "Игрок Хаб",
+  "home.explorePlayersTitle": "Найдите любого Игрок и проследите за его записью.",
+  "home.exploreTitleLead": "Одна платформа.",
+  "home.exploreTitleRest": "Каждый угол Королевства.",
+  "home.latestChanges": "Последние изменения",
+  "home.logoAlt": "Логотип PaladinsCat",
+  "home.noChangelogEntries": "Записей в журнале изменений пока нет",
+  "home.noNotifications": "Нет уведомлений",
+  "home.tagline": "Paladins: Comp Analytics Tool — расширенная статистика или просто мяуканье.",
+  "home.viewAllChanges": "Просмотреть все изменения",
+  "search.clear": "Очистить поиск",
+  "search.homeInputLabel": "Поиск Игроки, матчей, чемпионов, Предметы, Карты, талантов",
+  "search.submit": "Поиск"
+}

@@ -1,0 +1,12 @@
+{
+  "localization.contributingGuide": "貢献ガイドを読む",
+  "localization.deploymentDescription": "マージされたロケール コミットは、再現可能な VPS 導入のために PaladinsCat フロントエンド イメージに固定されます。",
+  "localization.githubDescription": "パブリック ロケール リポジトリのクローンを作成し、Tolgee またはテキスト エディタで編集し、GitHub プル リクエストを 1 つ開きます。 PaladinsCat は ストア 翻訳ドラフトを作成したり、2 回目の承認を必要としたりしません。",
+  "localization.githubTitle": "GitHub 経由で翻訳する",
+  "localization.repository": "ロケールリポジトリを開く",
+  "localization.tolgeeGuide": "Tolgee ワークフローを読む",
+  "localization.workflowStepClone": "PaladinsCat-locales をクローンし、翻訳ブランチを作成します。",
+  "localization.workflowStepPr": "検証し、GitHub Desktop でコミットし、プル リクエストを開き、チェックに合格したらマージします。",
+  "localization.workflowStepTolgee": "英語ファイルを Tolgee にインポートし、翻訳して、ターゲット ファイルをクローンにエクスポートして戻します。",
+  "localization.workflowTitle": "リポジトリのワークフロー"
+}

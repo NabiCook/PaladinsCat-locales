@@ -1,0 +1,959 @@
+{
+  "schemaVersion": 1,
+  "strategy": "Use native translations for listed game terms; translate general prose normally.",
+  "source": "game-client/en.csv matched by exact English value and stable message_id",
+  "terms": {
+    "Champion": {
+      "messageId": "170167",
+      "translations": {
+        "de": "Champion",
+        "es-419": "Campeón",
+        "fr": "Champion",
+        "ja": "チャンピオン",
+        "ko": "Champion",
+        "pl": "Czempion",
+        "pt-BR": "Campeão",
+        "ru": "Чемпион",
+        "tr": "Şampiyon",
+        "zh-CN": "英雄",
+        "zh-TW": "英雄"
+      },
+      "missingLocales": []
+    },
+    "Ability": {
+      "messageId": "155105",
+      "translations": {
+        "de": "Fertigkeit",
+        "es-419": "Habilidad",
+        "fr": "Compétence",
+        "ja": "アビリティ",
+        "ko": "Ability",
+        "pl": "Zdolność",
+        "pt-BR": "Habilidade",
+        "ru": "Способность",
+        "tr": "Yetenek",
+        "zh-CN": "技能",
+        "zh-TW": "技能"
+      },
+      "missingLocales": []
+    },
+    "Abilities": {
+      "messageId": "59479",
+      "translations": {
+        "de": "Fertigkeiten",
+        "es-419": "Habilidades",
+        "fr": "Compétences",
+        "ja": "アビリティ",
+        "ko": "Abilities",
+        "pl": "Zdolności",
+        "pt-BR": "Habilidades",
+        "ru": "Способности",
+        "tr": "Yetenekler",
+        "zh-CN": "技能",
+        "zh-TW": "技能"
+      },
+      "missingLocales": []
+    },
+    "Loadout": {
+      "messageId": "155114",
+      "translations": {
+        "de": "DECK",
+        "es-419": "BARAJA",
+        "fr": "DECK",
+        "ja": "ロードアウト",
+        "ko": "LOADOUT",
+        "pl": "TALIA",
+        "pt-BR": "BARALHO",
+        "ru": "КОНФИГУРАЦИЯ",
+        "tr": "DİZİLİM",
+        "zh-CN": "卡片组",
+        "zh-TW": "卡片組"
+      },
+      "missingLocales": []
+    },
+    "Loadouts": {
+      "messageId": "161827",
+      "translations": {
+        "de": "Decks",
+        "es-419": "Barajas",
+        "fr": "Decks",
+        "ja": "ロードアウト",
+        "ko": "Loadouts",
+        "pl": "Talie",
+        "pt-BR": "Baralhos",
+        "ru": "Конфигурации",
+        "tr": "Dizilimler",
+        "zh-CN": "卡组",
+        "zh-TW": "卡組"
+      },
+      "missingLocales": []
+    },
+    "Card": {
+      "messageId": "1000167185",
+      "translations": {
+        "de": "Karte",
+        "es-419": "Carta",
+        "fr": "Carte",
+        "ja": "カード",
+        "ko": "Card",
+        "pl": "Karta",
+        "pt-BR": "Carta",
+        "ru": "Карта",
+        "tr": "Kart",
+        "zh-CN": "卡牌",
+        "zh-TW": "卡牌"
+      },
+      "missingLocales": []
+    },
+    "Cards": {
+      "messageId": "155179",
+      "translations": {
+        "de": "Karten",
+        "es-419": "Cartas",
+        "fr": "Cartes",
+        "ja": "カード",
+        "ko": "Cards",
+        "pl": "Karty",
+        "pt-BR": "Cartas",
+        "ru": "Карты",
+        "tr": "Kartlar",
+        "zh-CN": "卡牌",
+        "zh-TW": "卡牌"
+      },
+      "missingLocales": []
+    },
+    "Item": {
+      "messageId": "171009",
+      "translations": {
+        "de": "Gegenst.",
+        "es-419": "Objeto",
+        "fr": "Objet",
+        "ja": "アイテム",
+        "ko": "Item",
+        "pl": "Przedmiot",
+        "pt-BR": "Item",
+        "ru": "Предмет",
+        "tr": "Eşya",
+        "zh-CN": "装备",
+        "zh-TW": "裝備"
+      },
+      "missingLocales": []
+    },
+    "Items": {
+      "messageId": "170286",
+      "translations": {
+        "de": "Gegenstände",
+        "es-419": "Objetos",
+        "fr": "Objets",
+        "ja": "アイテム",
+        "ko": "Items",
+        "pl": "Przedmioty",
+        "pt-BR": "Itens",
+        "ru": "Предметы",
+        "tr": "Eşyalar",
+        "zh-CN": "装备",
+        "zh-TW": "裝備"
+      },
+      "missingLocales": []
+    },
+    "Map": {
+      "messageId": "104402",
+      "translations": {
+        "de": "Karte",
+        "es-419": "Mapa",
+        "fr": "Carte",
+        "ja": "マップ",
+        "ko": "Map",
+        "pl": "Mapa",
+        "pt-BR": "Mapa",
+        "ru": "Карта",
+        "tr": "Harita",
+        "zh-CN": "地图",
+        "zh-TW": "地圖"
+      },
+      "missingLocales": []
+    },
+    "Ranked": {
+      "messageId": "163624",
+      "translations": {
+        "de": "Rangliste",
+        "es-419": "Clasificación",
+        "fr": "Classé",
+        "ja": "ランク戦",
+        "ko": "Ranked",
+        "pl": "Rankingowy",
+        "pt-BR": "Ranqueado",
+        "ru": "Рейтинговый режим",
+        "tr": "Dereceli",
+        "zh-CN": "排位赛",
+        "zh-TW": "排位賽"
+      },
+      "missingLocales": []
+    },
+    "Casual": {
+      "messageId": "1000152973",
+      "translations": {
+        "de": "Normal",
+        "es-419": "Casual",
+        "fr": "Classique",
+        "ja": "カジュアル",
+        "ko": "Casual",
+        "pl": "Normalny",
+        "pt-BR": "Casual",
+        "ru": "Обычная игра",
+        "tr": "Standart",
+        "zh-CN": "Casual",
+        "zh-TW": "Casual"
+      },
+      "missingLocales": []
+    },
+    "Practice": {
+      "messageId": "1000111168",
+      "translations": {
+        "de": "Training",
+        "es-419": "Práctica",
+        "fr": "Entraînement",
+        "ja": "練習",
+        "ko": "Practice",
+        "pl": "Trening",
+        "pt-BR": "Treino",
+        "ru": "Тренировка",
+        "tr": "Antrenman",
+        "zh-CN": "练习模式",
+        "zh-TW": "練習模式"
+      },
+      "missingLocales": []
+    },
+    "Siege": {
+      "messageId": "160519",
+      "translations": {
+        "de": "Belagerung",
+        "es-419": "Asedio",
+        "fr": "Siège",
+        "ja": "シージ",
+        "ko": "Siege",
+        "pl": "Oblężenie",
+        "pt-BR": "Cerco",
+        "ru": "Осада",
+        "tr": "Kuşatma",
+        "zh-CN": "占领护送 定级卡组",
+        "zh-TW": "佔領護送 定級卡組"
+      },
+      "missingLocales": []
+    },
+    "Onslaught": {
+      "messageId": "162335",
+      "translations": {
+        "de": "Offensive",
+        "es-419": "Matanza",
+        "fr": "Assaut",
+        "ja": "襲撃",
+        "ko": "Onslaught",
+        "pl": "Szturm",
+        "pt-BR": "Chacina",
+        "ru": "Натиск",
+        "tr": "Şiddetli Saldırı",
+        "zh-CN": "强袭猛攻 I",
+        "zh-TW": "強襲猛攻 I"
+      },
+      "missingLocales": []
+    },
+    "Team Deathmatch": {
+      "messageId": "168931",
+      "translations": {
+        "de": "Team Deathmatch",
+        "es-419": "Batalla por equipos",
+        "fr": "Match à mort en équipe",
+        "ja": "チームデスマッチ",
+        "ko": "Team Deathmatch",
+        "pl": "Drużynowy DM",
+        "pt-BR": "Mata-mata",
+        "ru": "Командный бой насмерть",
+        "tr": "Takım Ölüm Maçı",
+        "zh-CN": "团队竞技",
+        "zh-TW": "團隊競技"
+      },
+      "missingLocales": []
+    },
+    "Payload": {
+      "messageId": "163604",
+      "translations": {
+        "de": "Ladung",
+        "es-419": "Carga Explosiva",
+        "fr": "Payload",
+        "ja": "ペイロード",
+        "ko": "Payload",
+        "pl": "Ładunek",
+        "pt-BR": "Payload",
+        "ru": "Груз",
+        "tr": "Yük",
+        "zh-CN": "送宝箱",
+        "zh-TW": "送寶箱"
+      },
+      "missingLocales": []
+    },
+    "Credits": {
+      "messageId": "170158",
+      "translations": {
+        "de": "Credits",
+        "es-419": "Créditos",
+        "fr": "Crédits",
+        "ja": "スタッフクレジット",
+        "ko": "Credits",
+        "pl": "Kredyty",
+        "pt-BR": "Créditos",
+        "ru": "Кредиты",
+        "tr": "Kredi",
+        "zh-CN": "积分",
+        "zh-TW": "積分"
+      },
+      "missingLocales": []
+    },
+    "Crystals": {
+      "messageId": "161942",
+      "translations": {
+        "de": "Kristalle",
+        "es-419": "Cristales",
+        "fr": "Cristaux",
+        "ja": "クリスタル",
+        "ko": "Crystals",
+        "pl": "Kryształów",
+        "pt-BR": "Cristais",
+        "ru": "Кристаллы",
+        "tr": "Kristal",
+        "zh-CN": "混沌水晶",
+        "zh-TW": "混沌水晶"
+      },
+      "missingLocales": []
+    },
+    "Gold": {
+      "messageId": "165271",
+      "translations": {
+        "de": "Gold",
+        "es-419": "Oro",
+        "fr": "Or",
+        "ja": "ゴールド",
+        "ko": "Gold",
+        "pl": "Złoto",
+        "pt-BR": "Ouro",
+        "ru": "Золото",
+        "tr": "Altın",
+        "zh-CN": "金币",
+        "zh-TW": "金幣"
+      },
+      "missingLocales": []
+    },
+    "XP": {
+      "messageId": "165596",
+      "translations": {
+        "de": "EP",
+        "es-419": "EXP",
+        "fr": "EXP",
+        "ja": "EXP",
+        "ko": "XP",
+        "pl": "PD",
+        "pt-BR": "EXP",
+        "ru": "Опыт",
+        "tr": "TP",
+        "zh-CN": "经验",
+        "zh-TW": "經驗"
+      },
+      "missingLocales": []
+    },
+    "Level": {
+      "messageId": "161874",
+      "translations": {
+        "de": "Stufe",
+        "es-419": "Nivel",
+        "fr": "Niveau",
+        "ja": "レベル",
+        "ko": "Level",
+        "pl": "Poziom",
+        "pt-BR": "Nível",
+        "ru": "Уровень",
+        "tr": "Seviye",
+        "zh-CN": "等级",
+        "zh-TW": "等級"
+      },
+      "missingLocales": []
+    },
+    "Skin": {
+      "messageId": "1000102659",
+      "translations": {
+        "de": "Skin",
+        "es-419": "Aspecto",
+        "fr": "Skin",
+        "ja": "スキン",
+        "ko": "Skin",
+        "pl": "Skórka",
+        "pt-BR": "Aparência",
+        "ru": "Облик",
+        "tr": "Görünüm",
+        "zh-CN": "Skin",
+        "zh-TW": "皮膚"
+      },
+      "missingLocales": []
+    },
+    "Emote": {
+      "messageId": "174635",
+      "translations": {
+        "de": "Emote",
+        "es-419": "Emoticón",
+        "fr": "Émote",
+        "ja": "エモート",
+        "ko": "Emote",
+        "pl": "Emotikona",
+        "pt-BR": "Emote",
+        "ru": "Эмоция",
+        "tr": "İfade",
+        "zh-CN": "表情动作",
+        "zh-TW": "表情動作"
+      },
+      "missingLocales": []
+    },
+    "Spray": {
+      "messageId": "177397",
+      "translations": {
+        "de": "Spray",
+        "es-419": "Espray",
+        "fr": "Spray",
+        "ja": "スプレー",
+        "ko": "Spray",
+        "pl": "Graffiti",
+        "pt-BR": "Spray",
+        "ru": "Граффити",
+        "tr": "Sprey",
+        "zh-CN": "喷漆",
+        "zh-TW": "噴漆"
+      },
+      "missingLocales": []
+    },
+    "Mount": {
+      "messageId": "144450",
+      "translations": {
+        "de": "Reittier",
+        "es-419": "Montura",
+        "fr": "Monture",
+        "ja": "マウント",
+        "ko": "Mount",
+        "pl": "Wierzchowiec",
+        "pt-BR": "Montaria",
+        "ru": "Скакун",
+        "tr": "Binek",
+        "zh-CN": "乘骑",
+        "zh-TW": "乘騎"
+      },
+      "missingLocales": []
+    },
+    "Avatar": {
+      "messageId": "1000167523",
+      "translations": {
+        "de": "Avatar",
+        "es-419": "Avatar",
+        "fr": "Avatar",
+        "ja": "アバター",
+        "ko": "Avatar",
+        "pl": "Awatar",
+        "pt-BR": "Avatar",
+        "ru": "Аватар",
+        "tr": "Avatar",
+        "zh-CN": "头像",
+        "zh-TW": "頭像"
+      },
+      "missingLocales": []
+    },
+    "Title": {
+      "messageId": "1000165911",
+      "translations": {
+        "de": "Titel",
+        "es-419": "Título",
+        "fr": "Titre",
+        "ja": "タイトル:",
+        "ko": "Title",
+        "pl": "Tytuł",
+        "pt-BR": "Título",
+        "ru": "Звание",
+        "tr": "Unvan",
+        "zh-CN": "Title",
+        "zh-TW": "稱號"
+      },
+      "missingLocales": []
+    },
+    "Party": {
+      "messageId": "170002",
+      "translations": {
+        "de": "GRUPPE",
+        "es-419": "Grupo",
+        "fr": "GROUPE",
+        "ja": "パーティ",
+        "ko": "PARTY",
+        "pl": "DRUŻYNA",
+        "pt-BR": "GRUPO",
+        "ru": "Команда",
+        "tr": "GRUP",
+        "zh-CN": "队伍",
+        "zh-TW": "隊伍"
+      },
+      "missingLocales": []
+    },
+    "Friends": {
+      "messageId": "155085",
+      "translations": {
+        "de": "Freunde",
+        "es-419": "Amigos",
+        "fr": "Amis",
+        "ja": "フレンド",
+        "ko": "Friends",
+        "pl": "Znajomi",
+        "pt-BR": "Amigos",
+        "ru": "Друзья",
+        "tr": "Arkadaşlar",
+        "zh-CN": "好友",
+        "zh-TW": "好友"
+      },
+      "missingLocales": []
+    },
+    "Clan": {
+      "messageId": "1000167380",
+      "translations": {
+        "de": "Clan",
+        "es-419": "Clan",
+        "fr": "Clan",
+        "ja": "クラン",
+        "ko": "Clan",
+        "pl": "Klan",
+        "pt-BR": "Clã",
+        "ru": "Клан",
+        "tr": "Klan",
+        "zh-CN": "Clan",
+        "zh-TW": "Clan"
+      },
+      "missingLocales": []
+    },
+    "Battle Pass": {
+      "messageId": "199142",
+      "translations": {
+        "de": "Battle-Pass",
+        "es-419": "Pase de Batalla",
+        "fr": "Battle Pass",
+        "ja": "バトルパス",
+        "ko": "Battle Pass",
+        "pl": "Bilet rozgrywek",
+        "pt-BR": "Passe de Batalha",
+        "ru": "Боевой пропуск",
+        "tr": "Savaş Bileti",
+        "zh-CN": "游侠纹章",
+        "zh-TW": "遊俠紋章"
+      },
+      "missingLocales": []
+    },
+    "Challenge": {
+      "messageId": "175434",
+      "translations": {
+        "de": "Herausforderung",
+        "es-419": "Desafió",
+        "fr": "Paré au combat",
+        "ja": "挑戦",
+        "ko": "Challenge",
+        "pl": "Wyzwanie",
+        "pt-BR": "Desafio",
+        "ru": "Вызов",
+        "tr": "Meydan Okuma",
+        "zh-CN": "挑战",
+        "zh-TW": "挑戰"
+      },
+      "missingLocales": []
+    },
+    "Challenges": {
+      "messageId": "1000103456",
+      "translations": {
+        "de": "Herausford.",
+        "es-419": "Desafíos",
+        "fr": "Défis",
+        "ja": "チャレンジ",
+        "ko": "Challenges",
+        "pl": "Wyzwania",
+        "pt-BR": "Desafios",
+        "ru": "Вызовы",
+        "tr": "Mücadeleler",
+        "zh-CN": "挑战模式",
+        "zh-TW": "挑戰模式"
+      },
+      "missingLocales": []
+    },
+    "Reward": {
+      "messageId": "195693",
+      "translations": {
+        "de": "Belohnung",
+        "es-419": "Recompensa",
+        "fr": "Friandise",
+        "ja": "報酬",
+        "ko": "Reward",
+        "pl": "Nagroda",
+        "pt-BR": "Recompensa",
+        "ru": "Награда",
+        "tr": "Ödül",
+        "zh-CN": "喂食时间到",
+        "zh-TW": "餵食時間到"
+      },
+      "missingLocales": []
+    },
+    "Rewards": {
+      "messageId": "170191",
+      "translations": {
+        "de": "Belohnungen",
+        "es-419": "Recompensas",
+        "fr": "Récompenses",
+        "ja": "報酬",
+        "ko": "Rewards",
+        "pl": "Nagrody",
+        "pt-BR": "Recompensas",
+        "ru": "Награды",
+        "tr": "Ödüller",
+        "zh-CN": "奖励",
+        "zh-TW": "獎勵"
+      },
+      "missingLocales": []
+    },
+    "Victory": {
+      "messageId": "32977",
+      "translations": {
+        "de": "Sieg",
+        "es-419": "Victoria",
+        "fr": "Victoire",
+        "ja": "勝利",
+        "ko": "Victory",
+        "pl": "Zwycięstwo",
+        "pt-BR": "Vitória",
+        "ru": "Победа",
+        "tr": "Zafer",
+        "zh-CN": "胜利",
+        "zh-TW": "勝利"
+      },
+      "missingLocales": []
+    },
+    "Defeat": {
+      "messageId": "32978",
+      "translations": {
+        "de": "Niederlage",
+        "es-419": "Derrota",
+        "fr": "Défaite",
+        "ja": "敗北",
+        "ko": "Defeat",
+        "pl": "Porażka",
+        "pt-BR": "Derrotar",
+        "ru": "Поражение",
+        "tr": "Mağlubiyet",
+        "zh-CN": "失败",
+        "zh-TW": "失敗"
+      },
+      "missingLocales": []
+    },
+    "Damage": {
+      "messageId": "54125",
+      "translations": {
+        "de": "Schaden",
+        "es-419": "Daño",
+        "fr": "Dégâts",
+        "ja": "ダメージ",
+        "ko": "Damage",
+        "pl": "Obrażenia",
+        "pt-BR": "Dano",
+        "ru": "Урон",
+        "tr": "Hasar",
+        "zh-CN": "伤害输出",
+        "zh-TW": "傷害輸出"
+      },
+      "missingLocales": []
+    },
+    "Healing": {
+      "messageId": "155201",
+      "translations": {
+        "de": "Heilung",
+        "es-419": "Curación",
+        "fr": "PV rendus",
+        "ja": "回復中",
+        "ko": "Healing",
+        "pl": "Leczenie",
+        "pt-BR": "Vida curada",
+        "ru": "Исцеление",
+        "tr": "İyileşme",
+        "zh-CN": "治疗量",
+        "zh-TW": "治療量"
+      },
+      "missingLocales": []
+    },
+    "Elimination": {
+      "messageId": "1000165637",
+      "translations": {
+        "de": "Eliminierung",
+        "es-419": "Eliminaciones",
+        "fr": "Élimination",
+        "ja": "エリミネーション",
+        "ko": "Elimination",
+        "pl": "Eliminacja",
+        "pt-BR": "Eliminações",
+        "ru": "Устранение",
+        "tr": "Saf Dışı Bırakma",
+        "zh-CN": "Elimination",
+        "zh-TW": "Elimination"
+      },
+      "missingLocales": []
+    },
+    "Eliminations": {
+      "messageId": "163301",
+      "translations": {
+        "de": "Eliminierungen",
+        "es-419": "Eliminaciones",
+        "fr": "K.O.",
+        "ja": "エリミネーション",
+        "ko": "Eliminations",
+        "pl": "Eliminacje",
+        "pt-BR": "Eliminações",
+        "ru": "Устранения",
+        "tr": "Saf Dışı Bırakmalar",
+        "zh-CN": "击败",
+        "zh-TW": "擊敗"
+      },
+      "missingLocales": []
+    },
+    "Kills": {
+      "messageId": "161877",
+      "translations": {
+        "de": "Kills",
+        "es-419": "Muertes",
+        "fr": "Exécutions",
+        "ja": "キル",
+        "ko": "Kills",
+        "pl": "Zabójstwa",
+        "pt-BR": "Eliminações",
+        "ru": "Убийства",
+        "tr": "Katletmeler",
+        "zh-CN": "击败",
+        "zh-TW": "擊敗"
+      },
+      "missingLocales": []
+    },
+    "Death": {
+      "messageId": "122072",
+      "translations": {
+        "de": "Tod",
+        "es-419": "Muerte",
+        "fr": "Mort",
+        "ja": "デス",
+        "ko": "Death",
+        "pl": "Śmierć",
+        "pt-BR": "Morte",
+        "ru": "Смерть",
+        "tr": "Ölüm",
+        "zh-CN": "死亡",
+        "zh-TW": "死亡"
+      },
+      "missingLocales": []
+    },
+    "Deaths": {
+      "messageId": "161878",
+      "translations": {
+        "de": "Tode",
+        "es-419": "Muertes",
+        "fr": "Morts",
+        "ja": "デス",
+        "ko": "Deaths",
+        "pl": "Zgony",
+        "pt-BR": "Mortes",
+        "ru": "Смерти",
+        "tr": "Ölümler",
+        "zh-CN": "死亡",
+        "zh-TW": "死亡"
+      },
+      "missingLocales": []
+    },
+    "Assists": {
+      "messageId": "113350",
+      "translations": {
+        "de": "Unterstützungen",
+        "es-419": "Asistencias",
+        "fr": "Assistances",
+        "ja": "アシスト",
+        "ko": "Assists",
+        "pl": "Asysty",
+        "pt-BR": "Assistências",
+        "ru": "Помощь",
+        "tr": "Asistler",
+        "zh-CN": "助攻",
+        "zh-TW": "助攻"
+      },
+      "missingLocales": []
+    },
+    "Cooldown": {
+      "messageId": "54706",
+      "translations": {
+        "de": "Abklingz.",
+        "es-419": "Recarga",
+        "fr": "Tps recharge",
+        "ja": "クールダウン",
+        "ko": "Cooldown",
+        "pl": "Czas odnowienia",
+        "pt-BR": "Intervalo",
+        "ru": "Восстановление",
+        "tr": "Bekleme Süresi",
+        "zh-CN": "冷却",
+        "zh-TW": "冷卻"
+      },
+      "missingLocales": []
+    },
+    "Ultimate": {
+      "messageId": "59495",
+      "translations": {
+        "de": "Überkraft",
+        "es-419": "Habilidad definitiva",
+        "fr": "Ultime",
+        "ja": "アルティメット",
+        "ko": "Ultimate",
+        "pl": "Arcyzdolność",
+        "pt-BR": "Suprema",
+        "ru": "Суперудар",
+        "tr": "Ulti",
+        "zh-CN": "终极技能",
+        "zh-TW": "終極技能"
+      },
+      "missingLocales": []
+    },
+    "Flank": {
+      "messageId": "172735",
+      "translations": {
+        "de": "Flanke",
+        "es-419": "Flanco",
+        "fr": "Flanc",
+        "ja": "フランク",
+        "ko": "Flank",
+        "pl": "Skrzydłowy",
+        "pt-BR": "Flanco",
+        "ru": "Фланг",
+        "tr": "Vurkaççı",
+        "zh-CN": "突进",
+        "zh-TW": "突進"
+      },
+      "missingLocales": []
+    },
+    "Front Line": {
+      "messageId": "172734",
+      "translations": {
+        "de": "Tank",
+        "es-419": "Tanque",
+        "fr": "Tank",
+        "ja": "フロントライン",
+        "ko": "Front Line",
+        "pl": "Obrońca",
+        "pt-BR": "Tanque",
+        "ru": "Танк",
+        "tr": "Tank",
+        "zh-CN": "坦克",
+        "zh-TW": "坦克"
+      },
+      "missingLocales": []
+    },
+    "Support": {
+      "messageId": "172736",
+      "translations": {
+        "de": "Unterstützung",
+        "es-419": "Apoyo",
+        "fr": "Soutien",
+        "ja": "サポート",
+        "ko": "Support",
+        "pl": "Wsparcie",
+        "pt-BR": "Suporte",
+        "ru": "Поддержка",
+        "tr": "Destek",
+        "zh-CN": "辅助",
+        "zh-TW": "輔助"
+      },
+      "missingLocales": []
+    },
+    "Player": {
+      "messageId": "155177",
+      "translations": {
+        "de": "Spieler",
+        "es-419": "Jugador",
+        "fr": "Joueur",
+        "ja": "プレイヤー",
+        "ko": "Player",
+        "pl": "Gracz",
+        "pt-BR": "Jogador",
+        "ru": "Игрок",
+        "tr": "Oyuncu",
+        "zh-CN": "玩家",
+        "zh-TW": "玩家"
+      },
+      "missingLocales": []
+    },
+    "Players": {
+      "messageId": "155087",
+      "translations": {
+        "de": "Spieler",
+        "es-419": "Jugadores",
+        "fr": "Joueurs",
+        "ja": "プレイヤー",
+        "ko": "Players",
+        "pl": "Gracze",
+        "pt-BR": "Jogadores",
+        "ru": "Игроки",
+        "tr": "Oyuncular",
+        "zh-CN": "玩家",
+        "zh-TW": "玩家"
+      },
+      "missingLocales": []
+    },
+    "Profile": {
+      "messageId": "155221",
+      "translations": {
+        "de": "Profil",
+        "es-419": "Perfil",
+        "fr": "Profil",
+        "ja": "プロフィール",
+        "ko": "Profile",
+        "pl": "Profil",
+        "pt-BR": "Perfil",
+        "ru": "Профиль",
+        "tr": "Profil",
+        "zh-CN": "玩家档案",
+        "zh-TW": "玩家檔案"
+      },
+      "missingLocales": []
+    },
+    "Settings": {
+      "messageId": "155210",
+      "translations": {
+        "de": "Einstellungen",
+        "es-419": "Ajustes",
+        "fr": "Paramètres",
+        "ja": "設定",
+        "ko": "Settings",
+        "pl": "Ustawienia",
+        "pt-BR": "Configurações",
+        "ru": "Настройки",
+        "tr": "Ayarlar",
+        "zh-CN": "设置",
+        "zh-TW": "設置"
+      },
+      "missingLocales": []
+    },
+    "Store": {
+      "messageId": "162278",
+      "translations": {
+        "de": "Shop",
+        "es-419": "Tienda",
+        "fr": "Boutique",
+        "ja": "ストア",
+        "ko": "Store",
+        "pl": "Sklep",
+        "pt-BR": "Loja",
+        "ru": "Магазин",
+        "tr": "Mağaza",
+        "zh-CN": "商店",
+        "zh-TW": "商店"
+      },
+      "missingLocales": []
+    }
+  }
+}

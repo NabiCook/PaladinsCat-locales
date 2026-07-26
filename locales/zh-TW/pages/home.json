@@ -1,0 +1,22 @@
+{
+  "home.brandAccent": "貓",
+  "home.brandLead": "聖騎士",
+  "home.dismiss": "解僱",
+  "home.exploreBotEyebrow": "《聖騎士》不和諧之貓",
+  "home.exploreBotTitle": "將答案帶入 Discord",
+  "home.exploreMetaEyebrow": "英雄 排位賽 統計",
+  "home.exploreMetaTitle": "比較 英雄 排位賽 效能",
+  "home.explorePlayersEyebrow": "玩家 集線器",
+  "home.explorePlayersTitle": "找到任何 玩家 並追蹤他們的記錄",
+  "home.exploreTitleLead": "一個平台。",
+  "home.exploreTitleRest": "領域的每個角度。",
+  "home.latestChanges": "最新變化",
+  "home.logoAlt": "聖騎士貓標誌",
+  "home.noChangelogEntries": "尚無變更日誌條目",
+  "home.noNotifications": "無通知",
+  "home.tagline": "Paladins：Comp Analytics Tool——高級統計，或只是喵。",
+  "home.viewAllChanges": "查看所有更改",
+  "search.clear": "清除搜尋",
+  "search.homeInputLabel": "搜尋 玩家、比賽、冠軍、裝備、卡牌、人才",
+  "search.submit": "搜尋"
+}

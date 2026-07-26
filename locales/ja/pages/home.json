@@ -1,0 +1,22 @@
+{
+  "home.brandAccent": "猫",
+  "home.brandLead": "パラディン",
+  "home.dismiss": "解雇する",
+  "home.exploreBotEyebrow": "Discord用PaladinsCat",
+  "home.exploreBotTitle": "答えを Discord に持ち込む",
+  "home.exploreMetaEyebrow": "チャンピオン ランク戦 統計",
+  "home.exploreMetaTitle": "チャンピオン ランク戦 のパフォーマンスを比較する",
+  "home.explorePlayersEyebrow": "プレイヤー ハブ",
+  "home.explorePlayersTitle": "プレイヤー を見つけてその記録をたどります",
+  "home.exploreTitleLead": "プラットフォームは 1 つ。",
+  "home.exploreTitleRest": "レルムのあらゆる角度。",
+  "home.latestChanges": "最新の変更点",
+  "home.logoAlt": "パラディン猫のロゴ",
+  "home.noChangelogEntries": "まだ変更ログエントリがありません",
+  "home.noNotifications": "通知はありません",
+  "home.tagline": "Paladins: Comp Analytics Tool — 高度な統計、または単にニャー。",
+  "home.viewAllChanges": "すべての変更を表示",
+  "search.clear": "検索をクリア",
+  "search.homeInputLabel": "プレイヤー、試合、チャンピオン、アイテム、カード、タレントを検索",
+  "search.submit": "検索"
+}

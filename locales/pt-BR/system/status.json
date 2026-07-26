@@ -1,0 +1,20 @@
+{
+  "status.affectedHours": "{count} horas afetadas",
+  "status.apiDegraded": "API Hi-Rez degradada",
+  "status.apiOutage": "Interrupção da API Hi-Rez",
+  "status.heldMatches": "{count} realizou partidas",
+  "status.live": "Ao vivo",
+  "status.nextProbe": "Próxima sondagem {time}",
+  "status.probeDue": "Sonda vencida",
+  "status.requestsPaused": "Novas solicitações de dados pausadas",
+  "status.updateDraining": "Atualização começando",
+  "status.updateDrainingMessage": "Concluir solicitações ativas antes que o serviço mude de versão.",
+  "status.updateFailed": "Atualização atrasada",
+  "status.updateFailedMessage": "O serviço atual foi retomado enquanto a atualização é revisada.",
+  "status.updateQueued": "Atualização na fila",
+  "status.updateQueuedMessage": "Uma atualização do PaladinsCat está pronta e começará em breve.",
+  "status.updateSwitching": "Aplicando atualização",
+  "status.updateSwitchingMessage": "A nova versão do PaladinsCat está sendo carregada.",
+  "status.updateWarming": "Atualização quase pronta",
+  "status.updateWarmingMessage": "O novo serviço está online e concluindo verificações de prontidão."
+}

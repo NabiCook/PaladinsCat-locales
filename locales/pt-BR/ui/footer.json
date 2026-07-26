@@ -1,0 +1,12 @@
+{
+  "footer.allRightsReserved": "Todos os direitos reservados.",
+  "footer.branch": "Filial: {branch}",
+  "footer.commit": "Confirmar: {commit}",
+  "footer.dataProvidedBy": "Dados fornecidos por © Hi-Rez Studios,",
+  "footer.databaseSchema": "Esquema do banco de dados: {version}",
+  "footer.deployed": "Implantado: {date}",
+  "footer.dirtyWorktree": "Árvore de trabalho suja na implantação",
+  "footer.joinDiscord": "Junte-se à discórdia",
+  "footer.privacyPolicy": "Política de Privacidade",
+  "footer.termsOfUse": "Termos de Uso"
+}

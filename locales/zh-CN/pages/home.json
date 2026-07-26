@@ -1,0 +1,22 @@
+{
+  "home.brandAccent": "猫",
+  "home.brandLead": "圣骑士",
+  "home.dismiss": "解雇",
+  "home.exploreBotEyebrow": "《圣骑士》不和谐之猫",
+  "home.exploreBotTitle": "将答案带入 Discord",
+  "home.exploreMetaEyebrow": "英雄 排位赛 统计",
+  "home.exploreMetaTitle": "比较 英雄 排位赛 性能",
+  "home.explorePlayersEyebrow": "玩家 集线器",
+  "home.explorePlayersTitle": "找到任何 玩家 并跟踪他们的记录",
+  "home.exploreTitleLead": "一个平台。",
+  "home.exploreTitleRest": "领域的每个角度。",
+  "home.latestChanges": "最新变化",
+  "home.logoAlt": "圣骑士猫标志",
+  "home.noChangelogEntries": "尚无变更日志条目",
+  "home.noNotifications": "无通知",
+  "home.tagline": "Paladins：Comp Analytics Tool——高级统计，或者只是喵。",
+  "home.viewAllChanges": "查看所有更改",
+  "search.clear": "清除搜索",
+  "search.homeInputLabel": "搜索 玩家、比赛、冠军、装备、卡牌、人才",
+  "search.submit": "搜索"
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "description": "Native game-client strings exported by stable message_id.",
+  "sources": [
+    {
+      "locale": "en",
+      "gameCode": "INT",
+      "source": "INT/Lang_INT.dat",
+      "sourceFormat": "dat",
+      "sha256": "f28e0b65e1c9fe1eb3f6069183bbebaafbb481938467cbe55c9c943ec4d321c8",
+      "sourceRecords": 112865,
+      "exportedRecords": 112479,
+      "skippedBlankValues": 386
+    },
+    {
+      "locale": "de",
+      "gameCode": "DEU",
+      "source": "DEU/Lang_DEU.dat",
+      "sourceFormat": "dat",
+      "sha256": "eb6807ca2d7d66337d65367496595e064a85c2b9259ca4b35031140546f9db96",
+      "sourceRecords": 53844,
+      "exportedRecords": 53377,
+      "skippedBlankValues": 467
+    },
+    {
+      "locale": "es-419",
+      "gameCode": "ESL",
+      "source": "ESL/Lang_ESL.dat",
+      "sourceFormat": "dat",
+      "sha256": "71d4915e92cf4bc429f5cc3db00d72aed818f5ddee38a3eedf4ab2f442213aee",
+      "sourceRecords": 53622,
+      "exportedRecords": 53172,
+      "skippedBlankValues": 450
+    },
+    {
+      "locale": "fr",
+      "gameCode": "FRA",
+      "source": "FRA/Lang_FRA.dat",
+      "sourceFormat": "dat",
+      "sha256": "8058dc30647f95251fe69ab08f071e952dbbbf3ca5972746bdfb4321a28a6c16",
+      "sourceRecords": 53770,
+      "exportedRecords": 53348,
+      "skippedBlankValues": 422
+    },
+    {
+      "locale": "ja",
+      "gameCode": "JPN",
+      "source": "JPN/Lang_JPN.dat",
+      "sourceFormat": "dat",
+      "sha256": "f6a16efea41c1c21aecd8ebce6fe3b58b0c48d542a42b76c30c1a1493edf5acd",
+      "sourceRecords": 50040,
+      "exportedRecords": 39873,
+      "skippedBlankValues": 10167
+    },
+    {
+      "locale": "ko",
+      "gameCode": "KOR",
+      "source": "KOR/Lang_KOR.csv",
+      "sourceFormat": "csv",
+      "sha256": "2ac53bc4dd68b4e9aaf1af51274aaf07adbf474adacbb3523c25060b9f693bcb",
+      "sourceRecords": 112865,
+      "exportedRecords": 112479,
+      "skippedBlankValues": 386
+    },
+    {
+      "locale": "pl",
+      "gameCode": "POL",
+      "source": "POL/Lang_POL.dat",
+      "sourceFormat": "dat",
+      "sha256": "7898bf377b54f57e3a129ad28d43baaaad740d47be309460505214bcf7865cc2",
+      "sourceRecords": 53494,
+      "exportedRecords": 53041,
+      "skippedBlankValues": 453
+    },
+    {
+      "locale": "pt-BR",
+      "gameCode": "POR",
+      "source": "POR/Lang_POR.dat",
+      "sourceFormat": "dat",
+      "sha256": "60343bb7a691d2bd68f32ce8ac18f161cc11b32d96d202d7b1c7dcd0e6b868bb",
+      "sourceRecords": 54893,
+      "exportedRecords": 54299,
+      "skippedBlankValues": 594
+    },
+    {
+      "locale": "ru",
+      "gameCode": "RUS",
+      "source": "RUS/Lang_RUS.dat",
+      "sourceFormat": "dat",
+      "sha256": "1910087fd3bf24362dfc017aa42e59e2815a5f9095bcf29e6fd5b3b375374004",
+      "sourceRecords": 55667,
+      "exportedRecords": 53156,
+      "skippedBlankValues": 2511
+    },
+    {
+      "locale": "tr",
+      "gameCode": "TUR",
+      "source": "TUR/Lang_TUR.dat",
+      "sourceFormat": "dat",
+      "sha256": "787ecf5526ff23f62bbd770855d62f198fd7d9348b983d896db6b85e13f81bbf",
+      "sourceRecords": 53104,
+      "exportedRecords": 52644,
+      "skippedBlankValues": 460
+    },
+    {
+      "locale": "zh-CN",
+      "gameCode": "CHN",
+      "source": "CHN/Lang_CHN.dat",
+      "sourceFormat": "dat",
+      "sha256": "b247cd1aab9bdd4353540d62b6743560271e187275979bc3df9a4a2040ac08bc",
+      "sourceRecords": 35956,
+      "exportedRecords": 33976,
+      "skippedBlankValues": 1980
+    },
+    {
+      "locale": "zh-TW",
+      "gameCode": "CHT",
+      "source": "CHT/Lang_CHT.dat",
+      "sourceFormat": "dat",
+      "sha256": "87e80733cfc0a5ce4c891432cb8fa9f0f143f2bc67d929fdac87ef86efc83d27",
+      "sourceRecords": 25040,
+      "exportedRecords": 23659,
+      "skippedBlankValues": 1381
+    }
+  ]
+}
