@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "matching": "exact English value + unique message_id",
+  "locales": {
+    "de": {
+      "game/champions": {
+        "uniqueNativeMatches": 171,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 171
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "es-419": {
+      "game/champions": {
+        "uniqueNativeMatches": 171,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 171
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "fr": {
+      "game/champions": {
+        "uniqueNativeMatches": 171,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 171
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "ja": {
+      "game/champions": {
+        "uniqueNativeMatches": 171,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 171
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "ko": {
+      "game/champions": {
+        "uniqueNativeMatches": 172,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 172
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "pl": {
+      "game/champions": {
+        "uniqueNativeMatches": 171,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 171
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "pt-BR": {
+      "game/champions": {
+        "uniqueNativeMatches": 171,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 171
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "ru": {
+      "game/champions": {
+        "uniqueNativeMatches": 171,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 171
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "tr": {
+      "game/champions": {
+        "uniqueNativeMatches": 171,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 171
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "zh-CN": {
+      "game/champions": {
+        "uniqueNativeMatches": 7,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 7
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    },
+    "zh-TW": {
+      "game/champions": {
+        "uniqueNativeMatches": 7,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 7
+      },
+      "game/talents": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "uniqueNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "uniqueNativeMatches": 1,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 1
+      }
+    }
+  }
+}

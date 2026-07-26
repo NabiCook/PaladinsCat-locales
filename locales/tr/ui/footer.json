@@ -1,0 +1,12 @@
+{
+  "footer.allRightsReserved": "Tüm hakları saklıdır.",
+  "footer.branch": "Şube: {branch}",
+  "footer.commit": "Taahhüt: {commit}",
+  "footer.dataProvidedBy": "Veriler © Hi-Rez Studios tarafından sağlanmıştır,",
+  "footer.databaseSchema": "Veritabanı şeması: {version}",
+  "footer.deployed": "Dağıtıldı: {date}",
+  "footer.dirtyWorktree": "Dağıtım sırasında kirli çalışma ağacı",
+  "footer.joinDiscord": "Discord'a Katılın",
+  "footer.privacyPolicy": "Gizlilik Politikası",
+  "footer.termsOfUse": "Kullanım Koşulları"
+}

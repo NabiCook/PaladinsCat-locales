@@ -1,0 +1,20 @@
+{
+  "status.affectedHours": "{count} 受影響的時間",
+  "status.apiDegraded": "Hi-Rez API 降級",
+  "status.apiOutage": "Hi-Rez API 中斷",
+  "status.heldMatches": "{count}舉行比賽",
+  "status.live": "直播",
+  "status.nextProbe": "下一個探針 {time}",
+  "status.probeDue": "調查到期",
+  "status.requestsPaused": "新資料請求已暫停",
+  "status.updateDraining": "更新開始",
+  "status.updateDrainingMessage": "在服務切換版本之前完成活動請求。",
+  "status.updateFailed": "更新延遲",
+  "status.updateFailedMessage": "目前服務已恢復，同時審核更新。",
+  "status.updateQueued": "更新已排隊",
+  "status.updateQueuedMessage": "PaladinsCat 更新已準備就緒並將很快開始。",
+  "status.updateSwitching": "正在應用更新",
+  "status.updateSwitchingMessage": "新的 PaladinsCat 版本正在加載。",
+  "status.updateWarming": "更新即將準備就緒",
+  "status.updateWarmingMessage": "新服務已上線並完成準備檢查。"
+}

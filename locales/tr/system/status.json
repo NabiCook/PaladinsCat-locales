@@ -1,0 +1,20 @@
+{
+  "status.affectedHours": "{count} etkilenen saatler",
+  "status.apiDegraded": "Hi-Rez API'si bozuldu",
+  "status.apiOutage": "Hi-Rez API kesintisi",
+  "status.heldMatches": "{count} düzenlenen maçlar",
+  "status.live": "Canlı",
+  "status.nextProbe": "Sonraki prob {time}",
+  "status.probeDue": "Sondanın zamanı geldi",
+  "status.requestsPaused": "Yeni veri istekleri duraklatıldı",
+  "status.updateDraining": "Güncelleme başlıyor",
+  "status.updateDrainingMessage": "Hizmetin sürümleri değiştirmeden önce etkin isteklerin tamamlanması.",
+  "status.updateFailed": "Güncelleme gecikti",
+  "status.updateFailedMessage": "Güncelleme incelenirken mevcut hizmet devam ettirildi.",
+  "status.updateQueued": "Güncelleme sıraya alındı",
+  "status.updateQueuedMessage": "PaladinsCat güncellemesi hazır ve kısa süre içinde başlayacak.",
+  "status.updateSwitching": "Güncelleme uygulanıyor",
+  "status.updateSwitchingMessage": "Yeni PaladinsCat sürümü yükleniyor.",
+  "status.updateWarming": "Güncelleme neredeyse hazır",
+  "status.updateWarmingMessage": "Yeni hizmet çevrimiçi durumda ve hazırlık kontrollerini tamamlıyor."
+}

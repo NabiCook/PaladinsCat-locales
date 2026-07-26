@@ -1,0 +1,20 @@
+{
+  "status.affectedHours": "{count} betroffene Stunden",
+  "status.apiDegraded": "Hi-Rez-API beeinträchtigt",
+  "status.apiOutage": "Ausfall der Hi-Rez-API",
+  "status.heldMatches": "{count} hielt Spiele ab",
+  "status.live": "Lebe",
+  "status.nextProbe": "Nächste Sonde {time}",
+  "status.probeDue": "Sonde fällig",
+  "status.requestsPaused": "Neue Datenanfragen wurden pausiert",
+  "status.updateDraining": "Update startet",
+  "status.updateDrainingMessage": "Beenden aktiver Anfragen, bevor der Dienst die Version wechselt.",
+  "status.updateFailed": "Update verzögert",
+  "status.updateFailedMessage": "Der aktuelle Dienst wurde wieder aufgenommen, während das Update überprüft wird.",
+  "status.updateQueued": "Update in der Warteschlange",
+  "status.updateQueuedMessage": "Ein PaladinsCat-Update ist fertig und wird in Kürze beginnen.",
+  "status.updateSwitching": "Update anwenden",
+  "status.updateSwitchingMessage": "Die neue PaladinsCat-Version wird geladen.",
+  "status.updateWarming": "Update fast fertig",
+  "status.updateWarmingMessage": "Der neue Dienst ist online und führt Bereitschaftsprüfungen durch."
+}

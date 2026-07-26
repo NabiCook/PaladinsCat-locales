@@ -1,0 +1,12 @@
+{
+  "footer.allRightsReserved": "保留所有权利。",
+  "footer.branch": "分支：{branch}",
+  "footer.commit": "提交：{commit}",
+  "footer.dataProvidedBy": "数据由 © Hi-Rez Studios 提供，",
+  "footer.databaseSchema": "数据库架构：{version}",
+  "footer.deployed": "部署：{date}",
+  "footer.dirtyWorktree": "部署时的脏工作树",
+  "footer.joinDiscord": "加入不和谐",
+  "footer.privacyPolicy": "隐私政策",
+  "footer.termsOfUse": "使用条款"
+}

@@ -1,0 +1,20 @@
+{
+  "status.affectedHours": "{count} 影響を受ける時間帯",
+  "status.apiDegraded": "Hi-Rez API の劣化",
+  "status.apiOutage": "Hi-Rez API の停止",
+  "status.heldMatches": "{count} が試合を開催しました",
+  "status.live": "ライブ",
+  "status.nextProbe": "次のプローブ {time}",
+  "status.probeDue": "調査期限",
+  "status.requestsPaused": "新しいデータリクエストが一時停止されました",
+  "status.updateDraining": "アップデート開始",
+  "status.updateDrainingMessage": "サービスがバージョンを切り替える前にアクティブなリクエストを終了します。",
+  "status.updateFailed": "更新が遅れました",
+  "status.updateFailedMessage": "アップデートの検討中のため、現在のサービスは再開されました。",
+  "status.updateQueued": "更新が待機中",
+  "status.updateQueuedMessage": "PaladinsCat のアップデートの準備が整い、間もなく開始されます。",
+  "status.updateSwitching": "アップデートを適用しています",
+  "status.updateSwitchingMessage": "新しい PaladinsCat バージョンがロードされています。",
+  "status.updateWarming": "アップデートはほぼ準備完了",
+  "status.updateWarmingMessage": "新しいサービスはオンラインであり、準備状況チェックが完了しています。"
+}

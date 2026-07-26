@@ -1,0 +1,22 @@
+{
+  "home.brandAccent": "Chat",
+  "home.brandLead": "Paladins",
+  "home.dismiss": "Rejeter",
+  "home.exploreBotEyebrow": "PaladinsCat pour Discord",
+  "home.exploreBotTitle": "Apportez les réponses dans Discord",
+  "home.exploreMetaEyebrow": "Champion Classé Statistiques",
+  "home.exploreMetaTitle": "Comparez les performances de Champion Classé",
+  "home.explorePlayersEyebrow": "Centre Joueur",
+  "home.explorePlayersTitle": "Trouvez n'importe quel Joueur et suivez leur dossier",
+  "home.exploreTitleLead": "Une seule plateforme.",
+  "home.exploreTitleRest": "Tous les angles du Royaume.",
+  "home.latestChanges": "Derniers changements",
+  "home.logoAlt": "Logo PaladinsCat",
+  "home.noChangelogEntries": "Aucune entrée du journal des modifications pour l'instant",
+  "home.noNotifications": "Aucune notification",
+  "home.tagline": "Paladins : Comp Analytics Tool – statistiques avancées, ou simplement miaou.",
+  "home.viewAllChanges": "Afficher toutes les modifications",
+  "search.clear": "Effacer la recherche",
+  "search.homeInputLabel": "Rechercher Joueurs, matchs, champions, Objets, Cartes, talents",
+  "search.submit": "Rechercher"
+}

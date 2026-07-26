@@ -1,0 +1,22 @@
+{
+  "home.brandAccent": "Katze",
+  "home.brandLead": "Paladine",
+  "home.dismiss": "Entlassen",
+  "home.exploreBotEyebrow": "PaladinsCat für Discord",
+  "home.exploreBotTitle": "Bringen Sie die Antworten in Discord",
+  "home.exploreMetaEyebrow": "Champion Rangliste Statistiken",
+  "home.exploreMetaTitle": "Vergleichen Sie die Leistung von Champion Rangliste",
+  "home.explorePlayersEyebrow": "Spieler-Hub",
+  "home.explorePlayersTitle": "Suchen Sie alle Spieler und folgen Sie deren Aufzeichnung",
+  "home.exploreTitleLead": "Eine Plattform.",
+  "home.exploreTitleRest": "Jeder Winkel des Reiches.",
+  "home.latestChanges": "Neueste Änderungen",
+  "home.logoAlt": "PaladinsCat-Logo",
+  "home.noChangelogEntries": "Noch keine Changelog-Einträge",
+  "home.noNotifications": "Keine Benachrichtigungen",
+  "home.tagline": "Paladins: Comp Analytics Tool – erweiterte Statistik, oder einfach nur miauen.",
+  "home.viewAllChanges": "Alle Änderungen anzeigen",
+  "search.clear": "Suche löschen",
+  "search.homeInputLabel": "Suchen Sie nach Spieler, Spielen, Champions, Gegenstände, Karten, Talenten",
+  "search.submit": "Suchen"
+}
