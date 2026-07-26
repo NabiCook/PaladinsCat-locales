@@ -196,11 +196,15 @@ def main() -> int:
     invalid = set(requested) - set(TARGET_LOCALES)
     if invalid:
         raise SystemExit(f"Unsupported locale(s): {', '.join(sorted(invalid))}")
-    manifest: dict[str, object] = {
-        "schemaVersion": 1,
-        "matching": "unique exact, normalized card format, or conservative talent/card semantic match",
-        "locales": {},
-    }
+    manifest_path = game_client_root / "frontend-game-match-manifest.json"
+    manifest: dict[str, object] = (
+        json.loads(manifest_path.read_text(encoding="utf-8"))
+        if manifest_path.is_file()
+        else {}
+    )
+    manifest["schemaVersion"] = 1
+    manifest["matching"] = "unique exact, normalized card format, or conservative talent/card semantic match"
+    manifest.setdefault("locales", {})
 
     for locale in requested:
         _, target_values_by_id = read_catalog(game_client_root / f"{locale}.csv")
@@ -276,7 +280,7 @@ def main() -> int:
             print(f"{locale} {module}: {added} added, {refreshed} refreshed, {skipped_existing} preserved")
         manifest["locales"][locale] = locale_stats
 
-    atomic_write_json(game_client_root / "frontend-game-match-manifest.json", manifest)
+    atomic_write_json(manifest_path, manifest)
     return 0
 
 

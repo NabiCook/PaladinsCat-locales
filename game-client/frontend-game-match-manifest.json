@@ -381,6 +381,44 @@
         "refreshed": 0,
         "preservedExisting": 0
       }
+    },
+    "ko": {
+      "game/champions": {
+        "exactNativeMatches": 172,
+        "normalizedNativeMatches": 814,
+        "semanticNativeMatches": 117,
+        "titleAdjacentNativeMatches": 155,
+        "added": 0,
+        "refreshed": 1258,
+        "preservedExisting": 0
+      },
+      "game/talents": {
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/items": {
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
+        "added": 0,
+        "refreshed": 0,
+        "preservedExisting": 0
+      },
+      "game/maps": {
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
+        "added": 0,
+        "refreshed": 1,
+        "preservedExisting": 0
+      }
     }
   }
 }
