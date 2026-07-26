@@ -31,6 +31,7 @@ scripts/*.sh
 !scripts/import-frontend-game-locales.py
 !scripts/build-game-term-glossary.py
 !scripts/translate-frontend-general-copy.py
+!scripts/normalize-branding.py
 
 # Generated KO pages (ad-hoc, re-generated from source)
 locales/ko/pages/diminishing-returns.json

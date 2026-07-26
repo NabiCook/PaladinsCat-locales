@@ -20,7 +20,7 @@ from pathlib import Path
 TARGET_LOCALES = ("de", "es-419", "fr", "ja", "pl", "pt-BR", "ru", "tr", "zh-CN", "zh-TW")
 LOCALE_TO_GOOGLE = {"es-419": "es", "pt-BR": "pt", "zh-CN": "zh-CN", "zh-TW": "zh-TW"}
 PLACEHOLDER_PATTERN = re.compile(r"@@[A-Za-z0-9_]+@@|\{[A-Za-z0-9_]+\}|%(?:\d+\$)?[sdif]")
-TOKEN_PATTERN = re.compile(r"xq(?:ph|term|abbr|nl)\d*x", re.IGNORECASE)
+TOKEN_PATTERN = re.compile(r"xq(?:ph|term|abbr|brand|nl)\d*x", re.IGNORECASE)
 MAX_BATCH_CHARACTERS = 3_500
 # These are the site's game-stat abbreviations, not prose to be translated.
 # Protect them before sending a sentence to a machine translator: otherwise PR
@@ -33,6 +33,11 @@ PROTECTED_METRIC_TOKENS = (
 METRIC_PATTERN = re.compile(
     r"(?<![A-Za-z0-9])(" + "|".join(re.escape(token) for token in PROTECTED_METRIC_TOKENS) + r")(?![A-Za-z0-9])",
 )
+BRAND_PATTERN = re.compile(r"PaladinsCat", re.IGNORECASE)
+BRAND_KEY_OVERRIDES = {
+    "home.brandLead": "Paladins",
+    "home.brandAccent": "Cat",
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -113,6 +118,15 @@ def protector(glossary: dict[str, object], locale: str):
 
         protected = METRIC_PATTERN.sub(metric, protected)
 
+        def brand(match: re.Match[str]) -> str:
+            nonlocal counter
+            token = f"xqbrand{counter}x"
+            counter += 1
+            tokens[token] = "PaladinsCat"
+            return token
+
+        protected = BRAND_PATTERN.sub(brand, protected)
+
         # Normalize dictionary lookup while retaining case-insensitive matching.
         normalized = {term.casefold(): translated for term, translated in translations.items()}
         def normalized_game_term(match: re.Match[str]) -> str:
@@ -187,6 +201,10 @@ def main() -> int:
                 ((key, value) for key, value in source.items() if METRIC_PATTERN.search(value))
                 if options.metrics_only
                 else source.items()
+            )
+            source_items = (
+                (key, BRAND_KEY_OVERRIDES.get(key, value))
+                for key, value in source_items
             )
             prepared: list[tuple[str, str, dict[str, str]]] = [
                 (key, *protect(value)) for key, value in source_items
