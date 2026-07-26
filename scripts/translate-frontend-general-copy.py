@@ -20,8 +20,19 @@ from pathlib import Path
 TARGET_LOCALES = ("de", "es-419", "fr", "ja", "pl", "pt-BR", "ru", "tr", "zh-CN", "zh-TW")
 LOCALE_TO_GOOGLE = {"es-419": "es", "pt-BR": "pt", "zh-CN": "zh-CN", "zh-TW": "zh-TW"}
 PLACEHOLDER_PATTERN = re.compile(r"@@[A-Za-z0-9_]+@@|\{[A-Za-z0-9_]+\}|%(?:\d+\$)?[sdif]")
-TOKEN_PATTERN = re.compile(r"xq(?:ph|term|nl)\d*x", re.IGNORECASE)
+TOKEN_PATTERN = re.compile(r"xq(?:ph|term|abbr|nl)\d*x", re.IGNORECASE)
 MAX_BATCH_CHARACTERS = 3_500
+# These are the site's game-stat abbreviations, not prose to be translated.
+# Protect them before sending a sentence to a machine translator: otherwise PR
+# becomes public relations and DPM/HPM can be interpreted as unrelated fields.
+PROTECTED_METRIC_TOKENS = (
+    "AFK", "APM", "BR", "CD", "CPM", "DMG", "DPM", "eCPM", "EGPM", "ELO",
+    "HPM", "K/D/A", "KDA", "KBM", "MPM", "P10", "P25", "P75", "P90", "PR",
+    "SHPM", "SPM", "TP", "WPM", "WR", "XP",
+)
+METRIC_PATTERN = re.compile(
+    r"(?<![A-Za-z0-9])(" + "|".join(re.escape(token) for token in PROTECTED_METRIC_TOKENS) + r")(?![A-Za-z0-9])",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -30,6 +41,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--locales-root", type=Path, default=repository / "locales")
     parser.add_argument("--glossary", type=Path, default=repository / "game-client" / "term-glossary.json")
     parser.add_argument("--locales", default=",".join(TARGET_LOCALES), help="comma-separated BCP 47 tags")
+    parser.add_argument(
+        "--metrics-only",
+        action="store_true",
+        help="translate only values containing protected game-stat abbreviations",
+    )
     return parser.parse_args()
 
 
@@ -87,6 +103,15 @@ def protector(glossary: dict[str, object], locale: str):
             return token
 
         protected = PLACEHOLDER_PATTERN.sub(placeholder, value)
+
+        def metric(match: re.Match[str]) -> str:
+            nonlocal counter
+            token = f"xqabbr{counter}x"
+            counter += 1
+            tokens[token] = match.group(0)
+            return token
+
+        protected = METRIC_PATTERN.sub(metric, protected)
 
         # Normalize dictionary lookup while retaining case-insensitive matching.
         normalized = {term.casefold(): translated for term, translated in translations.items()}
@@ -158,8 +183,13 @@ def main() -> int:
         for module in general_modules:
             source_path = locales_root / "en" / f"{module}.json"
             source = json.loads(source_path.read_text(encoding="utf-8"))
+            source_items = (
+                ((key, value) for key, value in source.items() if METRIC_PATTERN.search(value))
+                if options.metrics_only
+                else source.items()
+            )
             prepared: list[tuple[str, str, dict[str, str]]] = [
-                (key, *protect(value)) for key, value in source.items()
+                (key, *protect(value)) for key, value in source_items
             ]
             translated_by_key: dict[str, str] = {}
             batch: list[tuple[str, str, dict[str, str]]] = []

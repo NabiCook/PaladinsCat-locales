@@ -9,7 +9,7 @@
   "common.activity.policy": "Politik",
   "common.activity.possibleDisconnect": "Möglicherweise Verbindungsabbruch",
   "common.activity.reviewOnly": "Nur Rezension",
-  "common.activity.reviewPolicy": "Aktivitätsklammern sind konservative Signale, kein Beweis. Spieler mit 70–119 eCPM werden zur Überprüfung angezeigt; Nur Werte unter 70, nahe oder unter der passiven Kreditgeschwindigkeit, werden automatisch gekennzeichnet.",
+  "common.activity.reviewPolicy": "Aktivitätsklammern sind konservative Signale, kein Beweis. Spieler bei 70–119 eCPM werden zur Überprüfung angezeigt; Nur Werte unter 70, nahe oder unter der passiven Kreditgeschwindigkeit, werden automatisch gekennzeichnet.",
   "common.changelog.automatedDeploy": "Automatisierte Bereitstellung",
   "common.changelog.changes": "Änderungen",
   "common.changelog.legacyVersion": "Legacy-Version",

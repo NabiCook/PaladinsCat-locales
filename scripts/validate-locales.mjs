@@ -7,11 +7,27 @@ const gameDirectory = fileURLToPath(new URL("../game-client/", import.meta.url))
 const localeName = /^(?:[a-z]{2,3})(?:-(?:[A-Z]{2}|\d{3}))?$/;
 const moduleName = /^[a-z][a-z0-9-]*(?:\/[a-z][a-z0-9-]*)*$/;
 const placeholderPattern = /@@[A-Za-z0-9_]+@@|\{[A-Za-z0-9_]+\}|%(?:\d+\$)?[sdif]/g;
+// Game-stat shorthand is shared across the site. Translating it turns PR into
+// public relations and DPM/HPM into unrelated units, so these must remain
+// literal in imported non-Korean locale files.
+const protectedMetricTokens = [
+  "AFK", "APM", "BR", "CD", "CPM", "DMG", "DPM", "eCPM", "EGPM", "ELO",
+  "HPM", "K/D/A", "KDA", "KBM", "MPM", "P10", "P25", "P75", "P90", "PR",
+  "SHPM", "SPM", "TP", "WPM", "WR", "XP",
+];
+const metricTokenPattern = new RegExp(
+  `(?<![A-Za-z0-9])(${protectedMetricTokens.map((token) => token.replace(/[\\^$.*+?()[\]{}|]/g, "\\$&")).join("|")})(?![A-Za-z0-9])`,
+  "g",
+);
 const modules = JSON.parse(await readFile(join(localesDirectory, "modules.json"), "utf8"));
 let hasErrors = false;
 
 function placeholders(value) {
   return [...value.matchAll(placeholderPattern)].map((match) => match[0]).sort();
+}
+
+function metricTokens(value) {
+  return [...new Set([...value.matchAll(metricTokenPattern)].map((match) => match[0]))];
 }
 
 function hasUnpairedSurrogate(value) {
@@ -136,6 +152,15 @@ for (const locale of languageDirectories) {
       if (locale !== "en" && JSON.stringify(placeholders(value)) !== JSON.stringify(placeholders(source))) {
         console.error(`${file}: ${JSON.stringify(key)} must preserve source placeholders exactly.`);
         hasErrors = true;
+      }
+      // Korean is intentionally maintained separately while its native review
+      // is pending. Every generated/imported locale must preserve game stats.
+      if (locale !== "en" && locale !== "ko" && !module.startsWith("game/")) {
+        const missingMetrics = metricTokens(source).filter((token) => !value.includes(token));
+        if (missingMetrics.length > 0) {
+          console.error(`${file}: ${JSON.stringify(key)} must preserve game-stat abbreviation(s) ${missingMetrics.join(", ")}.`);
+          hasErrors = true;
+        }
       }
     }
   }

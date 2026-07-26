@@ -1,6 +1,6 @@
 {
   "common.activity.automaticFlag": "自動フラグ",
-  "common.activity.candidates": "最近の eCPM 候補",
+  "common.activity.candidates": "最近の eCPM 候補者",
   "common.activity.candidatesDescription": "最近完了した ランク戦 プレイヤー の一致をアクティビティ ブラケットごとに検査します。数とパーセンテージは、維持されている ランク戦 ディストリビューションから取得されます。",
   "common.activity.candidatesLoadFailed": "候補をロードできませんでした。もう一度やり直してください。",
   "common.activity.classification": "分類",
@@ -9,7 +9,7 @@
   "common.activity.policy": "ポリシー",
   "common.activity.possibleDisconnect": "切断の可能性",
   "common.activity.reviewOnly": "レビューのみ",
-  "common.activity.reviewPolicy": "アクティビティブラケットは保守的なシグナルであり、証拠ではありません。レビューのために、70 ～ 119 eCPM の プレイヤー が示されています。 70 未満の値、つまりパッシブ信用ペースに近いかそれを下回る値のみに、自動的にフラグが立てられます。",
+  "common.activity.reviewPolicy": "アクティビティブラケットは保守的なシグナルであり、証拠ではありません。 70 ～ 119 eCPM の プレイヤー はレビューのために示されています。 70 未満の値、つまりパッシブ信用ペースに近いかそれを下回る値のみに、自動的にフラグが立てられます。",
   "common.changelog.automatedDeploy": "自動展開",
   "common.changelog.changes": "変更点",
   "common.changelog.legacyVersion": "レガシーバージョン",
@@ -75,7 +75,7 @@
   "common.metrics.health": "健康",
   "common.metrics.hpm": "HPM",
   "common.metrics.kda": "KDA",
-  "common.metrics.kdaRatio": "KDA比率",
+  "common.metrics.kdaRatio": "KDA 比率",
   "common.metrics.pickRate": "ピック率",
   "common.metrics.playerElo": "プレイヤー エロ",
   "common.metrics.range": "範囲",
@@ -180,6 +180,6 @@
   "common.tiers.tierNumber": "層 {number}",
   "performance.mean": "平均",
   "performance.median": "中央値",
-  "performance.p10p90": "P10～P90",
+  "performance.p10p90": "P10–P90",
   "performance.roleMetric": "{role} {metric}"
 }
