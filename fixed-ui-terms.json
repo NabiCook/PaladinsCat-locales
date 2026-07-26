@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "description": "Reviewed UI terminology and locale-specific manual overrides that must survive general translation runs.",
+  "terms": {
+    "ko": {
+      "record": "전적",
+      "ranked": "경쟁전",
+      "stats": "통계"
+    }
+  },
+  "keyOverrides": {
+    "ko": {
+      "home.brandAccent": "Cat",
+      "home.brandLead": "Paladins",
+      "home.exploreBotEyebrow": "팔라딘스캣 디스코드 봇",
+      "home.exploreBotTitle": "디스코드로 정답을 가져가세요",
+      "home.exploreMetaEyebrow": "챔피언 경쟁전 통계",
+      "home.exploreMetaTitle": "챔피언 경쟁전 성능을 비교하세요",
+      "home.explorePlayersEyebrow": "플레이어 허브",
+      "home.explorePlayersTitle": "플레이어를 검색하고 전적을 추적 하세요",
+      "home.exploreTitleLead": "하나의 플랫폼",
+      "home.exploreTitleRest": "왕국의 모든 각도",
+      "home.tagline": "Paladins: Comp Analytics Tool — 정밀 분석, 아님 그냥 야옹."
+    }
+  }
+}

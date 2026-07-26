@@ -1,12 +1,12 @@
 {
   "footer.allRightsReserved": "모든 권리 보유.",
-  "footer.branch": "브랜치: {branch}",
+  "footer.branch": "분기: {branch}",
   "footer.commit": "커밋: {commit}",
+  "footer.dataProvidedBy": "© Hi-Rez Studios에서 제공한 데이터,",
   "footer.databaseSchema": "DB 스키마: {version}",
-  "footer.dataProvidedBy": "데이터 제공 © Hi-Rez Studios,",
   "footer.deployed": "배포됨: {date}",
-  "footer.dirtyWorktree": "배포 시 디저티 작업트리",
-  "footer.joinDiscord": "Discord 참여",
-  "footer.privacyPolicy": "개인정보 처리방침",
+  "footer.dirtyWorktree": "배포 시 더티 작업 트리",
+  "footer.joinDiscord": "디스코드에 참여하세요",
+  "footer.privacyPolicy": "개인 정보 보호 정책",
   "footer.termsOfUse": "이용약관"
 }
