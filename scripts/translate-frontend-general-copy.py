@@ -2,8 +2,9 @@
 """Direct-translate non-game frontend copy while preserving native game terms.
 
 Game modules are intentionally excluded: their descriptions come only from the
-official client catalog through import-frontend-game-locales.py. Korean is also
-excluded so its existing reviewed locale remains untouched.
+official client catalog through import-frontend-game-locales.py. Reviewed
+locale-specific terminology and manual overrides are loaded from
+fixed-ui-terms.json before any text is sent to translation.
 """
 
 from __future__ import annotations
@@ -17,7 +18,7 @@ import urllib.request
 from pathlib import Path
 
 
-TARGET_LOCALES = ("de", "es-419", "fr", "ja", "pl", "pt-BR", "ru", "tr", "zh-CN", "zh-TW")
+TARGET_LOCALES = ("de", "es-419", "fr", "ja", "ko", "pl", "pt-BR", "ru", "tr", "zh-CN", "zh-TW")
 LOCALE_TO_GOOGLE = {"es-419": "es", "pt-BR": "pt", "zh-CN": "zh-CN", "zh-TW": "zh-TW"}
 PLACEHOLDER_PATTERN = re.compile(r"@@[A-Za-z0-9_]+@@|\{[A-Za-z0-9_]+\}|%(?:\d+\$)?[sdif]")
 TOKEN_PATTERN = re.compile(r"xq(?:ph|term|abbr|brand|nl)\d*x", re.IGNORECASE)
@@ -45,6 +46,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--locales-root", type=Path, default=repository / "locales")
     parser.add_argument("--glossary", type=Path, default=repository / "game-client" / "term-glossary.json")
+    parser.add_argument("--fixed-terms", type=Path, default=repository / "fixed-ui-terms.json")
     parser.add_argument("--locales", default=",".join(TARGET_LOCALES), help="comma-separated BCP 47 tags")
     parser.add_argument(
         "--metrics-only",
@@ -84,12 +86,13 @@ def atomic_write_json(path: Path, contents: dict[str, str]) -> None:
     temporary.replace(path)
 
 
-def protector(glossary: dict[str, object], locale: str):
+def protector(glossary: dict[str, object], fixed_terms: dict[str, object], locale: str):
     translations = {
         term: entry["translations"][locale]
         for term, entry in glossary["terms"].items()
         if locale in entry["translations"]
     }
+    translations.update(fixed_terms.get("terms", {}).get(locale, {}))
     ordered_terms = sorted(translations, key=len, reverse=True)
     term_pattern = re.compile(
         r"(?<![A-Za-z0-9])(" + "|".join(re.escape(term) for term in ordered_terms) + r")(?![A-Za-z0-9])",
@@ -179,6 +182,7 @@ def main() -> int:
     options = parse_args()
     locales_root = options.locales_root.resolve()
     glossary = json.loads(options.glossary.read_text(encoding="utf-8"))
+    fixed_terms = json.loads(options.fixed_terms.read_text(encoding="utf-8"))
     requested = tuple(locale.strip() for locale in options.locales.split(",") if locale.strip())
     invalid = set(requested) - set(TARGET_LOCALES)
     if invalid:
@@ -187,7 +191,8 @@ def main() -> int:
     modules = json.loads((locales_root / "modules.json").read_text(encoding="utf-8"))
     general_modules = [module for module in modules if not module.startswith("game/")]
     for locale in requested:
-        protect = protector(glossary, locale)
+        protect = protector(glossary, fixed_terms, locale)
+        key_overrides = fixed_terms.get("keyOverrides", {}).get(locale, {})
         native_terms = tuple(
             entry["translations"][locale]
             for entry in glossary["terms"].values()
@@ -228,6 +233,10 @@ def main() -> int:
                     item[0]: checked_restore(source[item[0]], value, item[2], locale, native_terms)
                     for item, value in zip(batch, translated)
                 })
+
+            translated_by_key.update({
+                key: value for key, value in key_overrides.items() if key in source
+            })
 
             target_path = locales_root / locale / f"{module}.json"
             existing = json.loads(target_path.read_text(encoding="utf-8")) if target_path.is_file() else {}
