@@ -1,291 +1,385 @@
 {
   "schemaVersion": 1,
-  "matching": "exact English value + unique message_id",
+  "matching": "unique exact, normalized card format, or conservative talent/card semantic match",
   "locales": {
     "de": {
       "game/champions": {
-        "uniqueNativeMatches": 171,
-        "added": 0,
+        "exactNativeMatches": 171,
+        "normalizedNativeMatches": 812,
+        "semanticNativeMatches": 116,
+        "titleAdjacentNativeMatches": 126,
+        "added": 126,
         "refreshed": 0,
-        "preservedExisting": 171
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 1
+        "preservedExisting": 0
       }
     },
     "es-419": {
       "game/champions": {
-        "uniqueNativeMatches": 171,
+        "exactNativeMatches": 171,
+        "normalizedNativeMatches": 814,
+        "semanticNativeMatches": 116,
+        "titleAdjacentNativeMatches": 126,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 171
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 1
+        "preservedExisting": 0
       }
     },
     "fr": {
       "game/champions": {
-        "uniqueNativeMatches": 171,
-        "added": 0,
+        "exactNativeMatches": 171,
+        "normalizedNativeMatches": 814,
+        "semanticNativeMatches": 116,
+        "titleAdjacentNativeMatches": 126,
+        "added": 126,
         "refreshed": 0,
-        "preservedExisting": 171
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 1
+        "preservedExisting": 0
       }
     },
     "ja": {
       "game/champions": {
-        "uniqueNativeMatches": 171,
-        "added": 0,
+        "exactNativeMatches": 171,
+        "normalizedNativeMatches": 814,
+        "semanticNativeMatches": 116,
+        "titleAdjacentNativeMatches": 126,
+        "added": 126,
         "refreshed": 0,
-        "preservedExisting": 171
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
-        "added": 0,
-        "refreshed": 0,
-        "preservedExisting": 1
-      }
-    },
-    "ko": {
-      "game/champions": {
-        "uniqueNativeMatches": 172,
-        "added": 0,
-        "refreshed": 0,
-        "preservedExisting": 172
-      },
-      "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
-      },
-      "game/items": {
-        "uniqueNativeMatches": 0,
-        "added": 0,
-        "refreshed": 0,
-        "preservedExisting": 0
-      },
-      "game/maps": {
-        "uniqueNativeMatches": 1,
-        "added": 0,
-        "refreshed": 0,
-        "preservedExisting": 1
       }
     },
     "pl": {
       "game/champions": {
-        "uniqueNativeMatches": 171,
-        "added": 0,
+        "exactNativeMatches": 171,
+        "normalizedNativeMatches": 814,
+        "semanticNativeMatches": 116,
+        "titleAdjacentNativeMatches": 126,
+        "added": 126,
         "refreshed": 0,
-        "preservedExisting": 171
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 1
+        "preservedExisting": 0
       }
     },
     "pt-BR": {
       "game/champions": {
-        "uniqueNativeMatches": 171,
-        "added": 0,
+        "exactNativeMatches": 171,
+        "normalizedNativeMatches": 814,
+        "semanticNativeMatches": 116,
+        "titleAdjacentNativeMatches": 126,
+        "added": 126,
         "refreshed": 0,
-        "preservedExisting": 171
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 1
+        "preservedExisting": 0
       }
     },
     "ru": {
       "game/champions": {
-        "uniqueNativeMatches": 171,
-        "added": 0,
+        "exactNativeMatches": 171,
+        "normalizedNativeMatches": 814,
+        "semanticNativeMatches": 116,
+        "titleAdjacentNativeMatches": 126,
+        "added": 126,
         "refreshed": 0,
-        "preservedExisting": 171
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 1
+        "preservedExisting": 0
       }
     },
     "tr": {
       "game/champions": {
-        "uniqueNativeMatches": 171,
-        "added": 0,
+        "exactNativeMatches": 171,
+        "normalizedNativeMatches": 814,
+        "semanticNativeMatches": 116,
+        "titleAdjacentNativeMatches": 126,
+        "added": 126,
         "refreshed": 0,
-        "preservedExisting": 171
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 1
+        "preservedExisting": 0
       }
     },
     "zh-CN": {
       "game/champions": {
-        "uniqueNativeMatches": 7,
-        "added": 0,
+        "exactNativeMatches": 7,
+        "normalizedNativeMatches": 581,
+        "semanticNativeMatches": 58,
+        "titleAdjacentNativeMatches": 91,
+        "added": 91,
         "refreshed": 0,
-        "preservedExisting": 7
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 1
+        "preservedExisting": 0
       }
     },
     "zh-TW": {
       "game/champions": {
-        "uniqueNativeMatches": 7,
-        "added": 0,
+        "exactNativeMatches": 7,
+        "normalizedNativeMatches": 573,
+        "semanticNativeMatches": 57,
+        "titleAdjacentNativeMatches": 88,
+        "added": 88,
         "refreshed": 0,
-        "preservedExisting": 7
+        "preservedExisting": 0
       },
       "game/talents": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/items": {
-        "uniqueNativeMatches": 0,
+        "exactNativeMatches": 0,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
         "preservedExisting": 0
       },
       "game/maps": {
-        "uniqueNativeMatches": 1,
+        "exactNativeMatches": 1,
+        "normalizedNativeMatches": 0,
+        "semanticNativeMatches": 0,
+        "titleAdjacentNativeMatches": 0,
         "added": 0,
         "refreshed": 0,
-        "preservedExisting": 1
+        "preservedExisting": 0
       }
     }
   }
