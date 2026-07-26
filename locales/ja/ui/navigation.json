@@ -172,6 +172,8 @@
   "playerActivity.pagination": "活動証拠ページ",
   "playerActivity.platformCoverage": "プラットフォームの対象範囲",
   "playerActivity.playerParticipations": "{total} が再構築した プレイヤー-match の参加",
+  "playerActivity.unresolvedPlayerRange": "未解決のプレイヤー数の範囲",
+  "playerActivity.possiblePlayerTotal": "ユニークプレイヤー数の推定合計",
   "playerActivity.playerRowsLoaded": "プレイヤー 行がロードされました",
   "playerActivity.players24h": "プレイヤー · 過去 24 時間",
   "playerActivity.playersByPlatform": "プラットフォーム別 プレイヤー",

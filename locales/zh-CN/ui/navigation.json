@@ -172,6 +172,8 @@
   "playerActivity.pagination": "活动证据页面",
   "playerActivity.platformCoverage": "平台覆盖范围",
   "playerActivity.playerParticipations": "{total} 重建 玩家-比赛参与",
+  "playerActivity.unresolvedPlayerRange": "未解析的玩家数量范围",
+  "playerActivity.possiblePlayerTotal": "可能的唯一玩家总数",
   "playerActivity.playerRowsLoaded": "已加载 玩家 行",
   "playerActivity.players24h": "玩家 · 过去 24 小时",
   "playerActivity.playersByPlatform": "玩家 按平台",

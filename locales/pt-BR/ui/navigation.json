@@ -172,6 +172,8 @@
   "playerActivity.pagination": "Páginas de evidências de atividades",
   "playerActivity.platformCoverage": "Cobertura da plataforma",
   "playerActivity.playerParticipations": "{total} reconstruiu participações Jogador-match",
+  "playerActivity.unresolvedPlayerRange": "Faixa de jogadores não resolvida",
+  "playerActivity.possiblePlayerTotal": "Total possível de jogadores únicos",
   "playerActivity.playerRowsLoaded": "Linhas Jogador carregadas",
   "playerActivity.players24h": "Jogadores · últimas 24 horas",
   "playerActivity.playersByPlatform": "Jogadores por plataforma",

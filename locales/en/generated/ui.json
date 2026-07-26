@@ -1246,6 +1246,7 @@
   "generated.search.exactLookupLocalDbIsCheckedFirst": "Account not found?",
   "generated.search.lookUpMatchId": "Look up match ID",
   "generated.search.lookUpPlayerId": "Look up player ID",
+  "generated.search.matchNotFound": "Match not found?",
   "generated.search.noRelatedResults": "No related results",
   "generated.search.noResultsFound": "No results found",
   "generated.search.remoteLookupUnavailable": "Remote lookup unavailable",

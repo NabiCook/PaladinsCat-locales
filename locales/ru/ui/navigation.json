@@ -172,6 +172,8 @@
   "playerActivity.pagination": "Страницы свидетельств активности",
   "playerActivity.platformCoverage": "Покрытие платформы",
   "playerActivity.playerParticipations": "{total} реконструировано участие в матче Игрок",
+  "playerActivity.unresolvedPlayerRange": "Неопределённый диапазон игроков",
+  "playerActivity.possiblePlayerTotal": "Возможное общее число уникальных игроков",
   "playerActivity.playerRowsLoaded": "строки Игрок загружены",
   "playerActivity.players24h": "Игроки · за последние 24 часа",
   "playerActivity.playersByPlatform": "Игроки по платформе",
