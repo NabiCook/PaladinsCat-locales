@@ -17,6 +17,6 @@
   "home.tagline": "Paladins: Comp Analytics Tool — 정밀 분석, 아님 그냥 야옹.",
   "home.viewAllChanges": "모든 변경사항 보기",
   "search.clear": "검색 지우기",
-  "search.homeInputLabel": "유저, 경기, 챔피언, Items, Cards, 재능 검색",
+  "search.homeInputLabel": "유저, 매치, 챔피언, Items, Cards, 재능 검색",
   "search.submit": "검색"
 }

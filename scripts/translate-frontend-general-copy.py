@@ -134,6 +134,15 @@ def protector(glossary: dict[str, object], fixed_terms: dict[str, object], local
         normalized = {term.casefold(): translated for term, translated in translations.items()}
         def normalized_game_term(match: re.Match[str]) -> str:
             nonlocal counter
+            # In Korean, "match" is a fixed game noun (매치), but English also
+            # uses it as a verb. Do not protect verb phrases such as "passwords
+            # do not match" or "accounts match this search"; let the translator
+            # render those naturally as 일치하다 instead.
+            if locale == "ko" and match.group(0).casefold() == "match":
+                before = match.string[max(0, match.start() - 24):match.start()]
+                after = match.string[match.end():match.end() + 12]
+                if re.search(r"\b(?:not|do not|does not|did not)\s+$", before, re.IGNORECASE) or re.match(r"\s+(?:this|these)\b", after, re.IGNORECASE):
+                    return match.group(0)
             token = f"xqterm{counter}x"
             counter += 1
             tokens[token] = normalized[match.group(0).casefold()]

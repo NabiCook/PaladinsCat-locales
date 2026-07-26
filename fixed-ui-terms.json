@@ -5,10 +5,14 @@
     "ko": {
       "alt account": "부계정",
       "cheater": "핵유저",
+      "match": "매치",
+      "matches": "매치",
       "private account": "비공개 계정",
       "players": "유저",
       "record": "전적",
       "ranked": "경쟁전",
+      "shield": "실드",
+      "shielding": "실딩",
       "stats": "통계",
       "win trade": "패작",
       "wintrade": "패작"
@@ -26,7 +30,23 @@
       "home.explorePlayersTitle": "플레이어를 검색하고 전적을 추적 하세요",
       "home.exploreTitleLead": "하나의 플랫폼",
       "home.exploreTitleRest": "왕국의 모든 각도",
-      "home.tagline": "Paladins: Comp Analytics Tool — 정밀 분석, 아님 그냥 야옹."
+      "home.tagline": "Paladins: Comp Analytics Tool — 정밀 분석, 아님 그냥 야옹.",
+      "common.metrics.abilityPerMinute": "스킬 / 분",
+      "common.metrics.creditsPerMinute": "크레딧 / 분",
+      "common.metrics.damagePerMinute": "피해량 / 분",
+      "common.metrics.healingPerMinute": "치유량 / 분",
+      "common.metrics.shieldingPerMinute": "실딩 / 분",
+      "common.metrics.weaponPerMinute": "무기 / 분",
+      "generated.players.creditsMin": "크레딧 / 분",
+      "generated.players.damageMin": "피해량 / 분",
+      "generated.players.healingMin": "치유량 / 분",
+      "generated.players.shieldingMin": "실딩 / 분",
+      "generated.stats.damagePerMinute": "분당 피해량",
+      "seo.metrics.cpm": "분당 크레딧",
+      "seo.metrics.dpm": "분당 피해량",
+      "seo.metrics.hpm": "분당 치유량",
+      "seo.metrics.spm": "분당 실딩",
+      "seo.stats.egpm.description": "Paladins 역할별 전 세계 유효 분당 크레딧 평균과 백분위 분포를 살펴보세요."
     }
   }
 }
