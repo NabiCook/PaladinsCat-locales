@@ -3,10 +3,15 @@
   "description": "Reviewed UI terminology and locale-specific manual overrides that must survive general translation runs.",
   "terms": {
     "ko": {
+      "alt account": "부계정",
+      "cheater": "핵유저",
+      "private account": "비공개 계정",
       "players": "유저",
       "record": "전적",
       "ranked": "경쟁전",
-      "stats": "통계"
+      "stats": "통계",
+      "win trade": "패작",
+      "wintrade": "패작"
     }
   },
   "keyOverrides": {
