@@ -1,12 +1,13 @@
 {
-  "localization.githubTitle": "Translate through GitHub",
-  "localization.githubDescription": "Clone the public locale repository, edit with Tolgee or a text editor, and open one GitHub pull request. PaladinsCat does not store translation drafts or require a second approval.",
+  "localization.githubTitle": "Translate with Weblate",
+  "localization.githubDescription": "Use Weblate to translate or suggest changes. Reviewed changes become a GitHub pull request; only a merged pull request changes the public locale repository.",
   "localization.workflowTitle": "Repository workflow",
-  "localization.workflowStepClone": "Clone PaladinsCat-locales and create a translation branch.",
-  "localization.workflowStepTolgee": "Import the English files into Tolgee, translate, and export the target files back into the clone.",
-  "localization.workflowStepPr": "Validate, commit with GitHub Desktop, open a pull request, and merge after checks pass.",
+  "localization.workflowStepClone": "Translate or submit suggestions in the Weblate workspace.",
+  "localization.workflowStepTolgee": "A Weblate reviewer approves completed strings and opens or updates a GitHub pull request.",
+  "localization.workflowStepPr": "Merge after the repository checks and GitHub wording review pass.",
   "localization.repository": "Open locale repository",
+  "localization.openWeblate": "Open Weblate workspace",
   "localization.contributingGuide": "Read contribution guide",
-  "localization.tolgeeGuide": "Read Tolgee workflow",
+  "localization.tolgeeGuide": "Read Weblate and GitHub workflow",
   "localization.deploymentDescription": "Merged locale commits are pinned into the PaladinsCat frontend image for reproducible VPS deployments."
 }
