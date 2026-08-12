@@ -1,12 +1,12 @@
 {
-  "localization.contributingGuide": "閱讀貢獻指南",
-  "localization.deploymentDescription": "合併的區域設定提交固定到 PaladinsCat 前端映像中，以實現可重複的 VPS 部署。",
-  "localization.githubDescription": "複製公共區域設定儲存庫，使用 Tolgee 或文字編輯器進行編輯，然後開啟一個 GitHub 拉取請求。 PaladinsCat 不需要 商店 翻譯草稿或需要第二次批准。",
-  "localization.githubTitle": "透過 GitHub 進行翻譯",
-  "localization.repository": "開啟語言環境儲存庫",
-  "localization.tolgeeGuide": "閱讀 Tolgee 工作流程",
-  "localization.workflowStepClone": "克隆 PaladinsCat-locales 並建立翻譯分支。",
-  "localization.workflowStepPr": "驗證、使用 GitHub Desktop 提交、開啟拉取請求，並在檢查通過後合併。",
-  "localization.workflowStepTolgee": "將英文檔案匯入 Tolgee，進行翻譯，然後將目標檔案匯出回複製中。",
-  "localization.workflowTitle": "儲存庫工作流程"
+    "localization.contributingGuide": "閱讀貢獻指南",
+    "localization.deploymentDescription": "合併的區域設定提交固定到 PaladinsCat 前端映像中，以實現可重複的 VPS 部署。",
+    "localization.githubDescription": "複製公共區域設定儲存庫，使用 Tolgee 或文字編輯器進行編輯，然後開啟一個 GitHub 拉取請求。 PaladinsCat 不需要 商店 翻譯草稿或需要第二次批准。",
+    "localization.githubTitle": "透過 GitHub 進行翻譯",
+    "localization.repository": "開啟語言環境儲存庫",
+    "localization.tolgeeGuide": "閱讀 Tolgee 工作流程",
+    "localization.workflowStepClone": "克隆 PaladinsCat-locales 並建立翻譯分支。",
+    "localization.workflowStepPr": "驗證、使用 GitHub Desktop 提交、開啟拉取請求，並在檢查通過後合併。",
+    "localization.workflowStepTolgee": "將英文檔案匯入 Tolgee，進行翻譯，然後將目標檔案匯出回複製中。",
+    "localization.workflowTitle": "儲存庫工作流程"
 }

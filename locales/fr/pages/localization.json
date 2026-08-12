@@ -1,12 +1,12 @@
 {
-  "localization.contributingGuide": "Lire le guide de contribution",
-  "localization.deploymentDescription": "Les validations de paramètres régionaux fusionnés sont épinglées dans l'image frontale de PaladinsCat pour des déploiements VPS reproductibles.",
-  "localization.githubDescription": "Clonez le référentiel de paramètres régionaux public, modifiez-le avec Tolgee ou un éditeur de texte et ouvrez une demande d'extraction GitHub. PaladinsCat ne rédige pas de brouillons de traduction Boutique et ne nécessite pas une deuxième approbation.",
-  "localization.githubTitle": "Traduire via GitHub",
-  "localization.repository": "Ouvrir le référentiel de paramètres régionaux",
-  "localization.tolgeeGuide": "Lire le flux de travail Tolgee",
-  "localization.workflowStepClone": "Clonez PaladinsCat-locales et créez une branche de traduction.",
-  "localization.workflowStepPr": "Validez, validez avec GitHub Desktop, ouvrez une pull request et fusionnez une fois les vérifications réussies.",
-  "localization.workflowStepTolgee": "Importez les fichiers anglais dans Tolgee, traduisez et exportez les fichiers cibles dans le clone.",
-  "localization.workflowTitle": "Flux de travail du référentiel"
+    "localization.contributingGuide": "Lire le guide de contribution",
+    "localization.deploymentDescription": "Les validations de paramètres régionaux fusionnés sont épinglées dans l'image frontale de PaladinsCat pour des déploiements VPS reproductibles.",
+    "localization.githubDescription": "Clonez le référentiel de paramètres régionaux public, modifiez-le avec Tolgee ou un éditeur de texte et ouvrez une demande d'extraction GitHub. PaladinsCat ne rédige pas de brouillons de traduction Boutique et ne nécessite pas une deuxième approbation.",
+    "localization.githubTitle": "Traduire via GitHub",
+    "localization.repository": "Ouvrir le référentiel de paramètres régionaux",
+    "localization.tolgeeGuide": "Lire le flux de travail Tolgee",
+    "localization.workflowStepClone": "Clonez PaladinsCat-locales et créez une branche de traduction.",
+    "localization.workflowStepPr": "Validez, validez avec GitHub Desktop, ouvrez une pull request et fusionnez une fois les vérifications réussies.",
+    "localization.workflowStepTolgee": "Importez les fichiers anglais dans Tolgee, traduisez et exportez les fichiers cibles dans le clone.",
+    "localization.workflowTitle": "Flux de travail du référentiel"
 }

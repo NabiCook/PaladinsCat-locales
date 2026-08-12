@@ -1,12 +1,12 @@
 {
-  "localization.contributingGuide": "Beitragsleitfaden lesen",
-  "localization.deploymentDescription": "Zusammengeführte Gebietsschema-Commits werden für reproduzierbare VPS-Bereitstellungen im PaladinsCat-Frontend-Image angeheftet.",
-  "localization.githubDescription": "Klonen Sie das öffentliche Gebietsschema-Repository, bearbeiten Sie es mit Tolgee oder einem Texteditor und öffnen Sie eine GitHub-Pull-Anfrage. PaladinsCat erstellt keine Übersetzungsentwürfe und erfordert keine zweite Genehmigung.",
-  "localization.githubTitle": "Übersetzen Sie über GitHub",
-  "localization.repository": "Öffnen Sie das Gebietsschema-Repository",
-  "localization.tolgeeGuide": "Lesen Sie den Tolgee-Workflow",
-  "localization.workflowStepClone": "Klonen Sie PaladinsCat-Gebietsschemas und erstellen Sie einen Übersetzungszweig.",
-  "localization.workflowStepPr": "Validieren, mit GitHub Desktop festschreiben, eine Pull-Anfrage öffnen und nach bestandener Prüfung zusammenführen.",
-  "localization.workflowStepTolgee": "Importieren Sie die englischen Dateien in Tolgee, übersetzen Sie und exportieren Sie die Zieldateien zurück in den Klon.",
-  "localization.workflowTitle": "Repository-Workflow"
+    "localization.contributingGuide": "Beitragsleitfaden lesen",
+    "localization.deploymentDescription": "Zusammengeführte Gebietsschema-Commits werden für reproduzierbare VPS-Bereitstellungen im PaladinsCat-Frontend-Image angeheftet.",
+    "localization.githubDescription": "Klonen Sie das öffentliche Gebietsschema-Repository, bearbeiten Sie es mit Tolgee oder einem Texteditor und öffnen Sie eine GitHub-Pull-Anfrage. PaladinsCat erstellt keine Übersetzungsentwürfe und erfordert keine zweite Genehmigung.",
+    "localization.githubTitle": "Übersetzen Sie über GitHub",
+    "localization.repository": "Öffnen Sie das Gebietsschema-Repository",
+    "localization.tolgeeGuide": "Lesen Sie den Tolgee-Workflow",
+    "localization.workflowStepClone": "Klonen Sie PaladinsCat-Gebietsschemas und erstellen Sie einen Übersetzungszweig.",
+    "localization.workflowStepPr": "Validieren, mit GitHub Desktop festschreiben, eine Pull-Anfrage öffnen und nach bestandener Prüfung zusammenführen.",
+    "localization.workflowStepTolgee": "Importieren Sie die englischen Dateien in Tolgee, übersetzen Sie und exportieren Sie die Zieldateien zurück in den Klon.",
+    "localization.workflowTitle": "Repository-Workflow"
 }

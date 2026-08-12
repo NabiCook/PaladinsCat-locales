@@ -1,12 +1,12 @@
 {
-  "localization.contributingGuide": "Przeczytaj przewodnik dotyczący wkładu",
-  "localization.deploymentDescription": "Połączone zatwierdzenia ustawień regionalnych są przypinane do obrazu frontonu PaladinsCat w celu powtarzalnych wdrożeń VPS.",
-  "localization.githubDescription": "Sklonuj publiczne repozytorium ustawień regionalnych, edytuj za pomocą Tolgee lub edytora tekstu i otwórz jedno żądanie ściągnięcia GitHub. PaladinsCat nie tworzy wersji roboczych tłumaczeń Sklep ani nie wymaga drugiej zgody.",
-  "localization.githubTitle": "Tłumaczenie przez GitHub",
-  "localization.repository": "Otwórz repozytorium ustawień regionalnych",
-  "localization.tolgeeGuide": "Przeczytaj przepływ pracy w Tolgee",
-  "localization.workflowStepClone": "Sklonuj ustawienia regionalne PaladinsCat i utwórz gałąź tłumaczeń.",
-  "localization.workflowStepPr": "Sprawdź, zatwierdź za pomocą GitHub Desktop, otwórz żądanie ściągnięcia i scal po przejściu kontroli.",
-  "localization.workflowStepTolgee": "Zaimportuj pliki w języku angielskim do Tolgee, przetłumacz i wyeksportuj pliki docelowe z powrotem do klonu.",
-  "localization.workflowTitle": "Przepływ pracy w repozytorium"
+    "localization.contributingGuide": "Przeczytaj przewodnik dotyczący wkładu",
+    "localization.deploymentDescription": "Połączone zatwierdzenia ustawień regionalnych są przypinane do obrazu frontonu PaladinsCat w celu powtarzalnych wdrożeń VPS.",
+    "localization.githubDescription": "Sklonuj publiczne repozytorium ustawień regionalnych, edytuj za pomocą Tolgee lub edytora tekstu i otwórz jedno żądanie ściągnięcia GitHub. PaladinsCat nie tworzy wersji roboczych tłumaczeń Sklep ani nie wymaga drugiej zgody.",
+    "localization.githubTitle": "Tłumaczenie przez GitHub",
+    "localization.repository": "Otwórz repozytorium ustawień regionalnych",
+    "localization.tolgeeGuide": "Przeczytaj przepływ pracy w Tolgee",
+    "localization.workflowStepClone": "Sklonuj ustawienia regionalne PaladinsCat i utwórz gałąź tłumaczeń.",
+    "localization.workflowStepPr": "Sprawdź, zatwierdź za pomocą GitHub Desktop, otwórz żądanie ściągnięcia i scal po przejściu kontroli.",
+    "localization.workflowStepTolgee": "Zaimportuj pliki w języku angielskim do Tolgee, przetłumacz i wyeksportuj pliki docelowe z powrotem do klonu.",
+    "localization.workflowTitle": "Przepływ pracy w repozytorium"
 }

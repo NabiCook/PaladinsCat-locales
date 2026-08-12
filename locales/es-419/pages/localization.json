@@ -1,12 +1,12 @@
 {
-  "localization.contributingGuide": "Leer guía de contribución",
-  "localization.deploymentDescription": "Las confirmaciones locales fusionadas se fijan en la imagen de la interfaz de PaladinsCat para implementaciones de VPS reproducibles.",
-  "localization.githubDescription": "Clone el repositorio local público, edítelo con Tolgee o un editor de texto y abra una solicitud de extracción de GitHub. PaladinsCat no realiza borradores de traducción Tienda ni requiere una segunda aprobación.",
-  "localization.githubTitle": "Traducir a través de GitHub",
-  "localization.repository": "Abrir repositorio local",
-  "localization.tolgeeGuide": "Leer el flujo de trabajo de Tolgee",
-  "localization.workflowStepClone": "Clona PaladinsCat-locales y crea una rama de traducción.",
-  "localization.workflowStepPr": "Valide, confirme con GitHub Desktop, abra una solicitud de extracción y fusione después de pasar las comprobaciones.",
-  "localization.workflowStepTolgee": "Importe los archivos en inglés a Tolgee, traduzca y exporte los archivos de destino nuevamente al clon.",
-  "localization.workflowTitle": "Flujo de trabajo del repositorio"
+    "localization.contributingGuide": "Leer guía de contribución",
+    "localization.deploymentDescription": "Las confirmaciones locales fusionadas se fijan en la imagen de la interfaz de PaladinsCat para implementaciones de VPS reproducibles.",
+    "localization.githubDescription": "Usa Weblate para traducir o sugerir cambios. Los cambios revisados se convierten en una solicitud de extracción de GitHub; solo una solicitud fusionada modifica el repositorio público de traducciones.",
+    "localization.githubTitle": "Traducir a través de GitHub",
+    "localization.repository": "Abrir repositorio local",
+    "localization.tolgeeGuide": "Leer el flujo de trabajo de Tolgee",
+    "localization.workflowStepClone": "Clona PaladinsCat-locales y crea una rama de traducción.",
+    "localization.workflowStepPr": "Valide, confirme con GitHub Desktop, abra una solicitud de extracción y fusione después de pasar las comprobaciones.",
+    "localization.workflowStepTolgee": "Importe los archivos en inglés a Tolgee, traduzca y exporte los archivos de destino nuevamente al clon.",
+    "localization.workflowTitle": "Flujo de trabajo del repositorio"
 }
