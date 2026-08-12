@@ -10,8 +10,9 @@ pull-request integration, never direct pushes to `main`.
    choose a language and namespace.
 2. Submit a translation or suggestion, preserving placeholders exactly.
 3. A language reviewer approves the wording in Weblate.
-4. Weblate synchronizes approved changes to its dedicated branch and opens or
-   updates one pull request against `main`.
+4. An operator runs the governed platform locale-sync command. It commits
+   pending Weblate changes, validates an isolated export, and uses the
+   localization GitHub App to open a `weblate/*` pull request against `main`.
 5. A maintainer checks the GitHub diff and required validation, then merges.
 
 Weblate review is linguistic QA. GitHub pull-request review and the required
@@ -21,9 +22,10 @@ Weblate review is linguistic QA. GitHub pull-request review and the required
 
 - Import `locales/en` as the source language and target files under
   `locales/<locale>`; keep namespace paths intact.
-- Enable repository webhooks so Weblate pulls English source updates promptly.
-- Configure a dedicated GitHub bot with only this repository's content and
-  pull-request permissions.
+- The GitHub push webhook at `/hooks/github/` updates Weblate after merged
+  source changes. `updategit` remains the guarded manual recovery command.
+- The dedicated GitHub App has only this repository's content and pull-request
+  permissions. Its private key stays in the external runtime secret root.
 - Restrict Weblate registration and assign language-review permissions to
   trusted reviewers.
 - Do not store the bot token in this repository, locale files, or the frontend.
