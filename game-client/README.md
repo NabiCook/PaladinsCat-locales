@@ -29,7 +29,7 @@ champion, ability, item, card, and mode names.
 Refresh all supported packages from a sibling `PaladinsCat-Tempest` checkout:
 
 ```powershell
-python scripts/import-game-client-locales.py
+python tools/refresh/import-game-client-locales.py
 npm run validate
 ```
 
@@ -44,7 +44,7 @@ importer deliberately excludes `ESN` (the stale English fallback) and `DEB`
 Build the curated native-term glossary after refreshing the client packs:
 
 ```powershell
-python scripts/build-game-term-glossary.py
+python tools/refresh/build-game-term-glossary.py
 ```
 
 `term-glossary.json` is the authority for game-specific UI terms such as
@@ -52,7 +52,7 @@ champion, ability, loadout, card, and queue/mode names. Apply those terms when
 translating frontend UI and surrounding prose. Translate ordinary copy normally;
 do not use the game catalog as a blanket machine-translation source.
 
-`translate-frontend-general-copy.py` applies this rule mechanically: it direct-
+`tools/refresh/translate-frontend-general-copy.py` applies this rule mechanically: it direct-
 translates non-game frontend modules only, masks native glossary terms and
 placeholders during translation, and restores them afterward. It never touches
 Korean or `game/*` descriptions.
@@ -63,7 +63,7 @@ To add native terms and descriptions to the frontend, run the second importer
 after refreshing the client packs:
 
 ```powershell
-python scripts/import-frontend-game-locales.py
+python tools/refresh/import-frontend-game-locales.py
 npm run validate
 ```
 
