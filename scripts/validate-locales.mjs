@@ -1,4 +1,4 @@
-import { access, readdir, readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -111,20 +111,17 @@ for (const locale of languageDirectories) {
 
   for (const module of modules) {
     const file = join(localesDirectory, locale, `${module}.json`);
-    try {
-      await access(file);
-    } catch {
-      if (locale === "en") {
-        console.error(`${file}: English must contain every locale module.`);
-        hasErrors = true;
-      }
-      continue;
-    }
-
     let messages;
     try {
       messages = JSON.parse(await readFile(file, "utf8"));
     } catch (error) {
+      if (error?.code === "ENOENT") {
+        if (locale === "en") {
+          console.error(`${file}: English must contain every locale module.`);
+          hasErrors = true;
+        }
+        continue;
+      }
       console.error(`${file}: invalid JSON.`, error);
       hasErrors = true;
       continue;
