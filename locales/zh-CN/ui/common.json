@@ -236,5 +236,14 @@
     "common.prototype.scoreboardPlatformDescription": "在实际计分板布局中检查单色平台标识。将鼠标悬停在玩家行的图标上，可查看其无障碍标签。",
     "common.metricHelp.egpm": "每分钟获得的积分，不含初始积分：Siege为500，Onslaught和Team Deathmatch为450。仍包含被动获得的积分。",
     "common.access.appealSubject": "游侠情报猫账号访问权限申诉",
-    "common.nameHistory.observed": "可观察到的日期范围，按时间先后排列。这些是 游侠情报猫 记录每个名称的时间范围，而非确切的更名时间。"
+    "common.nameHistory.observed": "可观察到的日期范围，按时间先后排列。这些是 游侠情报猫 记录每个名称的时间范围，而非确切的更名时间。",
+    "common.playerPresence.offline": "离线",
+    "common.playerPresence.lobby": "大厅",
+    "common.playerPresence.selection": "选择英雄中",
+    "common.playerPresence.match": "比赛中",
+    "common.playerPresence.online": "在线",
+    "common.playerPresence.unknown": "未知状态",
+    "common.playerPresence.loading": "检查玩家状态中……",
+    "common.playerPresence.unavailable": "玩家状态不可用",
+    "common.playerPresence.invalidResponse": "Hi-Rez 没有返回任何可用的玩家信息。"
 }
