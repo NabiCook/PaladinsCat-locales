@@ -51,7 +51,7 @@ WatchCat `source_commit`, and raw GitHub download descriptor.
 From WatchCat, after building the source:
 
 ```powershell
-$localeRepo = 'C:\Users\nabi\PaladinsCat\paladinscat-locales'
+$localeRepo = 'Z:\NABI\Project\PaladinsCat\paladinscat-locales'
 paladinscat-release.exe ime PATH_TO_BUILT_DLL $localeRepo 0.1.0
 paladinscat-release.exe validate $localeRepo
 ```
