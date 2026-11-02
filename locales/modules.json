@@ -11,6 +11,7 @@
   "pages/player-friends",
   "pages/champion-matchups",
   "pages/player-trends",
+  "pages/player-mcts-profile",
   "pages/localization",
   "pages/diminishing-returns",
   "pages/paladinscat-bot",
