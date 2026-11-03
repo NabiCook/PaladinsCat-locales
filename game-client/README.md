@@ -5,7 +5,7 @@
 Reviewed custom native inputs live in [native/translations](native/README.md).
 The localization and IME download catalog is `catalog.json`. Native patching,
 font, localization, and IME implementation belongs to WatchCat. The public
-[PaladinsCat Launcher](https://github.com/PaladinsCat/PaladinsCat-Launcher)
+[PaladinsCat Launcher](https://github.com/NabiCook/PaladinsCat-Launcher)
 owns the launcher GUI, package installation, and public release tooling;
 this repository owns locale data and release metadata.
 See [release preparation and publication](../docs/GAME_CLIENT_RELEASES.md).

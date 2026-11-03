@@ -3,7 +3,7 @@
     {
       "game_build": "8.1",
       "manifest_sha256": "b64c71f21d472afd62ccc114f9faa68c23f76e53c52e83bcdf26815085581f7e",
-      "manifest_url": "https://github.com/PaladinsCat/PaladinsCat-locales/releases/download/game-client-preview-20261010-r1/ime-package.json",
+      "manifest_url": "https://github.com/NabiCook/PaladinsCat-locales/releases/download/game-client-preview-20261010-r1/ime-package.json",
       "notes": "PREVIEW · Korean IME compatibility for pinned Win64 8.1. Esc, rapid-I and Korean typing passed on frozen v4-r1; this portable build and live disable still require a fresh client trial.",
       "package_id": "paladinscat-ime-0-1-0",
       "version": "0.1.0"
@@ -15,7 +15,7 @@
       "game_build": "8.1",
       "locale": "KOR",
       "manifest_sha256": "a6b51a6dee1c023c0c3cb1772c44f86a8fa754307b0ccc2603b4609213359b2a",
-      "manifest_url": "https://github.com/PaladinsCat/PaladinsCat-locales/releases/download/game-client-preview-20261015-v177-r2/locale-package.json",
+      "manifest_url": "https://github.com/NabiCook/PaladinsCat-locales/releases/download/game-client-preview-20261015-v177-r2/locale-package.json",
       "notes": "Korean v177"
     }
   ],

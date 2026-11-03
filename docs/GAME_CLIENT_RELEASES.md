@@ -9,7 +9,7 @@
 | Native catalogs and reviewed translation inputs | This repo: `game-client/` and `game-client/native/translations/` |
 | Download catalog and package contracts | This repo: `game-client/catalog.json`, `schema/` |
 | Local generated drafts | This repo: ignored `game-client/.release-staging/` |
-| Published binary payloads and manifests | Immutable GitHub Release assets on `PaladinsCat/PaladinsCat-locales` |
+| Published binary payloads and manifests | Immutable GitHub Release assets on `NabiCook/PaladinsCat-locales` |
 
 Do not copy patcher or IME source into this repository. Keep current reviewed
 translations here; WatchCat dated review/capture evidence remains in WatchCat.
@@ -22,7 +22,7 @@ diagnostic manifests belong in Git or public release assets.
 ## Download contract
 
 The patcher reads
-`https://raw.githubusercontent.com/PaladinsCat/PaladinsCat-locales/main/game-client/catalog.json`.
+`https://raw.githubusercontent.com/NabiCook/PaladinsCat-locales/main/game-client/catalog.json`.
 Catalog v1 has `packages` for locale bundles and optional `ime_packages` for IME
 releases. An empty array offers no release. A source/catalog commit does not
 publish downloadable packages. The GUI also accepts an explicit public GitHub
@@ -105,7 +105,7 @@ full localization coverage and visual acceptance gates.
 
 ## Published preview: 2026-10-10
 
-[game-client-preview-20261010-r1](https://github.com/PaladinsCat/PaladinsCat-locales/releases/tag/game-client-preview-20261010-r1)
+[game-client-preview-20261010-r1](https://github.com/NabiCook/PaladinsCat-locales/releases/tag/game-client-preview-20261010-r1)
 contains Korean v172 and IME 0.1.0 for the exact Win64 8.1 executable fingerprint.
 Both catalog entries and manifests explicitly say PREVIEW. Translation review,
 unresolved native ownership, targeted visual checks, portable IME gameplay and
@@ -145,7 +145,7 @@ remote protections.
 
 ## Korean terminology preview: 2026-10-14
 
-[game-client-preview-20261014-v174](https://github.com/PaladinsCat/PaladinsCat-locales/releases/tag/game-client-preview-20261014-v174)
+[game-client-preview-20261014-v174](https://github.com/NabiCook/PaladinsCat-locales/releases/tag/game-client-preview-20261014-v174)
 updates the Korean localization package to `kor-ui-v174-skills-bf6ef4ec41f7`.
 Skills and abilities use 스킬; View Skills uses 스킬 확인; champion selection
 uses 선택. The existing IME 0.1.0 catalog entry and its previous immutable
@@ -177,7 +177,7 @@ existing main catalog. A source push alone cannot update downloadable assets.
 
 ## Korean DLC and system preview: 2026-10-14
 
-[game-client-preview-20261014-v175-r1](https://github.com/PaladinsCat/PaladinsCat-locales/releases/tag/game-client-preview-20261014-v175-r1)
+[game-client-preview-20261014-v175-r1](https://github.com/NabiCook/PaladinsCat-locales/releases/tag/game-client-preview-20261014-v175-r1)
 contains 2,158 system-message corrections and 93 DLC/product body translations.
 The owner authorized general wording, with later corrections through issue
 reports. The new per-message authoring files preserve exact ID, key, English
@@ -204,7 +204,7 @@ coverage remains pending. Wording/visual feedback for this batch is on demand.
 
 ## Korean objective terminology preview: 2026-10-14
 
-[game-client-preview-20261014-v176-r1](https://github.com/PaladinsCat/PaladinsCat-locales/releases/tag/game-client-preview-20261014-v176-r1)
+[game-client-preview-20261014-v176-r1](https://github.com/NabiCook/PaladinsCat-locales/releases/tag/game-client-preview-20261014-v176-r1)
 standardizes five source-bound capture-point objective messages with 거점.
 The reviewed rows are MSG_BONUS_OBJ_POINTS (23028), Objective Captured (%)
 (1000011383), Distance From Current Objective (1000022297), Has Current
@@ -225,7 +225,7 @@ acceptance are pending. No game files were changed.
 
 ## Korean v177: 2026-10-15
 
-Preview release: [Korean v177](https://github.com/PaladinsCat/PaladinsCat-locales/releases/tag/game-client-preview-20261015-v177-r2).
+Preview release: [Korean v177](https://github.com/NabiCook/PaladinsCat-locales/releases/tag/game-client-preview-20261015-v177-r2).
 Bundle: `kor-ui-v177-1a73a309d6ab`.
 
 The candidate standardizes Gold as 골드 in 57 reviewed DAT entries while
