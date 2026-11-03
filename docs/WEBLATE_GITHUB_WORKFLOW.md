@@ -1,8 +1,8 @@
 # Weblate to GitHub workflow
 
 Weblate is the primary place to translate PaladinsCat at
-[translate.paladinscat.com](https://translate.paladinscat.com). It must use its GitHub
-pull-request integration, never direct pushes to `main`.
+[translate.paladinscat.com](https://translate.paladinscat.com). Maintainers review
+and validate translation changes before publishing them to GitHub `main`.
 
 ## Contributor and reviewer flow
 
@@ -11,16 +11,18 @@ pull-request integration, never direct pushes to `main`.
 2. Submit a translation or suggestion, preserving placeholders exactly.
 3. A language reviewer approves the wording in Weblate. The project commit
    policy excludes every string that is not in Weblate's approved state.
-4. Weblate's repository-scoped GitHub App commits the approved strings to its
-   translation branch and opens or updates a pull request against `main`. It
-   cannot push `main`.
-5. A maintainer checks the GitHub diff and required validation, then merges.
+4. A maintainer reviews the approved translation diff and runs `npm run validate`.
+5. Publish the reviewed changes through the owner-approved `main` workflow.
+   External Git contributors submit pull requests from personal forks.
 6. The frontend's hourly locale-pin workflow detects the merged locale commit,
    validates it, compiles the complete frontend, and only then opens a
    protected frontend pull request for the mechanical submodule-pin change.
 
-Weblate review is linguistic QA. GitHub pull-request review and the required
+Weblate review is linguistic QA. Maintainer review and the required
 `npm run validate` check remain release authorization.
+
+The upstream repository permits only `main`. Translation automation must use a
+permitted fork-based path; it must not create an upstream translation branch.
 
 ## Project configuration
 
@@ -36,16 +38,15 @@ Weblate review is linguistic QA. GitHub pull-request review and the required
   trusted reviewers.
 - Do not store the bot token in this repository, locale files, or the frontend.
 
-The governed platform sync script remains a recovery path. It refuses to run
-unless approval-only commits are enabled and exports committed `HEAD`, never
-Weblate's mutable working tree.
+The platform sync helper's upstream-branch PR flow conflicts with this policy.
+Reconcile that flow before using the helper to publish translation changes.
 
 ## Source updates and conflicts
 
 Application maintainers update canonical English directly on `main` after
 `npm run validate` passes. Weblate then pulls the source change through its
 webhook or scheduled sync.
-Resolve any Weblate Git conflict before creating a translation pull request;
+Resolve any Weblate Git conflict before publishing translation changes;
 do not overwrite changed English keys from Weblate.
 
 If the project-wide repository conflict auto-locks the Weblate components

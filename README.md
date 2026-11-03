@@ -8,10 +8,8 @@ committed directly to `main`.
 ## Contribute
 
 Translate in the [PaladinsCat Weblate project](https://translate.paladinscat.com).
-Approved translations are
-synchronized to a Weblate-owned GitHub pull request; merge it only after the
-repository validation and review pass. GitHub `main` remains authoritative.
-Direct local Git editing remains available as a fallback.
+Maintainers review and validate approved translations before publishing them to
+GitHub `main`. Git contributors use personal forks and pull requests.
 
 - [Contribution rules](CONTRIBUTING.md)
 - [Weblate and GitHub workflow](docs/WEBLATE_GITHUB_WORKFLOW.md)
