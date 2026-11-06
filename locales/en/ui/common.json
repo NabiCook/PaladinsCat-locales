@@ -205,6 +205,7 @@
   "common.relationships.rankedTitle": "Ranked Relationships",
   "common.relationships.casualTitle": "Casual Relationships",
   "common.relationships.casualDescription": "Casual Siege, TDM, and Onslaught teammates, opponents, and confirmed party partners over the last 30 days.",
+  "common.relationships.rankedDescription": "Ranked Siege teammates, opponents, and confirmed party partners over the last 30 days. Rebuilt every six hours.",
   "common.relationships.casualEncounterMix": "Casual Encounter Mix",
   "common.relationships.casualEmpty": "No casual relationship data is available for this player.",
   "common.relationships.rankedOnly": "Relationship counts use tracked ranked matches only.",
