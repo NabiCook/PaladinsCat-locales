@@ -35,6 +35,8 @@
   "seo.players.elo.title": "Paladins ELO Rankings — Account and Champion Ratings",
   "seo.players.leaderboard.description": "View the Paladins leaderboard for Grandmaster, Master, Diamond, and other ranks with player points, wins, win rates, match counts, and competitive stats.",
   "seo.players.leaderboard.title": "Paladins Ranked Leaderboard — Grandmaster, Master and Diamond",
+  "seo.players.mctsPrivate.description": "Private Paladins accounts confirmed by MCTS profile probes, with the recovered nameplate, first and last observation, and the sweep lane that found them.",
+  "seo.players.mctsPrivate.title": "Private account DB",
   "seo.players.performance.description": "Compare the highest single-match ranked Paladins credits, healing, damage, and shielding-per-minute records.",
   "seo.players.performance.title": "Paladins Player Performance Rankings — Account and Champion Records",
   "seo.players.parties.description": "See which Paladins players queued together in ranked matches, from two-player groups to full five-player parties.",
