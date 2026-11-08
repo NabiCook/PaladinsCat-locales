@@ -1,7 +1,7 @@
 {
   "mctsProfile.metaTitle": "Private profile #{value1}",
   "mctsProfile.badge": "Private account",
-  "mctsProfile.explanation": "The Hi-Rez API hides this account. Everything below was captured from the game client over MCTS.",
+  "mctsProfile.explanation": "The Hi-Rez API hides this account. Everything below was captured from the game client.",
   "mctsProfile.accountLevel": "Account level",
   "mctsProfile.xpLevel": "XP",
   "mctsProfile.identity": "Identity",
@@ -50,6 +50,6 @@
   "mctsProfile.captureStatus": "Status",
   "mctsProfile.loadFailed": "Could not load the private profile.",
   "mctsProfile.notPrivate": "No private capture for this player",
-  "mctsProfile.notPrivateBody": "The MCTS profile endpoint has no capture for this player id, so this is not a private account.",
+  "mctsProfile.notPrivateBody": "This player id has no private capture, so it is not a private account.",
   "mctsProfile.viewPublicProfile": "Open public profile"
 }
