@@ -310,5 +310,13 @@
   "invitation.disableRequirement": "Disable invitation requirement",
   "invitation.requirementEnabled": "Enabled — stats access requires a verified account and active invitation.",
   "invitation.requirementDisabled": "Disabled — verified accounts retain full access.",
-  "invitation.policySaveFailed": "The global invitation requirement could not be saved."
+  "invitation.policySaveFailed": "The global invitation requirement could not be saved.",
+  "history.recent": "Past 30 days",
+  "history.older": "Older",
+  "history.loadOlderMatches": "Load older matches",
+  "history.loadOlderData": "Load older data",
+  "history.loadOlderMatch": "Load older match",
+  "history.searchOlderMatch": "Search older match",
+  "history.noOlderMatches": "No older matches found.",
+  "history.noOlderData": "No older data found."
 }
